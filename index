@@ -1,0 +1,207 @@
+<html>
+
+<head>
+ <base target="_top">
+ <style type="text/css"></style>
+ <meta name="viewport" content="width=device-width, initia-scale=0.5">
+ <style type="text/css">
+  body {
+   color: white;
+   font-size: 7vw;
+   font-family: AppleGothic;
+   word-wrap: break-word;
+  }
+
+  h3 {
+   font-size: 11vw;
+   javascript: allow;
+   background-color: black;
+  }
+
+  a {
+   Color: darkgreen;
+   text-decoration: none;
+  }
+
+  input {
+   background-color: black;
+   color: white;
+   border: 0vw solid black;
+   padding: 0.25px 0.15px 0.25px 0.15px;
+  }
+
+  .clicksub {
+   border: 0.02vw solid darkgreen;
+   background-color: green;
+   color: black;
+   padding: 0.5vw;
+   padding-right: 0.75vw;
+   padding-left: 0.75vw;
+   box-shadow: 3px 2px #223322;
+  }
+
+  .clickres {
+   border: 0.02vw solid #B22222;
+   background-color: red;
+   color: black;
+   padding: 0.5vw;
+   padding-right: 0.75vw;
+   padding-left: 0.75vw;
+   box-shadow: 3px 2px #332222;
+  }
+
+
+  @media screen and (max-width: 9.9in) {
+   body {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+   }
+   .no-cell {
+    display: none;
+   }
+   .title {
+    margin-top: 0vw;
+   }
+   .aboveinput {
+    margin-bottom: -2.5vw;
+    margin-top: -2.5vw;
+   }
+
+
+  }
+
+  @media screen and (min-width: 10in) {
+
+   .no-desk {
+    display: none;
+   }
+   .aboveinput {
+    margin-bottom: -4.5vw;
+    margin-top: -6vw;
+   }
+   .no-cell {
+    display: block;
+    opacity: 0.0;
+   }
+   .world {
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: black;
+   }
+   .title {
+    font-size: 6.34vw;
+    margin-top: -5vw;
+   }
+   .subject {}
+  }
+ </style>
+</head>
+
+<body style="background-color:black;" onload="hashlink();">
+ <span class="world" style="margin-left:2.2vw;margin-right:2.2vw;">
+ <label style="align:left;left:0;"><span onclick="Alert();">PvtPpr Generator</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span align="right" style="right:0;align:right;"><img style="background-color:lightgreen;align:right;right:0;width:15vw;margin-bottom:-7vw;" class="thumb" src="https://chart.googleapis.com/chart?chs=250x250&amp;cht=qr&amp;chl=https://3dd.in/ppgen">
+         </span><br>&nbsp;&nbsp;&nbsp;&nbsp;<sup><sub><sup><sup>the IttyBittyApp</sup></sup>
+ </sub>
+ </sup>
+ </label>
+ <span><span><hr class="aboveinput"></span><br></span>
+ <div style="margin-left:6vw;padding-left:2vw;">
+  <span><input id="title" style="left:0; width:25vw; padding:0,5vw;" onfocus="this.value='';" align="left" placeholder="Article Title">&nbsp;<input id="subject" align="right" style="right:0; width:25vw; padding:0.5vw;" onfocus="this.value='';" placeholder="#SJ &amp; #ID #Tags">&nbsp;<input id="inin" onfocus="this.value='';" style="width:35vw; padding:0.5vw;" align="center" placeholder="Article Body"><br>
+ <input id="authornm" onfocus="this.value='';" style="left:0; width:35vw; padding:0.5vw;" placeholder="Author's Name" align="left"> &nbsp;&nbsp; <input id="sign" onfocus="this.value='';" style="right:0; width:25vw; padding:0.5vw;" align="right" placeholder="Autor's Digital Signiture">
+</span>
+  <span><input id="btc" onfocus="this.value='';" style="width:43vw; left:0; padding:0.5vw;" align="left" placeholder="Author's BTC address">&nbsp;<input id="ltc" onfocus="this.value='';" style="width:43vw; right:0; padding:0.5vw;" align="right" placeholder="Author's LTC address">
+  <br>
+<input type="url" onfocus="this.value='';" style="left:0;align:left; width:35vw; padding:0.5vw;" id="imglink" value="Related Image Link"><input id="adlink" type="url" onfocus="this.value='';" style="width:20vw; padding:0.5vw;" placeholder="Ad link">&nbsp;&nbsp; <input id="adtextin" onfocus="this.value='';" style="width:20vw; padding:0.5vw;" placeholder="Ad text">
+<hr style="margin-left:-9vw;"></span>
+  <span><input type="url" style="left:0; width:35vw; padding:0.5vw;" align="left" placeholder="Prev PvtPpr shortlink" id="previn" onfocus="this.value='';">&nbsp;&nbsp;
+<input type="submit" value="submit" class="clicksub" style="left:50;right:50;" align="center" onclick="document.getElementById('link').style.display='block'; myfunction();">&nbsp;&nbsp;<input class="clickres" type="button" value="refresh" style="right:0;" align="right" onclick="document.location.reload(true);">
+ </span></div>
+ <hr>
+ </span>
+ <!--   below is internal   -->
+ <a target="_top" id="link" style="display:none;">  <label><h1><span style="left:0;" align="left" id="outtop"></span></h1></label>  <label><h4 align="right" style="right:0"><span align="right" style="right:0;" id="outmid"></span><hr></h4></label>
+   <span align="center" id="img1" style="width:96vw;align:center;right:50;left:50;height:auto;"></span>
+<label><h4><span id="outout"></span></h4></label>  <label><span align="right" style="right:0;"><h4><span align="right" style="right:0;" id="outbott"></span> &nbsp; @<span id="authorname"></span></h4>
+   <span style="width:5vw;" id="adhere" align="left" onclick="this.style.display='none'; document.getElementById('adlink').style.display='none'; document.getElementById('adtextin').style.display='none';"></span>
+ <label><hr><h5 align="center"><sub>If you liked this PvtPpr please consider donating to the author, @<span id="authname"></span> by using the crypto-addresses below. Thank you.</sub><br><sub><span align="left"><b>₿://<i><span id="btcaddy"></span></i></b></span> &nbsp; <b><span align="right">Ł://<i><span id="ltcaddy"></span></i></span></b></sub></h5><hr></label>
+ <div align="center" style="align:center;left:50;right:50;"><label><h5><span style="align:left; left:0; margin-right:2.5vw;" align="left">Made&nbsp;with&nbsp;<span id="DFCabinet" style="text-decoration:none;"></span><sup><sup>2019</sup></sup></span><span id="prev" style="margin-top:-1.5px;margin-bottom:1.5px; margin-left:2.5vw; right:0; align:right;" align="right"></span></h5></label></div><br>
+ <hr><span style="opacity:0.53;color:grey;" align="left"> 
+  <br><span onclick="alalert()">PvtPpr. 2018-2019 <br> Private Paper 2018-2019</span> <br>
+<span id="footen" onclick="this.style.display='none'; document.getElementById('footsp').style.display='block';">A Thought Child of the 3 Jokers</span>
+<span id="footsp" onclick="this.style.display='none'; document.getElementById('footch').style.display='block';" style="display:none">Un pensamiento hijo de los 3 comodines</span>
+<span id="footch" onclick="this.style.display='none'; document.getElementById('footjp').style.display='block';" style="display:none">三个小丑的思想孩子</span>
+<span id="footjp" onclick="this.style.display='none'; document.getElementById('footru').style.display='block';" style="display:none">3人のジョーカーの思考の子</span>
+<span id="footru" onclick="this.style.display='none'; document.getElementById('footsw').style.display='block';" style="display:none">Мысленное Дитя 3 Джокеров</span>
+<span id="footsw" onclick="this.style.display='none'; document.getElementById('footdu').style.display='block';" style="display:none">Ett tänkt barn av de 3 jokarna</span>
+<span id="footdu" onclick="this.style.display='none'; document.getElementById('footen').style.display='block';" style="display:none">Ein Gedankenkind der 3 Joker</span>
+</span><br><br><span style="background-color:black;color:silver;box-shadow:dimgrey 3px 6px 9px;" target="_self" onclick="window.open('https://3dd.in/PvtPpr-HnState');">Download PvtPpr <b><i>Secure Chain</i></b></span><hr><span onclick="AlertCheck(); this.style.display='none'; document.getElementById('hashed').style.display='block';" id="LinkCover">3D: <b>#<i>15007vj5v84jp4</i></b></span><span onclick="this.style.display='none'; document.getElementById('LinkCover').style.display='block';" id="hashed" style="display:none;"></span>
+<script>
+ function hashlink(){
+  var hshlnk = location.href;
+  document.getElementById('hashed').innerHTML = hshlnk;
+ }
+ function alalert(){
+  alert('Hello & Welcome to the this PvtPpr [prīvit pāpər].\n\nPvtPpr is brought to you by 3G, Earthling-Twin & 3D.\n\nThis is hoasted by experimental technology in hash-based-link-data to store all the website code off servers.\n\n     Servers are used for decryting the hashlink for the browser to display the website/webapp.\n\nHosted by Itty.Bitty.Site (by alcor), where anything can be conveyed in a link.\n\n\nThank you.\n     [LS0zRA::JAN162020]');
+ }
+ function AlertCheck() {
+  alert("You clicked on an easter egg. Please enjoy!\n\nThis PvtPpr was made with the PvtPpr Generator (PPGen), which allows anyone to build a PvtPpr. This is a newspaper system with everyone in mind. Anyone can use PPGen to build their own news-type-paper complete with a usable link.\n\nThe superpostition of this build will appear after you click, 'ok'.\n\nThe superposition is the hash the data is stored to.\n\n\n\nThank You\n     [LS0zRA::JAN162020]");
+ }
+</script>
+</span></label></a>
+ <a>
+  <script src="https://itty.bitty.site/lzma/lzma_worker-min.js"></script>
+  <script>
+   function myfunction() {
+    var five = document.getElementById('inin').value;
+    var four = document.getElementById('subject').value;
+    var three = document.getElementById('title').value;
+    var two = document.getElementById('sign').value;
+    var one = document.getElementById('previn').innerTEXT;
+    var author = document.getElementById('authornm').value;
+    var baddy = document.getElementById('btc').value;
+    var laddy = document.getElementById('ltc').value;
+    document.getElementById('prev').innerHTML = one;
+    var qqtt = "none";
+    var name2 = document.getElementById('authornm').value;
+    document.getElementById('authname').innerHTML = name2;
+    document.getElementById('outtop').innerHTML = three;
+    document.getElementById('outmid').innerHTML = four;
+    document.getElementById('outout').innerHTML = five;
+    document.getElementById('outbott').innerHTML = two;
+    document.getElementById('btcaddy').innerHTML = baddy;
+    document.getElementById('ltcaddy').innerHTML = laddy;
+    document.getElementById('authorname').innerHTML = author;
+    var adstuff = '';     adstuff += '<a type="button" style="border-radius:360%; background-color:black; text-decoration:none; color:limegreen; border-color:orange; border-width:2vw; width:auto; align:right; overflow:hidden; right:0;" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" style="margin:0.vw 1.5vw 0.1vw 1.5vw;"><sup><sub>&nbsp&nbsp&nbsp' + document.getElementById('adtextin').value + '&nbsp&nbsp&nbsp</sub></sup></span></a><span id="adtxt" style="font-size:8px"></br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b id="adtxtbottom" >ad</b></span> &nbsp&nbsp&nbsp';     document.getElementById('adhere').innerHTML = adstuff;     var topimg = '';     topimg += '<img src="' + document.getElementById('imglink').value + '" style="border: 0.01vw solid limegreen; box-shadow: 1.2px 1.2px #ddccdd; width:43vw; align:center; overflow:hidden;" align="center" overflow="hidden" />';     document.getElementById('img1').innerHTML = topimg;     var DFClink = document.getElementById('DFCabinet').innerHTML = '<a href="https://3dd.in/ppgen" target="_blank">PvtPpr Generator</a>';     var str = '';     str += '<a href="' + document.getElementById('previn').value + '" target="_blank" style="border: 0.01vw solid silver; background-color:orange; color:black; box-shadow: 1.2px 1.2px #ddccdd; text-decoration:none;" alt="Go Back a Ppr!" label="Go Back!">Previous Paper</a>';    document.getElementById('prev').innerHTML = str;    a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}
+  </script>
+ </a>
+ <div align="center">
+  <p style="background-color:black;color:green;"></p>
+  <h5>
+   <footer>
+    <div align="center" width="100%" style="font-size:3.34vw; background-color:black"><sub><h4 style="color: orange; margin-top:-3vw;">If you liked this generator please consider donating cryptocurrency to the crafter by using the following crypto-addresses thank you.</h4></sub><sub>₿://31saqmrKAUdLr6Ta3CYzXsYpzqELsJ5etJ<br>Ł://LYDeUmzzyEqpugYjaavZYYM8yXpXJ1VrbR<br>Ð://D9F4zdgHE8Fb7mpWQ2BNFQVvC5ocJxWEjr<br>Ξ://0x38891a281fD0fc68eDFa434999F5eeA77b06589B</sub><br>
+     <hr>
+     <p align="center">1a1a3b6537d85664cfdec1d8533cdf0c9575c7540bf38c104c2bb169e1d42a6d<br><sup><i>[<b><sup>bef</sup></b>]</i><br><sub><b>3D#<i><sup onclick="HelpAlert();">15317femfqb6xmt</sup></i></b></sub></sup>
+     </p>
+     <hr>
+     <p></p>
+    </div>
+   </footer>
+  </h5>
+  <h6><a href="https://codepen.io/digimancer3d/pen/bGNKEQB" target="_top"><sub><sup>This was designed on Codepen.io, click to view &amp; fork this on Codepen.</sup></sub></a></h6>
+  <hr>
+  <p></p>
+ </div>
+
+ <script>
+  function HelpAlert() {
+   alert("Hello & Welcome to the Help Hash.\n\nThe hash you clicked on (#15317femfqb6xmt), confirms the corrct face ouput superposition for this ittybittyapp.\n\nThe face output is the webapp you see before building your Private Paper (PvtPpr).\n\n\nPvrivate Paper is an idea orginally thought of by 3G & 3D to help push local decentralized newspapers. The pages made from this ittybittyapp can be printed, the link can be set to a short-link and placed in QRs for sharing. With this webapp anyone may build their own PvtPpr News-Chain!\n\nTo visit or fork the official PvtPpr News-Chain direct your browser to: https://3dd.in/PvtPpr\n\n\nTo help get the PvtPpr publication & distribution public-blockchain up and running please contact 3D at https://twitter.com/radioactive3d & mention it's about the pvtppr chain.\n\nThank you");
+  }
+
+  function Alert() {
+   alert("Hello & Welcome to the the Private Paper (PvtPpr) Generator (Gen).\n\nYou clicked on an easter egg and I hope you enjoyed this.\n\nThis PvtPpr Generator (PPGen) allows anyone to build a PvtPpr to share news online & offline. This is a newspaper system with everyone in mind as in anyone can use this to build their own news-type-paper complete with a usable link.\n\nThe superposition has 2 entropy points of the same entropy-data.\n\nThe entropy-data: in process\nEntopy Points: SHA256 (bef) hash & 3D hash\n\n\nTry finding the HelpAlert that has more information packed inside!\n\n\n\nThank You\n     [LS0zRA::JAN132020]");
+  }
+ </script>
+ <script type="text/javascript"></script>
+</body>
+
+</html>
