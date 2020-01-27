@@ -104,26 +104,27 @@
  </sub>
  </sup>
  </label>
- <span><span><hr class="aboveinput"></span><br></span>
+ <span><span><hr class="aboveinput"></span><br></span> 
  <div style="margin-left:6vw;padding-left:2vw;">
   <span><input id="title" style="left:0; width:25vw; padding:0,5vw;" onfocus="this.value='';" align="left" placeholder="Article Title">&nbsp;<input id="subject" align="right" style="right:0; width:25vw; padding:0.5vw;" onfocus="this.value='';" placeholder="#SJ &amp; #ID #Tags">&nbsp;<input id="inin" onfocus="this.value='';" style="width:35vw; padding:0.5vw;" align="center" placeholder="Article Body"><br>
- <input id="authornm" onfocus="this.value='';" style="left:0; width:35vw; padding:0.5vw;" placeholder="Author's Name" align="left"> &nbsp;&nbsp; <input id="sign" onfocus="this.value='';" style="right:0; width:25vw; padding:0.5vw;" align="right" placeholder="Autor's Digital Signiture">
+ <input id="authornm" onfocus="this.value='';" style="left:0; width:35vw; padding:0.5vw;" placeholder="Author's Name" align="left"> &nbsp;&nbsp; <input id="autmsg" onfocus="this.value='';" style="right:0; width:25vw; padding:0.5vw;" align="right" placeholder="Short 'Author's Message'">
 </span>
   <span><input id="btc" onfocus="this.value='';" style="width:43vw; left:0; padding:0.5vw;" align="left" placeholder="Author's BTC address">&nbsp;<input id="ltc" onfocus="this.value='';" style="width:43vw; right:0; padding:0.5vw;" align="right" placeholder="Author's LTC address">
   <br>
 <input type="url" onfocus="this.value='';" style="left:0;align:left; width:35vw; padding:0.5vw;" id="imglink" value="Related Image Link"><input id="adlink" type="url" onfocus="this.value='';" style="width:20vw; padding:0.5vw;" placeholder="Ad link">&nbsp;&nbsp; <input id="adtextin" onfocus="this.value='';" style="width:20vw; padding:0.5vw;" placeholder="Ad text">
 <hr style="margin-left:-9vw;"></span>
-  <span><input type="url" style="left:0; width:35vw; padding:0.5vw;" align="left" placeholder="Prev PvtPpr shortlink" id="previn" onfocus="this.value='';">&nbsp;&nbsp;
+  <span><input type="url" onfocus="this.value='';" style="left:0; align:left; width:25vw; padding:0.5vw;" id="certlink" placeholder="Planned Certable Link" >
+  <input type="url" style="left:0; width:25vw; padding:0.5vw;" align="left" placeholder="Prev PvtPpr shortlink" id="previn" onfocus="this.value='';">&nbsp;&nbsp; </span>
 <input type="submit" value="submit" class="clicksub" style="left:50;right:50;" align="center" onclick="document.getElementById('link').style.display='block'; myfunction();">&nbsp;&nbsp;<input class="clickres" type="button" value="refresh" style="right:0;" align="right" onclick="document.location.reload(true);">
- </span></div>
+</div>
  <hr>
  </span>
  <!--   below is internal   -->
- <a target="_top" id="link" style="display:none;">  <label><h1><span style="left:0;" align="left" id="outtop"></span></h1></label>  <label><h4 align="right" style="right:0"><span align="right" style="right:0;" id="outmid"></span><hr></h4></label>
+ <a target="_top" id="link" style="display:none;"><div id="icheck" >  <label><h1><span style="left:0;" align="left" id="outtop"></span></h1></label>  <label><h4 align="right" style="right:0"><span align="right" style="right:0;" id="outmid"></span><hr></h4></label>
    <span align="center" id="img1" style="width:96vw;align:center;right:50;left:50;height:auto;"></span>
-<label><h4><span id="outout"></span></h4></label>  <label><span align="right" style="right:0;"><h4><span align="right" style="right:0;" id="outbott"></span> &nbsp; @<span id="authorname"></span></h4>
+<label><h4><span id="outout"></span></h4></label>  <label><span align="right" style="right:0;"><h4><span align="right" style="right:0;" id="outbott"></span> &nbsp; @<span id="authorname"></span></span></h4>
    <span style="width:5vw;" id="adhere" align="left" onclick="this.style.display='none'; document.getElementById('adlink').style.display='none'; document.getElementById('adtextin').style.display='none';"></span>
- <label><hr><h5 align="center"><sub>If you liked this PvtPpr please consider donating to the author, @<span id="authname"></span> by using the crypto-addresses below. Thank you.</sub><br><sub><span align="left"><b>₿://<i><span id="btcaddy"></span></i></b></span> &nbsp; <b><span align="right">Ł://<i><span id="ltcaddy"></span></i></span></b></sub></h5><hr></label>
+ <label><hr><h5 align="center"><sub>If you liked this PvtPpr please consider donating to the author, <span id="authname"></span> by using the crypto-addresses below. Thank you.</sub><br><sub><span align="left"><b>₿://<i><span id="btcaddy"></span></i></b></span> &nbsp; <b><span align="right">Ł://<i><span id="ltcaddy"></span></i></span></b></sub></h5><hr></label>
  <div align="center" style="align:center;left:50;right:50;"><label><h5><span style="align:left; left:0; margin-right:2.5vw;" align="left">Made&nbsp;with&nbsp;<span id="DFCabinet" style="text-decoration:none;"></span><sup><sup>2019</sup></sup></span><span id="prev" style="margin-top:-1.5px;margin-bottom:1.5px; margin-left:2.5vw; right:0; align:right;" align="right"></span></h5></label></div><br>
  <hr><span style="opacity:0.53;color:grey;" align="left"> 
   <br><span onclick="alalert()">PvtPpr. 2018-2019 <br> Private Paper 2018-2019</span> <br>
@@ -134,14 +135,15 @@
 <span id="footru" onclick="this.style.display='none'; document.getElementById('footsw').style.display='block';" style="display:none">Мысленное Дитя 3 Джокеров</span>
 <span id="footsw" onclick="this.style.display='none'; document.getElementById('footdu').style.display='block';" style="display:none">Ett tänkt barn av de 3 jokarna</span>
 <span id="footdu" onclick="this.style.display='none'; document.getElementById('footen').style.display='block';" style="display:none">Ein Gedankenkind der 3 Joker</span>
-</span><br><br><span style="background-color:black;color:silver;box-shadow:dimgrey 3px 6px 9px;" target="_self" onclick="window.open('https://3dd.in/PvtPpr-HnState');">Download PvtPpr <b><i>Secure Chain</i></b></span><hr><span onclick="AlertCheck(); this.style.display='none'; document.getElementById('hashed').style.display='block';" id="LinkCover">3D: <b>#<i>15007vj5v84jp4</i></b></span><span onclick="this.style.display='none'; document.getElementById('LinkCover').style.display='block';" id="hashed" style="display:none;"></span>
+</span><br><br><span style="background-color:black;color:silver;box-shadow:dimgrey 3px 6px 9px;" target="_self" onclick="window.open('https://3dd.in/PvtPpr-HnState');">Download PvtPpr <b><i>Secure Chain</i></b></span><hr><span onclick="AlertCheck(); this.style.display='none'; document.getElementById('hashed').style.display='block';" id="LinkCover">3D: <b>#<i>15007vj5v84jp4</i></b></span><span onclick="this.style.display='none'; document.getElementById('checks').style.display='block';" id="hashed" style="display:none;"></span><span onclick="this.style.display='none'; document.getElementById('LinkCover').style.display='block';" id="checks" style="display:none;"></span></br><hr><span style="align:center;left:50;right:50;" align="center" id="certable"></span></br></div>
 <script>
  function hashlink(){
   var hshlnk = location.href;
   document.getElementById('hashed').innerHTML = hshlnk;
  }
+ 
  function alalert(){
-  alert('Hello & Welcome to the this PvtPpr [prīvit pāpər].\n\nPvtPpr is brought to you by 3G, Earthling-Twin & 3D.\n\nThis is hoasted by experimental technology in hash-based-link-data to store all the website code off servers.\n\n     Servers are used for decryting the hashlink for the browser to display the website/webapp.\n\nHosted by Itty.Bitty.Site (by alcor), where anything can be conveyed in a link.\n\n\nThank you.\n     [LS0zRA::JAN162020]');
+  alert('Hello & Welcome to the this PvtPpr [prīvit pāpər].\n\nPvtPpr is brought to you by 3G, E-T & 3D.\n\nThis is hoasted by experimental technology in hash-based-link-data to store all the website code off servers.\n\n     Servers are used for decryting the hashlink for the browser to display the website/webapp.\n\nHosted by Itty.Bitty.Site (by alcor), where anything can be conveyed in a link.\n\n\nThank you.\n     [LS0zRA::JAN162020]');
  }
  function AlertCheck() {
   alert("You clicked on an easter egg. Please enjoy!\n\nThis PvtPpr was made with the PvtPpr Generator (PPGen), which allows anyone to build a PvtPpr. This is a newspaper system with everyone in mind. Anyone can use PPGen to build their own news-type-paper complete with a usable link.\n\nThe superpostition of this build will appear after you click, 'ok'.\n\nThe superposition is the hash the data is stored to.\n\n\n\nThank You\n     [LS0zRA::JAN162020]");
@@ -152,26 +154,29 @@
   <script src="https://itty.bitty.site/lzma/lzma_worker-min.js"></script>
   <script>
    function myfunction() {
+    var d = new Date(); var stamps = d.getTime(); var daters1 = d.getDate(); var months = ["SPACE", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]; if (daters1 = "1"){daters1=months[1];} else if (daters1 = "2"){daters1=months[2];} else if (daters1 = "3"){daters1=months[3];} else if (daters1 = "4"){daters1=months[4];}else if (daters1 = "5"){daters1=months[5];}else if (daters1 = "6"){daters1=months[6];} else if (daters1 = "7"){daters1=months[7];} else if (daters1 = "8"){daters1=months[8];}else if (daters1 = "9"){daters1=months[9];}else if (daters1 = "10"){daters1=months[10];}else if (daters1 = "11"){daters1=months[11];}else if (daters1 = "12"){daters1=months[12];} var daters2 = d.getDate(); if (daters2 == "1"){daters2="01";} else if (daters2 == "2"){daters2="02";} else if (daters2 == "3"){daters2="03";} else if (daters2 == "4"){daters2="04";}else if (daters2 == "5"){daters2="05";}else if (daters2 == "6"){daters2="06";} else if (daters2 == "7"){daters2="07";} else if (daters2 == "8"){daters2="08";}else if (daters2 == "9"){daters2="09";} var daters3 = d.getFullYear(); var timehash1A = "["+window.btoa(stamps)+"] :: ["+daters1+daters2+daters3+"]"; var datestamp = "["+"#"+window.btoa(timehash1A)+"]";
     var five = document.getElementById('inin').value;
     var four = document.getElementById('subject').value;
     var three = document.getElementById('title').value;
-    var two = document.getElementById('sign').value;
+    var two = document.getElementById('autmsg').value;
     var one = document.getElementById('previn').innerTEXT;
     var author = document.getElementById('authornm').value;
     var baddy = document.getElementById('btc').value;
     var laddy = document.getElementById('ltc').value;
     document.getElementById('prev').innerHTML = one;
+    var signeded = ' ['+two+']   @'+author+'  ||  '+datestamp+' ';
     var qqtt = "none";
-    var name2 = document.getElementById('authornm').value;
-    document.getElementById('authname').innerHTML = name2;
+    document.getElementById('authorname').innerHTML = window.btoa(signeded);
+    document.getElementById('authname').innerHTML = document.getElementById('authornm').value;
     document.getElementById('outtop').innerHTML = three;
     document.getElementById('outmid').innerHTML = four;
     document.getElementById('outout').innerHTML = five;
-    document.getElementById('outbott').innerHTML = two;
+    document.getElementById('outbott').innerHTML = author;
     document.getElementById('btcaddy').innerHTML = baddy;
     document.getElementById('ltcaddy').innerHTML = laddy;
-    document.getElementById('authorname').innerHTML = author;
-    var adstuff = '';     adstuff += '<a type="button" style="border-radius:360%; background-color:black; text-decoration:none; color:limegreen; border-color:orange; border-width:2vw; width:auto; align:right; overflow:hidden; right:0;" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" style="margin:0.vw 1.5vw 0.1vw 1.5vw;"><sup><sub>&nbsp&nbsp&nbsp' + document.getElementById('adtextin').value + '&nbsp&nbsp&nbsp</sub></sup></span></a><span id="adtxt" style="font-size:8px"></br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b id="adtxtbottom" >ad</b></span> &nbsp&nbsp&nbsp';     document.getElementById('adhere').innerHTML = adstuff;     var topimg = '';     topimg += '<img src="' + document.getElementById('imglink').value + '" style="border: 0.01vw solid limegreen; box-shadow: 1.2px 1.2px #ddccdd; width:43vw; align:center; overflow:hidden;" align="center" overflow="hidden" />';     document.getElementById('img1').innerHTML = topimg;     var DFClink = document.getElementById('DFCabinet').innerHTML = '<a href="https://3dd.in/ppgen" target="_blank">PvtPpr Generator</a>';     var str = '';     str += '<a href="' + document.getElementById('previn').value + '" target="_blank" style="border: 0.01vw solid silver; background-color:orange; color:black; box-shadow: 1.2px 1.2px #ddccdd; text-decoration:none;" alt="Go Back a Ppr!" label="Go Back!">Previous Paper</a>';    document.getElementById('prev').innerHTML = str;    a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}
+    var ichecker = " "+three+" "+four+" "+five+" "+author+" "+window.btoa(signeded)+" "+document.getElementById('authornm').value+" "+document.getElementById('adhere').innerHTML+" "+baddy+" "+laddy+" "+document.getElementById('DFCabinet').value;+" ";
+    var checker = window.btoa(ichecker); document.getElementById('checks').innerHTML = checker;
+    var adstuff = '';     adstuff += '<a type="button" style="border-radius:360%; background-color:black; text-decoration:none; color:limegreen; border-color:orange; border-width:2vw; width:auto; align:right; overflow:hidden; right:0;" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" style="margin:0.vw 1.5vw 0.1vw 1.5vw;"><sup><sub>&nbsp&nbsp&nbsp' + document.getElementById('adtextin').value + '&nbsp&nbsp&nbsp</sub></sup></span></a><span id="adtxt" style="font-size:8px"></br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b id="adtxtbottom" >ad</b></span> &nbsp&nbsp&nbsp';     document.getElementById('adhere').innerHTML = adstuff;     var topimg = '';     topimg += '<img src="' + document.getElementById('imglink').value + '" style="border: 0.01vw solid limegreen; box-shadow: 1.2px 1.2px #ddccdd; width:43vw; align:center; overflow:hidden;" align="center" overflow="hidden" />';     document.getElementById('img1').innerHTML = topimg;     var DFClink = document.getElementById('DFCabinet').innerHTML = '<a href="https://3dd.in/ppgen" target="_blank">PvtPpr Generator</a>';     var str = '';     str += '<a href="' + document.getElementById('previn').value + '" target="_blank" style="border: 0.01vw solid silver; background-color:orange; color:black; box-shadow: 1.2px 1.2px #ddccdd; text-decoration:none;" alt="Go Back a Ppr!" label="Go Back!">Previous Paper</a>';  document.getElementById('prev').innerHTML = str; var certs = ''; certs += "<a href='"+document.getElementById('certlink').value+"' target='_blank' style='text-decoration:none;background-color:black;color:white;'>View this object's Certable</a>"; document.getElementById('certable').innerHTML = certs; a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}
   </script>
  </a>
  <div align="center">
@@ -180,7 +185,7 @@
    <footer>
     <div align="center" width="100%" style="font-size:3.34vw; background-color:black"><sub><h4 style="color: orange; margin-top:-3vw;">If you liked this generator please consider donating cryptocurrency to the crafter by using the following crypto-addresses thank you.</h4></sub><sub>₿://31saqmrKAUdLr6Ta3CYzXsYpzqELsJ5etJ<br>Ł://LYDeUmzzyEqpugYjaavZYYM8yXpXJ1VrbR<br>Ð://D9F4zdgHE8Fb7mpWQ2BNFQVvC5ocJxWEjr<br>Ξ://0x38891a281fD0fc68eDFa434999F5eeA77b06589B</sub><br>
      <hr>
-     <p align="center">1a1a3b6537d85664cfdec1d8533cdf0c9575c7540bf38c104c2bb169e1d42a6d<br><sup><i>[<b><sup>bef</sup></b>]</i><br><sub><b>3D#<i><sup onclick="HelpAlert();">15317femfqb6xmt</sup></i></b></sub></sup>
+     <p align="center"><a href="http://zev5g.qr.ai" target="_blank" style="text-decoration:none; color:white;">1a1a3b6537d85664cfdec1d8533cdf0c9575c7540bf38c104c2bb169e1d42a6d</a><br><sup><i>[<b><sup>bef</sup></b>]</i><br><sub><b>3D#<i><sup onclick="HelpAlert();">15317femfqb6xmt</sup></i></b></sub></sup>
      </p>
      <hr>
      <p></p>
