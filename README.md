@@ -8,7 +8,7 @@ The main feature being presented in this generator is passing links through the 
      <code>  var adstuff = ''; </code>
        
   Next we add into the new variable the code directly being inserted into the output location:     
-    <code>   adstuff += '<a type="button" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" > < sup >< sub > ' + document.getElementById('adtextin').value + ' < / sub>< / sup>< / span>< / a><span id="adtxt" style="font-size:8px" ></br>  <b id="adtxtbottom" >ad< / b></ span>  '; </code>  
+    <code>   adstuff += '< a type="button" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" > < sup >< sub > ' + document.getElementById('adtextin').value + ' < / sub>< / sup>< / span>< / a><span id="adtxt" style="font-size:8px" ></br>  < b id="adtxtbottom" >ad< / b></ span>  '; </code>  
    
    In the input of the new variable inline styling may be used but more standard styling should work as well if the output styling is located within the selctor section. 
    
