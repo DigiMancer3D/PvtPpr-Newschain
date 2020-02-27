@@ -27,7 +27,7 @@ The nodejs passing for ittybittysite is as follows:
     
     
 <h2>Why showcase this?</h2>
-    This is a fun way to showcase more of what can be done with itty.bitty.site and allowing anyone to build thier own news-like-paper without having what they write saved on servers.
+    This is a fun way to showcase more of what can be done with <a href="https://itty.bitty.site" target="_blank" >itty.bitty.site</a> and allowing anyone to build thier own news-like-paper without having what they write saved on servers.
     
  <h1>Working Version:</h1>
  <h3>&nbsp&nbsp&nbsp&nbspI have a working version running from pasting my codepen.io repo link into itty.bitty.site's encoder and running the generator through itty.bitty.site as an application.</br></br> The links are as follows:</br>
