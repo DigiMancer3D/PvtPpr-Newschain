@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <base target="_top">
+ <style type="text/css"></style>
+ <meta name="viewport" content="width=device-width, initia-scale=0.5">
+ <style type="text/css">
+  body {
+   color: white;
+   font-size: 7vw;
+   font-family: AppleGothic;
+   word-wrap: break-word;
+  }
+  .img {
+   display:inline-block;
+  }
+  .imgtop {
+   display:none;
+  }
+  html {
+   scroll-behavior:smooth;
+   scroll-y:smooth;
+  }
+  .divi{
+   font-size:3.34vw; background-color:black;
+  }
+  h3 {
+   font-size: 11vw;
+   javascript: allow;
+   background-color: black;
+  }
+    
+  .theme1 {
+   display:block;
+   cursor: pointer;
+  }
+  .theme2 {
+   display:none;
+   cursor: pointer;
+  }
+  #theme2 {
+   display:none;
+  }
+  a {
+   Color: darkgreen;
+   text-decoration: none;
+  }
+  #getct {
+   cursor: pointer;font-size:30%; background-color:black; color:green; border-color:dimgrey;
+  }
+  input {
+   padding: 0.25px 0.15px 0.25px 0.15px;
+   border-color:black;
+  }
+  .ab {
+   background-color: black;
+   color: white;
+  }
+  input:placeholder {
+   color:silver;
+  }
+  .clicksub {
+   border: 0.02vw solid darkgreen;
+   background-color: green;
+   color: black;
+   padding: 0.5vw;
+   padding-right: 0.75vw;
+   padding-left: 0.75vw;
+   box-shadow: 3px 2px #223322;
+  font-weight: bold;
+   cursor: pointer;
+  }
+
+  .clickres {
+   border: 0.02vw solid #B22222;
+   background-color: red;
+   color: black;
+   padding: 0.5vw;
+   padding-right: 0.75vw;
+   padding-left: 0.75vw;
+   box-shadow: 3px 2px #332222;
+  font-weight: bold;
+   cursor: pointer;
+  }
+  .button {
+   color: black;
+   padding:0.5vw;
+   font-size: 70%;
+   background-color:white;
+  font-weight: bold;
+   box-shadow: 3px 2px #223322;
+  }
+   #inin {
+   width:96%; padding:0.5vw; color:white;  border-color:black;
+  }
+  #imglink {
+   background-color:black;color:white; placeholder:silver;
+  }
+  @media screen and (max-width: 9.9in) {
+   
+   body {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+   }
+   .no-cell {
+    display: none;
+   }
+   .title {
+    margin-top: 0vw;
+   }
+   .aboveinput {
+    margin-bottom: -2.5vw;
+    margin-top: -4vw;
+   }
+   #quote {
+    font-size:40%;
+    margin-top:-6.5vw;
+    margin-bottom:1vw;
+    text-align:left;line-height: normal;
+     white-space: pre-wrap;
+    -moz-margin-top:-5vw;
+   -moz-white-space: pre-wrap;
+   -ms-white-space: pre;
+   -webkit-white-space: pre;
+  
+   }
+
+  ::placeholder {
+   font-size:100%;
+  }
+  }
+
+  @media screen and (min-width: 10in) {
+   
+   .no-desk {
+    display: none;
+   }
+   .aboveinput {
+    margin-bottom: -4.5vw;
+    margin-top: -6vw;
+   }
+   .no-cell {
+    display: block;
+    opacity: 0.0;
+   }
+   .world {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    background-color: black;
+   }
+   .title {
+    font-size: 6.34vw;
+    margin-top: -5vw;
+   }
+   
+  #quote {
+   font-size:40%;
+   margin-top:-2.5vw;
+   margin-bottom:-1vw;
+   text-align:left;
+   align:left;line-height: normal; 
+   white-space: pre-wrap;
+   -moz-white-space: pre;
+   -ms-white-space: pre;
+   -webkit-white-space: pre;
+  
+  }
+  ::placeholder {
+   font-size:125%;
+  }
+   
+  }
+ </style>
+</head>
+
+<body style="background-color:black;" id="body" onload="hashlink();">
+ <span class="world" align="center">
+ <p style="height:15vw;"><span style="cursor: default;margin-right:2vw;" align="left"><img id="img" style="background-color:transparent;width:18vw;height:auto;margin-right:-0.5vw;margin-left:0.5vw;" onclick="Alert();" align="left" class="thumb" src="https://na.lbryplayer.xyz/content/claims/pvtppr-generator-logo/79793b37b45ee0e2452ddf3043badf73c204bbc7/stream"> <img id="imgtop" style="background-color:transparent;width:18vw;height:auto;margin-right:-0.5vw;margin-left:0.5vw;display:none;" onclick="Alert();" align="left" class="thumb" src="https://na.lbryplayer.xyz/content/claims/pvtppr-generator-official-logo-(reverse)/1b3ef0ff0a38c1403476e57d0063f9d419eb614c/stream">
+  </span><span id="quote" style="text-align:left;inline-height:0vw;-moz-white-space: pre;" align="left">PvtPpr Generator is a free tool to create private serverless-stored digital papers including <b><i>social chains, articles, blogs, vlogs, podcasts, memos, journals, lists, newsletters, newspapers, magazines, books<i> or what your mind can imagine.</b></br><button id="qq"  style="margin-left:40%;cursor: pointer;" type="submit"  align="right"value="?" class="button" onclick="Alertq()">?</button>&nbsp; &nbsp;<button id="yesthis"  style="cursor: pointer;" align="right"type="button" value="FAQ" class="button" onclick="window.open('https://3dd.in/PPFAQ')">FAQ</button>&nbsp; &nbsp;<button id="yesthis2" style="cursor: pointer;" type="submit"  align="right"value="Markup Help" class="button" onclick="window.open('https://tinyurl.com/rv7bks2')">Markup Help</button>&nbsp; &nbsp;<button id="theme1" style="cursor: pointer;" type="submit"  align="right" value="Theme" class="button" onclick="theme1()">Theme</button> <button id="theme2" type="submit"  align="right" value="Theme" class="button" onclick="theme2()" >Theme</button> 
+ </span><hr class="aboveinput" id="hr">
+  </p></br>
+  <div style="margin-bottom:-2vw;margin-top:-4vw;" align="center" text-align="center">
+  <span style="text-align:center" align="center"><input id="title" class="ab" style="width:43vw; padding:0.5vw;text-align:center;" onfocus="this.value='';" align="left" placeholder="Title Goes Here">&nbsp;<input id="subject" class="ab" align="right" style="width:43vw; padding:0.5vw;text-align:center;" onfocus="this.value='';" placeholder="#ID &amp; #Tags Goes Here"></br><textarea id="inin" class="ab" cols="75" rows="15" text-align="center" style="text-align:center;" overflow="auto" align="center" placeholder="
+   
+   This is where the body goes, markup can be included here."></textarea><br>
+ <input id="authornm" class="ab" onfocus="this.value='';" style="width:40vw; padding:0.5vw;text-align:center;" placeholder="Author's Name" align="left">&nbsp;&nbsp;<input id="autmsg" class="ab" onfocus="this.value='';" style="width:40vw; padding:0.5vw;text-align:center;" align="right" placeholder="Authentication Message">
+</span>
+  <span><input id="btc" class="ab" onfocus="this.value='';" style="width:40vw; padding:0.5vw;text-align:center;" align="left" placeholder="Author's BTC address">&nbsp;<input id="ltc" class="ab" onfocus="this.value='';" style="width:26vw; text-align:center;padding:0.5vw;" align="right" placeholder="Cointree User Name">&nbsp;&nbsp;<button id="getct" type="button" value="Sign up for Cointree" onclick="window.open('https://cointr.ee/')" target="_blank" >Cointree Sign-up</button> 
+  <br>
+<input id="imglink" type="url" onfocus="this.value='';" style="left:0;text-align:center; width:35vw; padding:0.5vw;" value="Related Image Link"><input id="adlink" class="ab" type="url" onfocus="this.value='';" style="width:20vw; padding:0.5vw;text-align:center;" placeholder="Ad link">&nbsp;&nbsp;<input id="adtextin" class="ab" onfocus="this.value='';" style="width:20vw; padding:0.5vw;text-align:center;" placeholder="Ad text">
+<hr></span>
+  <span><input  id="certlink"  class="ab"  type="url" onfocus="this.value='';" style="width:25vw; padding:0.5vw;text-align:center;" placeholder="Certable Link" >
+  <input  id="previn" class="ab" type="url" style="left:0; width:25vw; padding:0.5vw;text-align:center;" align="left" placeholder="Prev PvtPpr" onfocus="this.value='';">&nbsp;&nbsp; </span>
+<input type="submit" value="submit" class="clicksub" align="center" onclick="document.getElementById('link').style.display='block'; myfunction();window.scrollBy(0, 633);">&nbsp;&nbsp;<input class="clickres" type="button" value="refresh" align="right" onclick="document.location.reload(true);">
+  </div>
+ <hr>
+ </span>
+ <!--   below is internal   -->
+ <a target="_top" id="link" name="link" style="display:none;"><div id="icheck" >  <label><h1><span style="left:0;" align="left" id="outtop"></span></h1></label>  <label><h4 align="right" style="right:0"><span align="right" style="right:0;" id="outmid"></span><hr></h4></label>
+   <span align="center" id="img1" style="width:96vw;align:center;right:50;left:50;height:auto;"></span>
+<label><h4><span id="outout"></span></h4></label>  <label><span align="right" style="right:0;"><h4><span align="right" style="right:0;" id="outbott"></span> &nbsp; @<span id="authorname"></span></span></h4>
+   <span style="width:5vw;" id="adhere" align="left" onclick="this.style.display='none'; document.getElementById('adlink').style.display='none'; document.getElementById('adtextin').style.display='none';"></span>
+ <label><hr><h5 align="center"><sub>If you liked this PvtPpr please consider donating to the author, <span id="authname"></span> by using the crypto-addresses below. Thank you.</sub><br><sub><span align="left"><b>₿://<i><span id="btcaddy"></span></i></b></span> &nbsp; <b><span align="right"><i><span id="ltcaddy"></span></i></span></b></sub></h5><hr></label>
+ <div align="center" align="cneter"><label><h5><span style="align:left; left:0; margin-right:2.5vw;" align="left">Made&nbsp;with&nbsp;<span id="DFCabinet" style="text-decoration:none;"></span><sup><sup>2019</sup></sup></span><span id="prev" style="margin-top:-1.5px;margin-bottom:1.5px; margin-left:2.5vw; right:0; align:right;" align="right"></span></h5></label></div><br>
+ <hr><span style="opacity:0.53;color:grey;" align="left"> 
+  <br><span onclick="alalert()">PvtPpr. 2018-2020 <br> Private Paper 2018-2020</span> <br>
+<span id="footen" onclick="this.style.display='none'; document.getElementById('footsp').style.display='block';">A Thought Child of the 3 Jokers</span>
+<span id="footsp" onclick="this.style.display='none'; document.getElementById('footch').style.display='block';" style="display:none">Un pensamiento hijo de los 3 comodines</span>
+<span id="footch" onclick="this.style.display='none'; document.getElementById('footjp').style.display='block';" style="display:none">三个小丑的思想孩子</span>
+<span id="footjp" onclick="this.style.display='none'; document.getElementById('footru').style.display='block';" style="display:none">3人のジョーカーの思考の子</span>
+<span id="footru" onclick="this.style.display='none'; document.getElementById('footsw').style.display='block';" style="display:none">Мысленное Дитя 3 Джокеров</span>
+<span id="footsw" onclick="this.style.display='none'; document.getElementById('footdu').style.display='block';" style="display:none">Ett tänkt barn av de 3 jokarna</span>
+<span id="footdu" onclick="this.style.display='none'; document.getElementById('footen').style.display='block';" style="display:none">Ein Gedankenkind der 3 Joker</span>
+</span><br><br><span style="background-color:black;color:silver;box-shadow:dimgrey 3px 6px 9px;" target="_self" onclick="window.open('https://3dd.in/PvtPpr-HnState');">Download PvtPpr <b><i>Secure Chain</i></b></span><hr><span onclick="AlertCheck(); this.style.display='none'; document.getElementById('hashed').style.display='block';" id="LinkCover">3D: <b>#<i>15007vj5v84jp4</i></b></span><span onclick="this.style.display='none'; document.getElementById('checks').style.display='block';" id="hashed" style="display:none;"></span><span onclick="this.style.display='none'; document.getElementById('LinkCover').style.display='block';" id="checks" style="display:none;"></span></br><hr><span style="align:center;left:50;right:50;" align="center" id="certable"></span></br></div>
+<script>
+ function hashlink(){
+  var hshlnk = location.href;
+  document.getElementById('hashed').innerHTML = hshlnk;
+ }
+ function alalert(){
+  alert('Hello & Welcome to the this PvtPpr [prīvit pāpər].\n\nPvtPpr is brought to you by 3G, E-T & 3D.\n\nThis is hoasted by experimental technology in hash-based-link-data to store all of the website code off servers.\n\n     Servers are used for decryting the hashlink for the browser to display the website/webapp.\n\nHosted by Itty.Bitty.Site (by alcor), where anything can be conveyed in a link.\n\n\nThank you.\n     [LS0zRA::JAN162020]\n\n     Last Update [APR042020::LS0zRA]');
+ }
+ function AlertCheck() {
+  alert("You clicked on an easter egg. Please enjoy!\n\nThis PvtPpr was made with the PvtPpr Generator (PPGen), which allows anyone to build a PvtPpr. This is a newspaper system with everyone in mind. Anyone can use PPGen to build their own private paper complete with a usable link.\n\nThe superpostition of this build will appear after you click, 'ok'.\n\nThe superposition is the hash the data is stored to.\n\n\n\nThank You\n     [LS0zRA::JAN162020]\n\n     Last Update [APR042020::LS0zRA]");
+ }
+  
+</script>
+</span></label></a>
+ <a>
+  <script src="https://itty.bitty.site/lzma/lzma_worker-min.js"></script>
+  <script>
+   function myfunction() {
+    var d = new Date(); var stamps = d.getTime(); var daters1 = d.getDate(); var months = ["SPACE", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]; if (daters1 = "1"){daters1=months[1];} else if (daters1 = "2"){daters1=months[2];} else if (daters1 = "3"){daters1=months[3];} else if (daters1 = "4"){daters1=months[4];}else if (daters1 = "5"){daters1=months[5];}else if (daters1 = "6"){daters1=months[6];} else if (daters1 = "7"){daters1=months[7];} else if (daters1 = "8"){daters1=months[8];}else if (daters1 = "9"){daters1=months[9];}else if (daters1 = "10"){daters1=months[10];}else if (daters1 = "11"){daters1=months[11];}else if (daters1 = "12"){daters1=months[12];} var daters2 = d.getDate(); if (daters2 == "1"){daters2="01";} else if (daters2 == "2"){daters2="02";} else if (daters2 == "3"){daters2="03";} else if (daters2 == "4"){daters2="04";}else if (daters2 == "5"){daters2="05";}else if (daters2 == "6"){daters2="06";} else if (daters2 == "7"){daters2="07";} else if (daters2 == "8"){daters2="08";}else if (daters2 == "9"){daters2="09";} var daters3 = d.getFullYear(); var timehash1A = "["+window.btoa(stamps)+"] :: ["+daters1+daters2+daters3+"]"; var datestamp = "["+"#"+window.btoa(timehash1A)+"]";
+    var five = document.getElementById('inin').value;
+    var four = document.getElementById('subject').value;
+    var three = document.getElementById('title').value;
+    var two = document.getElementById('autmsg').value;
+    var one = document.getElementById('previn').innerTEXT;
+    var author = document.getElementById('authornm').value;
+    var baddy = document.getElementById('btc').value;
+    var laddy = ''; laddy += '<a href="https://cointr.ee/'+document.getElementById("ltc").value+'" target="_blank" style="text-decoration:none;color:darkgreen;">'+document.getElementById("ltc").value+'&#39;s Cointr.ee</a>';
+    document.getElementById('prev').innerHTML = one;
+    var signeded = ' ['+two+']   @'+author+'  ||  '+datestamp+' ';
+    var qqtt = "none";
+    document.getElementById('authorname').innerHTML = window.btoa(signeded);
+    document.getElementById('authname').innerHTML = document.getElementById('authornm').value;
+    document.getElementById('outtop').innerHTML = three;
+    document.getElementById('outmid').innerHTML = four;
+    document.getElementById('outout').innerHTML = five;
+    document.getElementById('outbott').innerHTML = author;
+    document.getElementById('btcaddy').innerHTML = baddy;
+    document.getElementById('ltcaddy').innerHTML = laddy;
+    var ichecker = "["+three+" :||: "+four+"] :||: ["+five+"] :||: ["+author+" :||: "+window.btoa(signeded)+" :||: "+document.getElementById('authornm').value+" :||: "+document.getElementById('adhere').innerHTML+" :||: "+baddy+" :||: "+laddy+" :||: "+document.getElementById('DFCabinet').value;+"]";
+    var checker = window.btoa(ichecker); document.getElementById('checks').innerHTML = checker;
+    var adstuff = '';     adstuff += '<a type="button" style="border-radius:360%; background-color:black; text-decoration:none; color:limegreen; border-color:orange; border-width:2vw; width:auto; align:right; overflow:hidden; right:0;" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" style="margin:0.vw 1.5vw 0.1vw 1.5vw;"><sup><sub>&nbsp&nbsp&nbsp' + document.getElementById('adtextin').value + '&nbsp&nbsp&nbsp</sub></sup></span></a><span id="adtxt" style="font-size:8px"></br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b id="adtxtbottom" >ad</b></span> &nbsp&nbsp&nbsp';     document.getElementById('adhere').innerHTML = adstuff;     var topimg = '';     topimg += '<img src="' + document.getElementById('imglink').value + '" style="width:43vw; align:center; overflow:hidden;" align="center" overflow="hidden" />';     document.getElementById('img1').innerHTML = topimg;     var DFClink = document.getElementById('DFCabinet').innerHTML = '<a href="https://3dd.in/ppgen" target="_blank">PvtPpr Generator</a>';     var str = '';     str += '<a href="' + document.getElementById('previn').value + '" target="_blank" style="border: 0.01vw solid silver; background-color:orange; color:black; box-shadow: 1.2px 1.2px #ddccdd; text-decoration:none;" >Previous Paper</a>';  document.getElementById('prev').innerHTML = str; var certs = ''; certs += "<a href='"+document.getElementById('certlink').value+"' target='_blank' style='text-decoration:none;background-color:black;color:white;'>View this object's Certable</a>"; document.getElementById('certable').innerHTML = certs; a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}
+  </script>
+ </a>
+ <div align="center">
+  <p style="background-color:black;color:green;"></p>
+  <h5>
+   <footer>
+    <div align="center" width="100%" id="divi">
+     <hr>
+     <p align="center"><a id="wierd" href="https://tinyurl.com/v63ujqb" target="_blank" style="text-decoration:none; color:white;">c8c286df916dd9e22de9d5994869d4bbc54c8b29c7a662994bb6ce026523a22f</a><br><sup><i>[<b><sup>bef</sup></b>]</i><br><sub><b>3D#<i><sup onclick="HelpAlert();">153o3gme8iwsurp</sup></i></b></sub></sup>
+     </p>
+     <hr>
+     <p></p>
+    </div>
+   </footer>
+  </h5>
+  <h6><a href="https://codepen.io/digimancer3d/pen/xxGowLj" target="_top"><sub><sup>This was designed on Codepen.io, click to view &amp; fork on Codepen.</sup></sub></a></h6>
+  <hr>
+  <p></p>
+ </div>
+
+ <script> 
+  function theme1() {
+   document.getElementById('theme1').style="display:none;";
+   document.getElementById('theme2').style="display:inline-block; background-color: black; color: white;";
+   document.getElementById('body').style="background-color:white; color: black;"; 
+  document.getElementById('title').style="background-color:white; color: black; width: 45%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;"; 
+   document.getElementById('subject').style="background-color:white; color: black; width: 45%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;"; 
+   document.getElementById('authornm').style="background-color:white; color: black; width: 45%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;";
+  document.getElementById('inin').style="background-color:white; color: black; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;"; 
+  document.getElementById('divi').style="background-color:white; color:black; text-decoration: none;"
+  document.getElementById('wierd').style="background-color:white; color:black; text-decoration: none;"
+   document.getElementById('autmsg').style="background-color:white; color: black; width: 45%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;"; 
+   document.getElementById('ltc').style="background-color:white; color: black; width: 30%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:dimgrey;text-align:center";
+   document.getElementById('btc').style="background-color:white; color: black; width: 30%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;";
+   document.getElementById('getct').style="background-color:white; color: green; width: 26%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;";
+   document.getElementById('imglink').style="background-color:white; color: black; width: 30%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;"; 
+   document.getElementById('adlink').style="background-color:white; color: black; width: 30%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;"; 
+   document.getElementById('adtextin').style="background-color:white; color: black; width: 30%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;";
+   document.getElementById('previn').style="background-color:white; color: black; width: 30%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;";
+   document.getElementById('certlink').style="background-color:white; color: black; width: 30%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;plaeholder-color:dimgrey;";
+   document.getElementById('quote').style="background-color:transparent; color: black;line-height: normal;";
+   document.getElementById('yesthis').style="background-color:black; color: white; align:right;";
+   document.getElementById('yesthis2').style="background-color:black; color: white; align:right;";
+   document.getElementById('qq').style="background-color:black; color: white; align:right;margin-left:40vw;";
+   document.getElementById('img').style="display:none;";
+   document.getElementById('imgtop').style="display:inline-block;width:18vw;height:auto;margin-right:-0.5vw;margin-left:0.5vw;";
+   document.getElementById('hr').style="border-color: dimgrey;";
+  }
+  
+  function theme2() {
+   document.getElementById('body').style="background-color:black; color: white;"; 
+   document.getElementById('ltc').style="background-color:black; color: white; width: 30%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;";
+  document.getElementById('title').style="background-color:black; color: white; width: 45%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;"; 
+   document.getElementById('btc').style="background-color:black; color: white; width: 30%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;";
+   document.getElementById('getct').style="background-color:black; color: green; width: 26%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;";
+   document.getElementById('subject').style="background-color:black; color: white; width: 45%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;"; 
+   document.getElementById('authornm').style="background-color:black; color: white; width: 45%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;"; 
+  document.getElementById('inin').style="background-color:black; color: white; width: 98%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;"; 
+   document.getElementById('autmsg').style="background-color:black; color: white; width: 45%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;"; 
+   document.getElementById('imglink').style="background-color:black; color: white; width: 30%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;";
+   document.getElementById('adlink').style="background-color:black; color: white; width: 30%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;";
+   document.getElementById('adtextin').style="background-color:black; color: white; width: 30%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;";
+   document.getElementById('previn').style="background-color:black; color: white; width: 30%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;";
+   document.getElementById('certlink').style="background-color:black; color: white; width: 30%; margin-right:1.5vw;margin-left:0.5vw;plaeholder-color:silver;text-align:center;";
+  document.getElementById('divi').style="background-color:black; color:white; text-decoration: none;"
+  document.getElementById('wierd').style="background-color:black; color:white; text-decoration: none;"
+   document.getElementById('theme2').style="display:none;";
+   document.getElementById('theme1').style="display:inline-block; background-color: white; color: black;";
+   document.getElementById('imgtop').style="display:none;";
+   document.getElementById('img').style="display:inline-block;width:18vw;height:auto;margin-right:-0.5vw;margin-left:0.5vw;";
+   document.getElementById('quote').style="background-color:transparent; color: white;line-height: normal;";
+   document.getElementById('yesthis').style="background-color:white; color: black;";
+   document.getElementById('yesthis2').style="background-color:white; color: black;";
+   document.getElementById('hr').style="border-color: silver;";
+   document.getElementById('qq').style="background-color:white; color: black; align:right;margin-left:40vw;";
+  }
+  function HelpAlert() {
+   alert("Hello & Welcome to the Help Hash.\n\nThe hash you clicked on (#153o3gdsmcnrrbi), confirms the corrct face ouput superposition for this ittybittyapp.\n\nThe face output is the webapp you see before building your Private Paper (PvtPpr).\n\n\nPvrivate Paper is an idea orginally thought of by 3G & 3D to help push local decentralized newspapers. The pages made from this ittybittyapp can be printed, the link can be set to a short-link and placed in QRs for sharing. With this webapp anyone may build their own PvtPpr News-Chain!\n\nTo visit or fork the official PvtPpr News-Chain direct your browser to: https://3dd.in/PvtPpr\n\n\nTo help get the PvtPpr publication & distribution public-blockchain up and running please contact 3Jokers at https://twitter.com/PvtPpr & mention it's about the pvtppr chain.\n\nThank you\n     Updated:[LS0zRA::APR042020]");
+  }
+
+  function Alert() {
+   alert("Hello & Welcome to the the Private Paper (PvtPpr) Generator (Gen).\n\nYou clicked on an easter egg and the PvtPpr team hopes you enjoyed this.\n\nThis PvtPpr Generator (PPGen) allows anyone to build a PvtPpr to share news online & offline. This is a newspaper system with everyone in mind as in anyone can use this to build their own news-type-paper complete with a usable link.\n\nThe superpositions for [bef] & 3D# the word, ''Building''.\n\n\nTry finding the HelpAlert that has more information packed inside!\n\n\n\nThank You\n     Updated:[LS0zRA::APR042020]");
+  
+   }
+  function Alertq() {
+   alert("To use this generator, plese click on the explainatory text below. Filling out each setion will slowly work your way down to the bottom of the generator then you can click submit to have your PvtPpr generated.\n\n\nTips:\n     You don't have to fill in all the sections.\n\n     If you don't have an image link, don't mess with the words, 'Related Image Link' and no image or spot for an image will be present in your build.\n\n     Newschains, websites and webapps are linkable in the 'Certables Link' spot and the 'Prev Paper' spot.\n\n     After you click 'Submit', the screen will scroll down to the build-output section and once the link becomes present, it'll be directly infront of you and all you have to do is click on the text to open the link in a new window.\n\n     If you cannot see the finished output after clicking on the secure link, try adding this app to your browser/ad-blocker/pop-up-blocker whitelist.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::APR042020]")
+  }
+ </script>
+</body>
+
+</html>
