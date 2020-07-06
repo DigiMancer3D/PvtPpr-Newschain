@@ -1,0 +1,485 @@
+<meta name="airtime-platform-display" content="PvtPpr Generator Lite">
+<meta name="airtime-platform-id" content="74d7c24b-f070-eb2c-9f08-a87f7e6bea00">
+<script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true"></script>
+<html>
+<head>
+ <style type="text/css"></style>
+ <meta name="viewport" content="width=device-width, initial-scale=0.5">
+ <style type="text/css">
+  body {
+   color: black;
+   font-size: 7vw;
+   font-family: AppleGothic;
+   word-wrap: break-word;
+  }
+  .space1 {
+  margin-left:12%;
+   margin-right:13%;
+  }
+   hr {
+   border-width:0.6px;
+   border-color:skyblue;
+   color:skyblue;
+   margin-top:-0.03%;
+   z-index:3;
+  }
+  .img {
+   display:inline-block;
+  }
+  .imgtop {
+   display:none;
+  }
+  html {
+   scroll-behavior:smooth;
+   scroll-y:smooth;
+   javascript: allow;
+  }
+  .divi{
+   font-size:3.34vw; background-color:white;
+  }
+  h3 {
+   font-size: 11vw;
+   javascript: allow;
+   background-color: white;
+  }
+    
+  .theme1 {
+   display:block;
+   cursor: pointer;
+  }
+  .theme2 {
+   display:none;
+   cursor: pointer;
+  }
+  #theme2 {
+   display:none;
+  }
+  a {
+   Color: skyblue;
+   text-decoration: none;
+  }
+  #getct {
+   cursor: pointer;font-size:30%; background-color:lightgreen; color:white; border:darkgreen; width:30%;
+  }
+  input {
+   padding: 0.25px 0.15px 0.25px 0.15px;
+   border:none;
+   width: 98%;
+   font-size:48%;
+   z-index:1;
+  }
+  .ab {
+   background-color: white;
+   color: orange;
+  }
+  input:placeholder {
+   color:skyblue;
+  }
+  .clicksub {
+   border: 0.02vw solid darkgreen;
+   background-color: lightgreen;
+   color: black;
+   padding: 0.5vw;
+   padding-right: 0.75vw;
+   padding-left: 0.75vw;
+   box-shadow: 3px 2px #223322;
+  font-weight: bold;
+   cursor: pointer;
+   width:40%;
+  }
+
+  .clickres {
+   border: 0.02vw solid #B22222;
+   background-color: pink;
+   color: black;
+   padding: 0.5vw;
+   padding-right: 0.75vw;
+   padding-left: 0.75vw;
+   box-shadow: 3px 2px #332222;
+  font-weight: bold;
+   cursor: pointer;
+   width:40%;
+  }
+  .button {
+   color: darkblue;
+   padding:0.5vw;
+   font-size: 70%;
+   background-color:skyblue;
+  font-weight: bold;
+   box-shadow: 3px 2px #223322;
+  }
+   #inin {
+   width:96%; padding:0.5vw; placeholder:skyblue; font-size:38%; background-color:white; color:orange;  border:none; margin-bottom:0.5%;padding-bottom:-0.5%;
+  }
+  #imglink {
+   background-color:white;color:orange; placeholder:skyblue;
+  }
+  
+ #lnk {
+  background-color:black;
+  color:silver;
+  font-size:50%;
+  border:none;
+ }
+.sidenav {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+ transition: transform .2s;
+  text-align:center;
+ 
+}
+.sidenav a {
+ 
+  text-decoration: none;
+  color: silver;
+  display: block;
+  transition: transform .2s;
+ text-align:center;
+}
+ 
+.sidenav #lnk:hover {
+  color: orange;
+ transform: scale(1.13);
+ transition-duration: 1.3s;
+ z-index:3;
+}
+  .ontime, .offtime {
+   background-color:lightblue;color:black;box-shadow:3px 3px 3px dimgrey;border:1px solid darkblue;
+  }
+  .ontime:hover, .offtime:hover {
+   background-color:skyblue;color:black;box-shadow:1px 1px 2px black;border:1px solid darkblue;
+  }
+  .bittubeHash, .bittubeName {
+   align:center;
+   width:98%;
+  }
+  @media screen and (max-width: 9.9in) {
+   
+   body {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+   }
+   .no-cell {
+    display: none;
+   }
+   .title {
+    margin-top: 0vw;
+   }
+   .aboveinput {
+    margin-bottom: -2.5vw;
+    margin-top: -4vw;
+   }
+   #quote {
+    font-size:40%;
+    margin-top:-6.5vw;
+    margin-bottom:1vw;
+    text-align:left;line-height: normal;
+     white-space: pre-wrap;
+    -moz-margin-top:-5vw;
+   -moz-white-space: pre-wrap;
+   -ms-white-space: pre;
+   -webkit-white-space: pre;
+  color:orange;
+   }
+
+  ::placeholder {
+   font-size:105%;
+   color:skyblue;
+  }
+  .sidenav {
+   display:none;
+ }
+   #sidebar1 {
+    display:none;
+   }
+   #sidebar2 {
+    display:none;
+   }
+  .sidenav a{
+   display:none;
+  }
+   .obj1 {
+    margin-left:0%;
+    margin-right:0%;
+   }
+   
+  }
+
+  @media screen and (min-width: 10in) {
+   
+   input{
+    margin-bottom:0.5%;
+   }
+   .sidenav a{
+  
+ margin-top:3px;
+ margin-bottom:9px; 
+  font-size: 28px;
+  }
+     .obj1 {
+    margin-left:0%;
+    margin-right:0%;
+   }
+  .sidenav{
+  width: 20%;
+  position: fixed;
+
+  height: 100%;
+ } 
+   
+   .no-desk {
+    display: none;
+   }
+   .aboveinput {
+    margin-bottom: -4.5vw;
+    margin-top: -6vw;
+   }
+   .no-cell {
+    display: block;
+    opacity: 0.0;
+   }
+   .world {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    background-color: white;
+   }
+   .title {
+    font-size: 6.34vw;
+    margin-top: -5vw;
+   }
+   
+  #quote {
+   font-size:40%;
+   margin-top:-2.5vw;
+   margin-bottom:-1vw;
+   text-align:left;
+   align:left;line-height: normal; 
+   white-space: pre-wrap;
+   -moz-white-space: pre;
+   -ms-white-space: pre;
+   -webkit-white-space: pre;
+  color:orange;
+  }
+  ::placeholder {
+   font-size:127%;
+   color:skyblue;
+  }
+   input:after {
+    content=""
+   }
+  }
+ </style>
+</head>
+ <meta name="airtime-platform-display" content="PvtPpr Generator Lite" >
+ <meta name="airtime-platform-id" content="74d7c24b-f070-eb2c-9f08-a87f7e6bea00" >
+<script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true"></script>
+<body style="background-color:white;color:black;" id="body">
+ <span class="world" align="center">
+ <p style="height:15vw;" class="obj1" id="obj2" align="left"><span style="cursor: default;margin-right:2vw;" align="left"><img id="img" style="background-color:transparent;width:18vw;height:auto;margin-right:-0.5vw;margin-left:0.5vw;" onclick="Alert();" align="left" class="thumb" src="https://na.lbryplayer.xyz/content/claims/pvtppr-generator-official-logo-(reverse)/1b3ef0ff0a38c1403476e57d0063f9d419eb614c/stream"> <img id="imgtop" style="background-color:transparent;width:18vw;height:auto;margin-right:-0.5vw;margin-left:0.5vw;display:none;" onclick="Alert();" align="left" class="thumb" src="https://na.lbryplayer.xyz/content/claims/pvtppr-generator-logo/79793b37b45ee0e2452ddf3043badf73c204bbc7/stream">
+  </span><span id="quote" style="text-align:left;inline-height:0vw;-moz-white-space: pre;align:left;" align="left">PvtPpr Generator is a free tool to create private serverless-stored digital papers including <b><i>social chains, articles, blogs, vlogs, podcasts, memos, journals, lists, newsletters, newspapers, magazines, books<i> or what your mind can imagine. <sup><sub>Lite Version.</sub></sup></b></br>&nbsp;<button id="sidebar1" style="cursor: pointer;" type="submit" align="right" value="sidebar" class="button" onclick="document.getElementById('sidenav').style.display='block';document.getElementById('obj1').style.margin='0% 0% 0% 20%';document.getElementById('obj2').style.margin='0% 0% 0% 20%';document.getElementById('obj3').style.margin='0% 0% 0% 20%';document.getElementById('obj4').style.margin='0% 0% 0% 20%';document.getElementById('obj5').style.margin='0% 0% 0% 20%';">Sidebar</button><button id="sidebar2" type="submit" style="align:right;display:none;"  align="right" value="sidebar" class="button" onclick="document.getElementById('sidenav').style.display='block';document.getElementById('obj1').style.margin='0% 0% 0% 20%';document.getElementById('obj2').style.margin='0% 0% 0% 20%';document.getElementById('obj3').style.margin='0% 0% 0% 20%';document.getElementById('obj4').style.margin='0% 0% 0% 20%';document.getElementById('obj5').style.margin='0% 0% 0% 20%';;" >Sidebar</button> &nbsp;<button id="qq"  style="cursor: pointer;" type="submit"  align="right" value="?" class="button" onclick="Alertq()">?</button>&nbsp; &nbsp;<button id="qq2"  style="margin-left:-0.5%;cursor: pointer;" type="submit"  align="right" value="?" class="button" onClick="window.open('https://3dd.in/PvtPpr-Info', '_blank')">Website</button>&nbsp; &nbsp;<button id="yesthis"  style="cursor: pointer;" align="right" type="button" value="FAQ" class="button" onclick="window.open('https://3dd.in/PPFAQ')">FAQ</button>&nbsp; &nbsp;<button id="yesthis2" style="cursor: pointer;" type="submit"  align="right"value="Markup Help" class="button" onclick="window.open('https://tinyurl.com/rv7bks2')">Markup Help</button>&nbsp; &nbsp;<button id="theme1" style="cursor: pointer;" type="submit"  style="align:right;" align="right" value="Theme" class="button" onclick="theme1()">Theme</button> <button id="theme2" type="submit" style="align:right;"  align="right" value="Theme" class="button" onclick="theme2()" >Theme</button>
+ <hr id="hr">
+  </p></br></br>
+  <div class="sidenav" id="sidenav" style="display:none;">
+    <button class="lnk" align="right" style="align:right; right:0;margin-left:70%;background-color:black;color:orange;font-size:50%;" onClick="document.getElementById('sidenav').style.display='none';document.getElementById('obj1').style.margin='0%';document.getElementById('obj2').style.margin='0%';document.getElementById('obj3').style.margin='0%';document.getElementById('obj4').style.margin='0%';document.getElementById('obj5').style.margin='0%';"><sup><sub>&times</sub></sup></button></br><hr style="border-color:black;">
+  <button id="lnk" onclick="location.href='#top'" target="_self" style="margin-top:-12%;color:silver;background-color:black;border:none;text-align:center;">PvtPpr Generator Lite</button></br>
+ <button id="lnk" onClick="location.href='#title';" target="_self" >Title</button></br>
+  <button id="lnk" onClick="location.href='#subject';" target="_self" >Subject hashtag</button></br>
+ <button id="lnk" onClick="location.href='#inin';" target="_self" >Body</button></br>
+  <button id="lnk" onClick="location.href='#authornm';" target="_self" >Sign</button></br>
+  <button id="lnk" onClick="location.href='#autmsg';" target="_self" >Authenticate</button></br>
+  <button id="lnk" onClick="location.href='#btc';" target="_self" >BTC Address</button></br>
+  <button id="lnk" onClick="location.href='#ltc';" target="_self" >Cointree</button></br>
+  <button id="lnk" onClick="window.open('https://cointr.ee');" target="_blank" >Join Cointree</button></br>
+  <button id="lnk" onClick="location.href='#imglink';" target="_self" >Image Link</button></br>
+  <button id="lnk" onClick="location.href='#adlink';" target="_self" >Ad Link</button></br>
+  <button id="lnk" onClick="location.href='#adtextin';" target="_self" >Ad Text</button></br>
+  <button id="lnk" onClick="location.href='#certlink';" target="_self" >Certable</button></br>
+  <button id="lnk" onClick="location.href='#previn';" target="_self" >Previous</button></br>
+<button id="lnk" onClick="location.href='#clicksub';" target="_self" ><sup><sub>Submit/Refresh</sub></sup></button></br>
+  <hr style="border-color:orange;"></br>
+  <button id="lnk" onClick="location.href='https://3dd.in/PvtPpr-Info';" style="color:yellow" target="_blank" >PvtPpr Website</button></br>
+  <button id="lnk" onClick="location.href='https://3dd.in/PPFAQ';" target="_blank" style="color:pink" >PvtPpr FAQ</button></br>
+  <button id="lnk" onClick="location.href='https://3dd.in/PPMH';" target="_blank" style="color:lightblue" >Generator Mark-Up Help</button></br>
+  <button id="lnk" onClick="location.href='https://3dd.in/ppgenfull';" target="_blank" style="color:orange" ><sub>PvtPpr Generator<sup>Full</sup></sub></button></br></br>
+  <hr><span style="color:white; font-size:-250%;align:center;" id="lnk" align="center">Go Directly to a Newschain Support Page:</span><hr><li><button onClick="location.href='https://3dd.in/NNNCerts';" target="_blank" id="lnk" class="lnk" style="color:green;font-size:-150%;">Certables</button></li><li><button onClick="location.href='https://3dd.in/CSupport';" class="lnk" target="_blank" id="lnk" style="color:orange;font-size:-150%;">Chain Support</button></li></br><hr></br>
+</div>    
+  <div style="margin-bottom:-2vw;margin-top:-4vw;" class="obj1" id="obj1" align="center" text-align="center">
+  <span style="text-align:center" align="center"><input id="title" class="ab" style="width:98%; padding:0.5vw;text-align:center;" onfocus="this.value='';" align="left" placeholder="Click Here to Edit Title"></input><hr><input id="subject" class="ab" align="right" style="width:98%; text-align:center;" onfocus="this.value='';" placeholder="#ID &amp; #Subject #Tags Go Here"><hr><textarea id="inin" class="ab" rows="25" cols="10" text-align="left" style="text-align:left;width:90%;" overflow="auto" align="center" placeholder="Click Here to Edit the Body. &nbsp       &nbsp        &nbsp        &nbsp      &nbsp    &nbsp   &nbsp   &nbsp     &nbsp    &nbsp      &nbsp        &nbsp     &nbsp     Markup Can Be Included Here."></textarea><hr>
+ <input id="authornm" class="ab tooltip" onfocus="this.value='';" style="width:98%; padding:0.5vw;text-align:center;" placeholder="Edit the Author's Name" align="left"><hr><input id="autmsg" class="ab" onfocus="this.value='';" style="width:98%; padding:0.5vw;text-align:center;" align="right" placeholder="Authentication Message"><hr>
+</span>
+  <span><input id="btc" class="ab" onfocus="this.value='';" style="width:98%; padding:0.5vw;text-align:center;" align="left" placeholder="Author's BTC address"><hr><input id="ltc" class="ab" onfocus="this.value='';" style="width:52%; text-align:center;padding:0.5vw;" align="right" placeholder="Cointree User Name">&nbsp;&nbsp;<button id="getct" type="button" value="Sign up for Cointree" onclick="window.open('https://cointr.ee/')" target="_blank" >Cointree Sign-up</button><hr>
+<input id="imglink" type="url" onfocus="this.value='';" style="left:0;text-align:center; width:98%; padding:0.5vw;" placeholder="Related Image Link" value="Related Image Link"><hr><input id="adlink" class="ab" type="url" onfocus="this.value='';" style="width:45%; padding:0.5vw;text-align:center;" placeholder="Ad link">&nbsp;&nbsp;<input id="adtextin" class="ab" onfocus="this.value='';" style="width:45%; padding:0.5vw;text-align:center;" placeholder="Ad text">
+   <hr>
+   <input id="bittubeHash" class="ab" onfocus="this.value='';" align="center" style="width:98%; padding:0.5vw;text-align:center;" placeholder="Airtime Hash">
+<hr><input id="bittubeName" class="ab" onfocus="this.value='';" align="center" style="width:98%; padding:0.5vw;text-align:center;" placeholder="Airtime Name">
+   <hr></span>
+  <span><input  id="certlink"  class="ab"  type="url" onfocus="this.value='';" style="width:98%; padding:0.5vw;text-align:center;" placeholder="Certable Link" ><hr>
+  <input  id="previn" class="ab" type="url" style="left:0; width:98%; padding:0.5vw;text-align:center;" align="left" placeholder="Prev PvtPpr" onfocus="this.value='';"><hr></span></br>
+<input type="submit" value="submit" class="clicksub" id="clicksub" align="center" onclick="document.getElementById('link').style.display='block'; myfunction();window.scrollBy(0, 633);">&nbsp;&nbsp;<input class="clickres" type="button" value="refresh" align="right" onclick="document.location.reload(true);"><hr>
+  </div>
+ </span>
+ <!--   below is internal   -->
+<a target="_top" id="link" name="link" style="display:none;"><div id="icheck" ><head><span id="bittube"></span><script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true"></script>
+</head> <label><h1><span style="left:0;" align="left" id="outtop"></span></h1></label>  <label><h4 align="right" style="right:0"><span align="right" style="right:0;" id="outmid"></span><hr></h4></label>
+   <span align="center" id="img1" style="width:96vw;align:center;right:50;left:50;height:auto;"></span>
+<label><h4><span id="outout"></span></h4></label>  <label><span align="right" style="right:0;"><h4><span align="right" style="right:0;" id="outbott"></span> &nbsp; @<span id="authorname"></span></span></h4>
+   <span style="width:5vw;" id="adhere" align="left" onclick="this.style.display='none'; document.getElementById('adlink').style.display='none'; document.getElementById('adtextin').style.display='none';"></span>
+ <label><hr><h5 align="center"><sub>If you liked this PvtPpr please consider donating to the author, <span id="authname"></span> by using the crypto-addresses below. Thank you.</sub><br><sub><span align="left"><b>₿://<i><span id="btcaddy"></span></i></b></span> &nbsp; <b><span align="right"><i><span id="ltcaddy"></span></i></span></b></sub></h5><hr></label>
+ <div align="center" align="cneter"><label><h5><span style="align:left; left:0; margin-right:2.5vw;" align="left">Made&nbsp;with&nbsp;<span id="DFCabinet" style="text-decoration:none;"></span><sup><sup>2019</sup></sup></span><span id="prev" style="margin-top:-1.5px;margin-bottom:1.5px; margin-left:2.5vw; right:0; align:right;" align="right"></span></h5></label></div><br>
+ <hr><span style="opacity:0.53;color:grey;" align="left"> 
+  <br><span onclick="alalert()">PvtPpr. 2018-2020 <br> Private Paper 2018-2020</span> <br>
+<span id="footen" onclick="this.style.display='none'; document.getElementById('footsp').style.display='block';">A Thought Child of the 3 Jokers</span>
+<span id="footsp" onclick="this.style.display='none'; document.getElementById('footch').style.display='block';" style="display:none">Un pensamiento hijo de los 3 comodines</span>
+<span id="footch" onclick="this.style.display='none'; document.getElementById('footjp').style.display='block';" style="display:none">三个小丑的思想孩子</span>
+<span id="footjp" onclick="this.style.display='none'; document.getElementById('footru').style.display='block';" style="display:none">3人のジョーカーの思考の子</span>
+<span id="footru" onclick="this.style.display='none'; document.getElementById('footsw').style.display='block';" style="display:none">Мысленное Дитя 3 Джокеров</span>
+<span id="footsw" onclick="this.style.display='none'; document.getElementById('footdu').style.display='block';" style="display:none">Ett tänkt barn av de 3 jokarna</span>
+<span id="footdu" onclick="this.style.display='none'; document.getElementById('footen').style.display='block';" style="display:none">Ein Gedankenkind der 3 Joker</span>
+</span><br><br><span style="background-color:black;color:silver;box-shadow:dimgrey 3px 6px 9px;" target="_self" onclick="window.open('https://3dd.in/PvtPpr-HnState');">Access the PvtPpr <b><i>Secure Chain</i></b></span><hr><span onclick="AlertCheck();" id="LinkCover">3D: <b>#<i>15007vj5v84jp4</i></b></span></br><hr><span style="align:center;left:50;right:50;" align="center" id="certable"></span></br></div>
+<script>
+ 
+ function alalert(){
+  alert('Hello & Welcome to the this PvtPpr [prīvit pāpər].\n\nPvtPpr is brought to you by 3G, E-T & 3D.\n\nThis is hoasted by experimental technology in hash-based-link-data to store all of the website code off servers.\n\n     Servers are used for decryting the hashlink for the browser to display the website/webapp.\n\nHosted by Itty.Bitty.Site (by alcor), where anything can be conveyed in a link.\n\n\nThank you.\n     [LS0zRA::JAN162020]\n\n     Last Update [APR242020::LS0zRA]');
+ }
+ function AlertCheck() {
+  alert("You clicked on an easter egg. Please enjoy!\n\nThis PvtPpr was made with the PvtPpr Generator (PPGen), which allows anyone to build a PvtPpr. This is a newspaper system with everyone in mind. Anyone can use PPGen to build their own private paper complete with a usable link.\n\nThe superpostition of this build will not appear in this build.\n\nThis is the lite-version of the PvtPpr Generator\n\n\n\nThank You\n     [LS0zRA::JAN162020]\n\n     Last Update [APR242020::LS0zRA]");
+ }
+  
+</script>
+</span></label></a>
+ <a>
+  <script src="https://itty.bitty.site/lzma/lzma_worker-min.js"></script>
+  <script>
+   function myfunction() {
+    var d = new Date(); var stamps = d.getTime(); var daters1 = d.getDate(); var months = ["SPACE", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]; if (daters1 = "1"){daters1=months[1];} else if (daters1 = "2"){daters1=months[2];} else if (daters1 = "3"){daters1=months[3];} else if (daters1 = "4"){daters1=months[4];}else if (daters1 = "5"){daters1=months[5];}else if (daters1 = "6"){daters1=months[6];} else if (daters1 = "7"){daters1=months[7];} else if (daters1 = "8"){daters1=months[8];}else if (daters1 = "9"){daters1=months[9];}else if (daters1 = "10"){daters1=months[10];}else if (daters1 = "11"){daters1=months[11];}else if (daters1 = "12"){daters1=months[12];} var daters2 = d.getDate(); if (daters2 == "1"){daters2="01";} else if (daters2 == "2"){daters2="02";} else if (daters2 == "3"){daters2="03";} else if (daters2 == "4"){daters2="04";}else if (daters2 == "5"){daters2="05";}else if (daters2 == "6"){daters2="06";} else if (daters2 == "7"){daters2="07";} else if (daters2 == "8"){daters2="08";}else if (daters2 == "9"){daters2="09";} var daters3 = d.getFullYear(); var timehash1A = "["+window.btoa(stamps)+"] :: ["+daters1+daters2+daters3+"]"; var datestamp = "["+"#"+window.btoa(timehash1A)+"]";
+    var moduleHashIn = document.getElementById('bittubeHash').value;
+    var moduleNameIn = document.getElementById('bittubeName').value;
+    document.getElementById('bittube').innerHTML = '<meta name="airtime-platform-display" content="'+moduleNameIn+'"><meta name="airtime-platform-id" content="'+moduleHashIn+'">';
+    var five = document.getElementById('inin').value;
+    var four = document.getElementById('subject').value;
+    var three = document.getElementById('title').value;
+    var two = document.getElementById('autmsg').value;
+    var one = document.getElementById('previn').innerTEXT;
+    var author = document.getElementById('authornm').value;
+    var baddy = document.getElementById('btc').value;
+    var laddy = ''; laddy += '<a href="https://cointr.ee/'+document.getElementById("ltc").value+'" target="_blank" style="text-decoration:none;color:darkgreen;">'+document.getElementById("ltc").value+'&#39;s Cointr.ee</a>';
+    document.getElementById('prev').innerHTML = one;
+    var signeded = ' ['+two+']   @'+author+'  ||  '+datestamp+' ';
+    var qqtt = "none";
+    document.getElementById('authorname').innerHTML = window.btoa(signeded);
+    document.getElementById('authname').innerHTML = document.getElementById('authornm').value;
+    document.getElementById('outtop').innerHTML = three;
+    document.getElementById('outmid').innerHTML = four;
+    document.getElementById('outout').innerHTML = five;
+    document.getElementById('outbott').innerHTML = author;
+    document.getElementById('btcaddy').innerHTML = baddy;
+    document.getElementById('ltcaddy').innerHTML = laddy;
+    var adstuff = '';     adstuff += '<a type="button" style="border-radius:360%; background-color:black; text-decoration:none; color:limegreen; border-color:orange; border-width:2vw; width:auto; align:right; overflow:hidden; right:0;" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" style="margin:0.vw 1.5vw 0.1vw 1.5vw;"><sup><sub>&nbsp&nbsp&nbsp' + document.getElementById('adtextin').value + '&nbsp&nbsp&nbsp</sub></sup></span></a><span id="adtxt" style="font-size:8px"></br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b id="adtxtbottom" >ad</b></span> &nbsp&nbsp&nbsp';     document.getElementById('adhere').innerHTML = adstuff;     var topimg = '';     topimg += '<img src="' + document.getElementById('imglink').value + '" style="width:43vw; align:center; overflow:hidden;" align="center" overflow="hidden" />';     document.getElementById('img1').innerHTML = topimg;     var DFClink = document.getElementById('DFCabinet').innerHTML = '<a href="https://3dd.in/ppgen" target="_blank">PvtPpr Generator Lite</a>';     var str = '';     str += '<a href="' + document.getElementById('previn').value + '" target="_blank" style="border: 0.01vw solid silver; background-color:orange; color:black; box-shadow: 1.2px 1.2px #ddccdd; text-decoration:none;" >Previous Paper</a>';  document.getElementById('prev').innerHTML = str; var certs = ''; certs += "<a href='"+document.getElementById('certlink').value+"' target='_blank' style='text-decoration:none;background-color:black;color:white;'>View this object's Certable</a>"; document.getElementById('certable').innerHTML = certs; a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}
+  </script>
+ </a>
+ <div align="center">
+  <p style="background-color:black;color:green;"></p>
+  <h5>
+   <footer>
+    <div align="center" width="100%" id="divi">
+     <hr>
+     <p align="center" id="obj3" class="obj1" ><a id="wierd" href="https://tinyurl.com/v63ujqb" target="_blank" style="text-decoration:none; color:lightgreen;">97472a114dc21b09e6fb6f9443eab1ba0c901c1f9a7f3ee21bc62a00aafee605</a><br><sup><i>[<b><sup>bef</sup></b>]</i><br><sub><b>3D#<i><sup onclick="HelpAlert();">153158v5ipbp1yb</sup></i></b></sub></sup>
+     </p>
+     <hr>
+     <p></p>
+    </div>
+   </footer>
+  </h5>
+  <h6 id="obj4" class="obj1"><a href="https://codepen.io/digimancer3d/pen/zYvmpJY" target="_top"><sub><sup>This was designed on Codepen.io, click to view &amp; fork on Codepen.</sup></sub></a></h6>
+  <h6 onClick="window.open('https://bittube.app');"><sup><sub>Monetized by Bittube Airtime</sub></sup></h6><hr>
+  <p></p>
+ </div>
+
+ <script> 
+  function theme1() {
+   document.getElementById('theme1').style="display:none;"
+   document.getElementById('theme2').style="display:inline-block; background-color: lightgreen; color:darkgreen; border-color:green;margin-left:-1%;"
+   document.getElementById('sidebar1').style="display:none;"
+   document.getElementById('sidebar2').style="display:inline-block; background-color: lightgreen; color:darkgreen; border-color:green;margin-left:-1%;"
+   document.getElementById('body').style="background-color:black; color: lightgreen;text-align:left;align:left;" 
+  document.getElementById('title').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;" 
+   document.getElementById('subject').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;" 
+   document.getElementById('authornm').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+   document.getElementById('bittubeName').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;" 
+   document.getElementById('bittubeHash').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+  document.getElementById('inin').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+   document.getElementById('autmsg').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;" 
+   document.getElementById('ltc').style="background-color:black; color: lightgreen; width: 52%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+   document.getElementById('btc').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+   document.getElementById('getct').style="background-color:mintgreen; color:darkgreen; width: 30%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;placeholder-color:green;border-color:green;"
+   document.getElementById('imglink').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+   document.getElementById('adlink').style="background-color:black; color: lightgreen; width: 45%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;" 
+   document.getElementById('adtextin').style="background-color:black; color: lightgreen; width: 45%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+   document.getElementById('previn').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+   document.getElementById('certlink').style="background-color:black; color: lightgreen; width: 98%; margin-right:1.5vw;margin-left:0.5vw;text-align:center;"
+   document.getElementById('quote').style="background-color:transparent; color: orange;line-height: normal;";
+   document.getElementById('yesthis').style="background-color:lightgreen; color: darkgreen; border-color:green; align:right;";
+   document.getElementById('yesthis2').style="background-color:lightgreen; color: darkgreen; border-color:green; align:right;";
+   document.getElementById('qq').style="background-color:lightgreen; color: darkgreen; border-color:green;"
+   document.getElementById('qq2').style="background-color:lightgreen; color: darkgreen; border-color:green;"
+   document.getElementById('img').style="display:none;";
+   document.getElementById('imgtop').style="display:inline-block;width:18vw;height:auto;margin-right:-0.5vw;margin-left:0.5vw;";
+   document.getElementById('hr').style="border-color: mintgreen;";
+   
+  document.getElementById('divi').style="background-color:black; color:orange; text-decoration: none;"
+  document.getElementById('wierd').style="background-color:black; color:orange; text-decoration: none;"
+  }
+  
+  function theme2() {
+   document.getElementById('body').style="background-color:white; color: orange;text-align:left;align:left;"; 
+   document.getElementById('ltc').style="background-color:white; color: orange; width: 52%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+  document.getElementById('title').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;" 
+   document.getElementById('btc').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('getct').style="background-color:lightgreen; color: darkgreen; border-color:green; width: 30%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:green;text-align:center;"
+   document.getElementById('subject').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('authornm').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('bittubeName').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('bittubeHash').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+  document.getElementById('inin').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;" 
+   document.getElementById('autmsg').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('imglink').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('adlink').style="background-color:white; color: orange; width: 45%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('adtextin').style="background-color:white; color: orange; width: 45%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('previn').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('certlink').style="background-color:white; color: orange; width: 98%; margin-right:1.5vw;margin-left:0.5vw;placeholder-color:lightblue;text-align:center;"
+   document.getElementById('theme2').style="display:none;"
+   document.getElementById('theme1').style="display:inline-block; background-color: lightblue; color: darkblue; border-color:blue;"
+   document.getElementById('sidebar2').style="display:none;"
+   document.getElementById('sidebar1').style="display:inline-block; background-color: lightblue; color: darkblue; border-color:blue;"
+   document.getElementById('imgtop').style="display:none;"
+   document.getElementById('img').style="display:inline-block;width:18vw;height:auto;margin-right:-0.5vw;margin-left:0.5vw;"
+   document.getElementById('quote').style="background-color:transparent; color: orange;line-height: normal;"
+   document.getElementById('yesthis').style="background-color:lightblue; color: darkblue; border-color:blue;"
+   document.getElementById('yesthis2').style="background-color:lightblue; color: darkblue; border-color:blue;"
+   document.getElementById('hr').style="border-color: skyblue;"
+   document.getElementById('qq').style="background-color:lightblue; color: darkblue; border-color:blue;"
+   document.getElementById('qq2').style="background-color:lightblue; color: darkblue; border-color:blue;"
+  document.getElementById('divi').style="background-color:white; color:orange; text-decoration: none;"
+  document.getElementById('wierd').style="background-color:white; color:orange; text-decoration: none;"
+  }
+  function HelpAlert() {
+   alert("Hello & Welcome to the Help Hash.\n\nThe hash you clicked on (#15317lz9gcql36s), confirms the corrct face ouput superposition for this ittybittyapp.\n\nThe face output is the webapp you see before building your Private Paper (PvtPpr).\n\n\nPvrivate Paper is an idea orginally thought of by 3G & 3D to help push local decentralized newspapers. The pages made from this ittybittyapp can be printed, the link can be set to a short-link and placed in QRs for sharing. With this webapp anyone may build their own PvtPpr News-Chain!\n\nTo visit or fork the official PvtPpr News-Chain direct your browser to: https://3dd.in/PvtPpr\n\n\nTo help get the PvtPpr publication & distribution public-blockchain up and running please contact 3Jokers at https://twitter.com/PvtPpr & mention it's about the pvtppr chain.\n\nThank you\n     Updated:[LS0zRA::APR042020]");
+  }
+
+  function Alert() {
+   alert("Hello & Welcome to the the Private Paper (PvtPpr) Generator (Gen).\n\nYou clicked on an easter egg and the PvtPpr team hopes you enjoyed this.\n\nThis PvtPpr Generator (PPGen) allows anyone to build a PvtPpr to share news online & offline. This is a newspaper system with everyone in mind as in anyone can use this to build their own news-type-paper complete with a usable link.\n\nThe superpositions for [bef] & 3D# the word, ''Building''.\n\n\nTry finding the HelpAlert that has more information packed inside!\n\n\n\nThank You\n     Updated:[LS0zRA::APR042020]");
+  
+   }
+  function Alertq() {
+   alert("To use this generator, plese click on the explainatory text below. Filling out each setion will slowly work your way down to the bottom of the generator then you can click submit to have your PvtPpr generated.\n\n\nTips:\n     You don't have to fill in all the sections.\n\n     If you don't have an image link, don't mess with the words, 'Related Image Link' and no image or spot for an image will be present in your build.\n\n     Newschains, websites and webapps are linkable in the 'Certables Link' spot and the 'Prev Paper' spot.\n\n     After you click 'Submit', the screen will scroll down to the build-output section and once the link becomes present, it'll be directly infront of you and all you have to do is click on the text to open the link in a new window.\n\n     If you cannot see the finished output after clicking on the secure link, try adding this app to your browser/ad-blocker/pop-up-blocker whitelist.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::APR042020]")
+  }
+ </script>
+</body>
+<meta name="airtime-platform-display" content="PvtPpr Generator Lite">
+<meta name="airtime-platform-id" content="74d7c24b-f070-eb2c-9f08-a87f7e6bea00">
+<script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true"></script>
+</html>
