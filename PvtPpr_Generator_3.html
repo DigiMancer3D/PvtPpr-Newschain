@@ -318,7 +318,7 @@
 <hr><input id="bittubeName" class="ab" onfocus="this.value='';" align="center" style="width:98%; padding:0.5vw;text-align:center;" placeholder="Airtime Name">
    <hr></span>
   <span><input  id="certlink"  class="ab"  type="url" onfocus="this.value='';" style="width:98%; padding:0.5vw;text-align:center;" placeholder="Certable Link" ><hr>
-  <input  id="previn" class="ab" type="url" style="left:0; width:98%; padding:0.5vw;text-align:center;" align="left" placeholder="Prev PvtPpr" onfocus="this.value='';"><hr></span></br>
+  <input  id="previn" class="ab" type="url" style="left:0; width:98%; padding:0.5vw;text-align:center;" align="left" placeholder="Prev PvtPpr" onfocus="this.value='';"><hr> <input  id="qrlink" class="ab" style="left:0; width:98%; padding:0.5vw;text-align:center;" align="left"  value="QR Data" placeholder="QR Data" onfocus="this.value='';" /><hr></span></br>
 <input type="submit" value="submit" class="clicksub" id="clicksub" align="center" onclick="document.getElementById('link').style.display='block'; myfunction();window.scrollBy(0, 633);">&nbsp;&nbsp;<input class="clickres" type="button" value="refresh" align="right" onclick="document.location.reload(true);"><hr>
 
 <script>
@@ -333,14 +333,15 @@ else {
         element.addEventListener(event, handler, false);
     };
 }
+ /*
 function init () {
     var text = document.getElementById('inin');
     function resize () {
         text.style.height = 'auto';
         text.style.height = text.scrollHeight+'px';
     }
-    /* 0-timeout to get the already changed text */
-    function delayedResize () {
+    /* 0-timeout to get the already changed text */ 
+/*    function delayedResize () {
         window.setTimeout(resize, 0);
     }
     observe(text, 'change',  resize);
@@ -352,7 +353,8 @@ function init () {
     text.focus();
     text.select();
     resize();
-}</script><script>
+} */
+</script><script>
  
   function handleFileSelect(evt) {
     evt.stopPropagation();
@@ -377,17 +379,125 @@ function init () {
   dropZone.addEventListener('dragover', handleDragOver, false);
   dropZone.addEventListener('drop', handleFileSelect, false);
 </script>
+
+<script>
+   
+   function titlePop(){
+ var title = prompt('Please fill in what you would like your title to be on your Ppr.\n\n  Basic Markup is allowed here.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('title').value = title;  subjectPop();
+   }
+ 
+   function subjectPop(){
+ var subject = prompt('Please fill in what you would like your subjects to be.\n\n Hashtags and basic Markup is allowed here.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]'); document.getElementById('subject').value = subject; bodyPop();
+}
+ 
+   function bodyPop(){
+ var body = prompt('Please fill in the body of your paper.\n\n Basic Markup is allowed here.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('inin').value = body;  authorPop();
+   }
+ 
+   function authorPop(){
+ var author = prompt('Please sign your name or psydonym.\n\n Basic Markup is allowed here.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]'); document.getElementById('authornm').value = author; authyPop();
+}
+ 
+  function authyPop(){
+ var authy = prompt('Please fill in an authentication message or script to be hashed into your Ppr.\n\n  For a correct hash output, please refrain from special characters.\n\n Special Characters and Code are stroed as plain text only.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('autmsg').value = authy;  btcPop();
+   }
+ 
+   function btcPop(){
+ var btc = prompt('Please fill in a Bitcoin ($BTC) address for readers to be able to donate to you.\n\n Only input the BTC address and no additional text or it will appear in your PvtPpr.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]'); document.getElementById('btc').value = btc; cointreePop();
+}
+ 
+   function cointreePop(){
+ var cointree = prompt('Please fill in any or your CoinTr.ee user name.\n\n Refrain from using Markup.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('ltc').value = cointree;  imgPop();
+   }
+ 
+   function imgPop(){
+ var imglink = prompt('Please input your Related Image Link or if you do not have an image link, insert the words "Related Image Link" to display no image section.\n\n Refrain from using Markup.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]'); document.getElementById('imglink').value = imglink; adlinkPop();
+}
+ 
+  function adlinkPop(){
+ var adlink = prompt('Please fill in an ad link you would like dislayed.\n\n  Please refrain from Markup.\n\n    For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('adlink').value = adlink;  adtextPop();
+   }
+ 
+   function adtextPop(){
+ var adtext = prompt('Please fill in an ad text you would like dislayed.\n\n  Please refrain from Markup.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]'); document.getElementById('adtextin').value = adtext; airtimehashPop();
+}
+ 
+   function airtimehashPop(){
+ var airhash = prompt('Please fill in any or your Bittube Airtime Module Hash.\n\n Refrain from using Markup.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('bittubeHash').value = airhash;  airtimetitlePop();
+   }
+ 
+   function airtimetitlePop(){
+ var airtitle = prompt('Please fill in any or your Bittube Airtime Module Title.\n\n Refrain from using Markup.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('bittubeName').value = airtitle;  certPop();
+   }
+ 
+   function certPop(){
+ var certable = prompt('Please fill in any or your Certable Hashlink or Shortlink.\n\n Refrain from using Markup.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('certlink').value = certable;  prevPop();
+   }
+ 
+   function prevPop(){
+ var prev = prompt('Please fill in any or your Previous PvtPpr Hashlink or Shortlink or PvtPpr-Holding-Link.\n\n Refrain from using Markup.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('previn').value = prev;  qrPop();
+   }
+ 
+   function qrPop(){
+ var qr = prompt('Please fill in any data to place in a QR.\n\n Refrain from using Markup.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]');  document.getElementById('qrlink').value = qr; 
+   }
+ 
+  </script>
+
   </div>
  </span>
  <!--   below is internal   -->
 <a target="_top" id="link" name="link" style="display:none;"><div id="icheck" ><head><span id="bittube"></span><script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true"></script>
-</head> <label><h1><span style="left:0;" align="left" id="outtop"></span></h1></label>  <label><h4 align="right" style="right:0"><span align="right" style="right:0;" id="outmid"></span><hr></h4></label>
+</head> <style>
+  @media screen and (max-width: 9.9in) {
+ .qrimg {
+   align: right;
+  right:0;
+   margin-right:-3.5%;
+  margin-bottom:-50%;
+  padding-right:-1.5%;
+  width:30%;  
+ }
+   .line {
+    margin-left:0.5%;
+    align:center;
+    left:0;
+   }
+ }
+ @media screen and (min-width: 10in) {
+  .qrimg {
+   align: right;
+  margin-bottom:-50%;
+   width:20%;
+ }
+  .line {
+   margin-left:0%;
+   align:center;
+   left:0;
+  }
+ }
+    .line { 
+        background: black;
+        opacity: 0.5;
+        height: 4.5px; 
+        border-radius: 25%;
+ -webkit-box-shadow: 2px -2px 3px dimgrey;
+                box-shadow: 2px -2px 3px dimgrey;
+        width: 0%; 
+        position: fixed; 
+        bottom: 0;
+        left:0;
+        align:center;
+       z-index:8;
+    } 
+ </style>  <div class="line" id="scrollIndicator" ></div> <label><h1><span style="left:0;" align="left" id="outtop"></span></h1></label>  <label><h4 align="right" style="right:0"><span align="right" style="right:0;" id="outmid"></span><hr></h4></label>
    <span align="center" id="img1" style="width:96vw;align:center;right:50;left:50;height:auto;"></span>
 <label><h4><span id="outout"></span></h4></label>  <label><span align="right" style="right:0;"><h4><span align="right" style="right:0;" id="outbott"></span> &nbsp; @<span id="authorname"></span></span></h4>
    <span style="width:5vw;" id="adhere" align="left" onclick="this.style.display='none'; document.getElementById('adlink').style.display='none'; document.getElementById('adtextin').style.display='none';"></span>
  <label><hr><h5 align="center"><sub>If you liked this PvtPpr please consider donating to the author, <span id="authname"></span> by using the crypto-addresses below. Thank you.</sub><br><sub><span align="left"><b>₿://<i><span id="btcaddy"></span></i></b></span> &nbsp; <b><span align="right"><i><span id="ltcaddy"></span></i></span></b></sub></h5><hr></label>
- <div align="center" align="cneter"><label><h5><span style="align:left; left:0; margin-right:2.5vw;" align="left">Made&nbsp;with&nbsp;<span id="DFCabinet" style="text-decoration:none;"></span><sup><sup>2019</sup></sup></span><span id="prev" style="margin-top:-1.5px;margin-bottom:1.5px; margin-left:2.5vw; right:0; align:right;" align="right"></span></h5></label></div><br>
- <hr><span style="opacity:0.53;color:grey;" align="left"> 
+ <div align="center" align="cneter"><label><h5><span style="align:left; left:0; margin-right:2.5vw;" align="left">Made&nbsp;with&nbsp;<span id="DFCabinet" style="text-decoration:none;"></span><sup><sup>2019</sup></sup></span><span id="prev" style="margin-top:-1.5px;margin-bottom:1.5px; margin-left:2.5vw; right:0; align:right;" align="right"></span></h5></label></div>
+ <hr><span id="qrimg" class="qrimg" align="right" style="right:0;margin-left:50%;"></span><span style="opacity:0.53;color:grey;" align="left"> 
+  <br><span style="opacity:0.53;color:grey;" align="left"> 
   <br><span onclick="alalert()">PvtPpr. 2018-2020 <br> Private Paper 2018-2020</span> <br>
 <span id="footen" onclick="this.style.display='none'; document.getElementById('footsp').style.display='block';">A Thought Child of the 3 Jokers</span>
 <span id="footsp" onclick="this.style.display='none'; document.getElementById('footch').style.display='block';" style="display:none">Un pensamiento hijo de los 3 comodines</span>
@@ -396,7 +506,36 @@ function init () {
 <span id="footru" onclick="this.style.display='none'; document.getElementById('footsw').style.display='block';" style="display:none">Мысленное Дитя 3 Джокеров</span>
 <span id="footsw" onclick="this.style.display='none'; document.getElementById('footdu').style.display='block';" style="display:none">Ett tänkt barn av de 3 jokarna</span>
 <span id="footdu" onclick="this.style.display='none'; document.getElementById('footen').style.display='block';" style="display:none">Ein Gedankenkind der 3 Joker</span>
-</span><br><br><span style="background-color:black;color:silver;box-shadow:dimgrey 3px 6px 9px;" target="_self" onclick="window.open('https://3dd.in/PvtPpr-HnState');">Access the PvtPpr <b><i>Secure Chain</i></b></span><hr><span onclick="AlertCheck();" id="LinkCover">3D: <b>#<i>15007vj5v84jp4</i></b></span></br><hr><span style="align:center;left:50;right:50;" align="center" id="certable"></span></br></div>
+</span></br><p align="center"><span style="background-color:black;color:silver;box-shadow:dimgrey 3px 6px 9px;margin-left:-6.5vw;margin-right:3.5vw;left:0;" align="left" rel="noreferrer noopener" target="_self" onclick="window.open('https://3dd.in/PvtPpr-HnState');">Access&nbsp;the&nbsp;PvtPpr&nbsp;<b><i>Newschain</i></b></span> <span onclick="AlertCheck();" id="LinkCover" align="right" style="left:0;margin-right:-6.5vw;margin-left:3.5vw;">3D&#58;&nbsp;<b>&#35;<i>15007vj5v84jp4</i></b></span></p><hr></br></br></div>
+<script> 
+ 
+    // Added event listener to the scroll 
+    window.addEventListener('scroll', 
+            moveScrollIndicator); 
+  
+    // Getting scrollIndicator element by ID 
+    const scrollIndicatorElt =  
+        document.getElementById('scrollIndicator'); 
+  
+    // Height of entire web page - height 
+    // of viewable portion of browser 
+    const maxHeight =  
+        window.document.body.scrollHeight  
+        - window.innerHeight; 
+  
+    function moveScrollIndicator(e) { 
+  
+        // Calculating width of the  
+        // scrollIndicator element 
+        const percentage =  
+            ((window.scrollY) / maxHeight) * 100; 
+  
+        // Pixels scrolled by the user  
+        // to total scrollable Pixels 
+        scrollIndicatorElt.style.width 
+                 = percentage + '%'; 
+    } 
+</script> 
 <script>
  
  function alalert(){
@@ -405,6 +544,7 @@ function init () {
  function AlertCheck() {
   alert("You clicked on an easter egg. Please enjoy!\n\nThis PvtPpr was made with the PvtPpr Generator (PPGen), which allows anyone to build a PvtPpr. This is a newspaper system with everyone in mind. Anyone can use PPGen to build their own private paper complete with a usable link.\n\nThe superpostition of this build will not appear in this build.\n\nThis is the lite-version of the PvtPpr Generator\n\n\n\nThank You\n     [LS0zRA::JAN162020]\n\n     Last Update [APR242020::LS0zRA]");
  }
+ 
   
 </script>
 </span></label></a>
@@ -435,7 +575,7 @@ function init () {
     document.getElementById('outbott').innerHTML = author;
     document.getElementById('btcaddy').innerHTML = baddy;
     document.getElementById('ltcaddy').innerHTML = laddy;
-    var adstuff = '';     adstuff += '<a type="button" style="border-radius:360%; background-color:black; text-decoration:none; color:limegreen; border-color:orange; border-width:2vw; width:auto; align:right; overflow:hidden; right:0;" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" style="margin:0.vw 1.5vw 0.1vw 1.5vw;"><sup><sub>&nbsp&nbsp&nbsp' + document.getElementById('adtextin').value + '&nbsp&nbsp&nbsp</sub></sup></span></a><span id="adtxt" style="font-size:8px"></br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b id="adtxtbottom" >ad</b></span> &nbsp&nbsp&nbsp';     document.getElementById('adhere').innerHTML = adstuff;     var topimg = '';     topimg += '<img src="' + document.getElementById('imglink').value + '" style="width:43vw; align:center; overflow:hidden;" align="center" overflow="hidden" />';     document.getElementById('img1').innerHTML = topimg;     var DFClink = document.getElementById('DFCabinet').innerHTML = '<a href="https://3dd.in/ppgen" target="_blank">PvtPpr Generator Lite</a>';     var str = '';     str += '<a href="' + document.getElementById('previn').value + '" target="_blank" style="border: 0.01vw solid silver; background-color:orange; color:black; box-shadow: 1.2px 1.2px #ddccdd; text-decoration:none;" >Previous Paper</a>';  document.getElementById('prev').innerHTML = str; var certs = ''; certs += "<a href='"+document.getElementById('certlink').value+"' target='_blank' style='text-decoration:none;background-color:black;color:white;'>View this object's Certable</a>"; document.getElementById('certable').innerHTML = certs; a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}
+    var adstuff = '';     adstuff += '<a type="button" style="border-radius:360%; background-color:black; text-decoration:none; color:limegreen; border-color:orange; border-width:2vw; width:auto; align:right; overflow:hidden; right:0;" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank"; ><span id="adtext" style="margin:0.vw 1.5vw 0.1vw 1.5vw;"><sup><sub>&nbsp&nbsp&nbsp' + document.getElementById('adtextin').value + '&nbsp&nbsp&nbsp</sub></sup></span></a><span id="adtxt" style="font-size:8px"></br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b id="adtxtbottom" >ad</b></span> &nbsp&nbsp&nbsp';     document.getElementById('adhere').innerHTML = adstuff;     var topimg = '';     var qrimgin = ''; qrimgin += '<img class="qrimg" src="https://zxing.org/w/chart?cht=qr&chs=225x225&chld=H|1&choe=UTF-8&chl=' + document.getElementById('qrlink').value + '" align="right" />'; document.getElementById('qrimg').innerHTML = qrimgin;    topimg += '<img src="' + document.getElementById('imglink').value + '" style="width:43vw; align:center; overflow:hidden;" align="center" overflow="hidden" />';     document.getElementById('img1').innerHTML = topimg;     var DFClink = document.getElementById('DFCabinet').innerHTML = '<a href="https://3dd.in/ppgen" target="_blank">PvtPpr Generator Lite</a>';     var str = '';     str += '<a href="' + document.getElementById('previn').value + '" target="_blank" style="border: 0.01vw solid silver; background-color:orange; color:black; box-shadow: 1.2px 1.2px #ddccdd; text-decoration:none;" >Previous Paper</a>';  document.getElementById('prev').innerHTML = str; var certs = ''; certs += "<a href='"+document.getElementById('certlink').value+"' target='_blank' style='text-decoration:none;background-color:black;color:white;'>View this object's Certable</a>"; document.getElementById('certable').innerHTML = certs; a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}
   </script>
  </a>
  <div align="center">
@@ -531,9 +671,9 @@ function init () {
    alert("Hello & Welcome to the the Private Paper (PvtPpr) Generator (Gen).\n\nYou clicked on an easter egg and the PvtPpr team hopes you enjoyed this.\n\nThis PvtPpr Generator (PPGen) allows anyone to build a PvtPpr to share news online & offline. This is a newspaper system with everyone in mind as in anyone can use this to build their own news-type-paper complete with a usable link.\n\nThe superpositions for [bef] & 3D# the word, ''Building''.\n\n\nTry finding the HelpAlert that has more information packed inside!\n\n\n\nThank You\n     Updated:[LS0zRA::APR042020]");
   
    }
-  function Alertq() {
-   alert("To use this generator, plese click on the explainatory text below. Filling out each setion will slowly work your way down to the bottom of the generator then you can click submit to have your PvtPpr generated.\n\n\nTips:\n     You don't have to fill in all the sections.\n\n     If you don't have an image link, don't mess with the words, 'Related Image Link' and no image or spot for an image will be present in your build.\n\n     Newschains, websites and webapps are linkable in the 'Certables Link' spot and the 'Prev Paper' spot.\n\n     After you click 'Submit', the screen will scroll down to the build-output section and once the link becomes present, it'll be directly infront of you and all you have to do is click on the text to open the link in a new window.\n\n     If you cannot see the finished output after clicking on the secure link, try adding this app to your browser/ad-blocker/pop-up-blocker whitelist.\n\n     For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::APR042020]")
-  }
+  function Alertq(){
+ alert("To use this generator, plese click on the explainatory text per input or click okay for the Pop-Up Wizard. Filling out each setion will slowly work your way down to the bottom of the generator then you can click submit to have your PvtPpr generated.\n\n\nTips:\n     You don't have to fill in all the sections.\n\n     If you don't have an image link, don't mess with the words, 'Related Image Link' and no image or spot for an image will be present in your build.\n\n     Newschains, websites and webapps are linkable in the 'Certables Link' spot and the 'Prev Paper' spot.\n\n     After you click 'Submit', the screen will scroll down to the build-output section and once the link becomes present, it'll be directly infront of you and all you have to do is click on the text to open the link in a new window.\n\n     If you cannot see the finished output after clicking on the secure link, try adding this app to your browser/ad-blocker/pop-up-blocker whitelist.\n\n\n  For more information try one of the helpful buttons besides this one.\n\n\n\nThank You\n     Updated:[LS0zRA::JUL282020]"); titlePop();
+}
  </script>
 </body>
 <meta name="airtime-platform-display" content="PvtPpr Generator Lite">
