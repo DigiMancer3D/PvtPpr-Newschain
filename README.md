@@ -61,7 +61,7 @@ The nodejs passing for ittybittysite is as follows:
     
 ## Actual Versions    
  <h1>Working Versions:</h1>
- <h3>&nbsp&nbsp&nbsp&nbspI have a working version running of both a secure version and a Lite version. The secure version will give the ultimate security in your text data while the light version is the easiest way to share your finished PvtPprs.</br></br> The Light Version links are as follows:</br>
+ <h3>&nbsp&nbsp&nbsp&nbspThere are a multitude of PvtPpr Generator Versions and even Hashr (a Hashpage Generator). All of the Official Pvtppr Generators are listed here with both the short link(s) and full hashlinks.</br></br> The Light Version links are as follows:</br>
  <li>Short Link: <a href="https://3dd.in/ppgen" target="_blank">3dd.in/ppgen</a></li></br>&</br>
  <li>Short Link: <a href="https://3dd.in/ppgenlite" target="_blank">3dd.in/ppgenlite</a></li>
  </br></br>
