@@ -1,0 +1,692 @@
+<html onload="textr()" style="scroll-behavior:smooth; scroll-y:smooth; javascript: allow;">
+<head>
+ <title>Hashr (#r)</title>
+ <meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+<body id="body" onload="textr()" style="margin-top:-1.5vw; word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;background-color:black;color:white;width:98%;">
+ <span id="world" align="center" onLoad="handleFileSelect(evt)" syle="scroll-behavior:smooth;">
+  <div id="headercolor" style="position:fixed;top:0;left:0;background: transparent; background: linear-gradient(0deg, transparent 0%, black 25%);">
+   <p id="obj2" align="left" onload="textr()" onclick="textr()" onmouseover="textr()" style="position:fixed;"><span style="cursor: default;margin-right:2vw;highlight:none;" align="left">
+     <p type="button" id="img" onclick="textr()" onmouseover="textr()" align="left" style="display:fixed;highlight:none;width:5vw;height:auto;margin: 1.5vw 0.5vw -7vw 0.5vw;color: limegreen;font-weight:bold;font-size:350%;top:0:left:0;border-radius:50%;padding:0.75vw 0vw 0.75vw 1.75vw;z-index:9;break-word:keep-all;white-space:nowrap;"><b onclick="textr()">&#35;<sub style="font-size:115%;"><sup><sub onmouseover="textr()">r</sub></sup></sub></b></p>
+
+     <marquee onload="btn9func()" id="marquee" style="font-size:150%;background-color:transparent;padding:0vw 0vw 0vw 0.5vw;margin:0vw -12vw -2vw -5vw;z-index:0;width:90%;"><span style="margin:0vw 2vw 0vw 3.5vw;padding:0vw 0.5vw 0vw 1.5vw;background-color:rgb(0,0,0,0.3);">Hashr is a Hashpage Builder for Meshed Networks</span><span style="margin:-10vw 2vw 0vw 3.5vw;padding:0vw 0.5vw 0vw 1.5vw;background-color:rgb(0,0,0,0.3);"><b style="font-size:135%;">#<sub style="font-size:120%;"><sup><sub><sub>r</sub></sub></sup></sub></b> === <b>Hashr</b></span><span style="margin:0vw 2vw 0vw 3.5vw;padding:0vw 0.5vw 0vw 1.5vw;background-color:rgb(0,0,0,0.3);">Easily generate a hashpage to show off, sell, talk, or just be you</span><span style="margin:0vw 2vw 0vw 3.5vw;padding:0vw 0.5vw 0vw 1.5vw;background-color:rgb(0,0,0,0.3);"> ~~Make more, worry less~~ </span><span style="margin:0vw 2vw 0vw 3.5vw;padding:0vw 0.5vw 0vw 1.5vw;background-color:rgb(0,0,0,0.3);">When <i>PvtPpr meets GoDaddy</i>...</span><span style="margin:0vw 2vw 0vw 3.5vw;padding:0vw 0.5vw 0vw 1.5vw;background-color:rgb(0,0,0,0.3);">...a new type of <i>GeoCities</i> appears but on a meshenet.</span> <span style="margin:0vw 5vw 0vw 2vw">Brought to you by the <i><b>PvtPpr</b> Team</i>.</span></marquee></br>
+    </span><span id="hrin" style="border-color:transparent;margin-top:-1.33vw;margin-left:10vw;margin-bottom:-3vw;"></span>
+   </p>
+
+   <div id="nav" align="center" style="width:100%;margin-left:5vw;margin-bottom:-2.25%;">
+    <div style="width:98%;overflow-x:scroll;direction:ltr;scroll-behavior:smooth;scroll-bar:transparent; white-space:nowrap;break-word:keep-all;display:flex;">
+      <button id="theme2" style="display:none;" align="right" onclick="theme2();" value="1">🔆</button>
+     <button onClick="btn1func(); location.href='#1top';" id="btn1" style="display:none;">Basics & Colors</button>
+     <button onclick="btn2func(); location.href='#2top';" style="display:none;" id="btn2">NavBar</button>
+     <button onclick="btn6func(); location.href='#3top';" style="display:none;" id="btn6">Content</button>
+     <button onclick="btn8func(); location.href='#4top';" style="display:none;" id="btn8">Forge</button>
+     <button onclick="btn9func(); location.href='#5top';" style="display:none;" id="btn9">About #r</button>&nbsp; &nbsp; 
+    </div>
+   </div>
+  </div>
+
+  <div style="margin-bottom:-2vw;margin-top:25vw;" id="obj1" align="center" text-align="center">
+   <div id="optionspage" style="display:none"></div>
+  </div>
+
+  <span id="titlehold" style="display:none;"></span>
+  <span id="subjecthold" style="display:none;"></span>
+  <span id="rtobjhold" style="display:none;"><div style="margin-top:-10.25vw;margin-bottom:-10vw;"><img style="width:12vw;visibility:hidden;z-index:0;" align="left" src=""></img></div></span>
+  <span id="ltobjhold" style="display:none;"><div style="margin-top:-10.25vw;margin-bottom:-10vw;"><img style="width:12vw;visibility:hidden;z-index:0;" align="left" src=""></img></div></span>
+  <span id="sparehold" style="display:none;"></span>
+  <span id="extrahold" style="display:none;"></span>
+  <span id="bghold" style="display:none;"></span>
+  <span id="bghold2" style="display:none;"></span>
+  <span id="texthold" style="display:none;"></span>
+  <span id="lineshold" style="display:none;"></span>
+  <span id="extra2hold" style="display:none;"></span>
+  <span id="navbarhold" style="display:none;"></span>
+  <span id="contentholder" style="display:none;"></span>
+   <div id="dbank" style="display:none;"></div>
+   <span id="cointreehold" style="display:none;"></span>
+   <span id="cthold" style="display:none;"></span>
+   <span id="bitcoinhold" style="display:none;"></span>
+   <span id="subinhold" style="display:none;"></span>
+   <span id="bthash" style="display:none;"></span>
+   <span id="btname" style="display:none;"></span>
+<span id="placelink" style="display:none;">window.open('insert link here')</span>
+
+
+   <span id="1options" style="display:none;width:98%;overflow-x:hidden;">
+    <h1 align="center">The Basics
+     <hr style="border-color:transparent" name="1top">
+    </h1>
+    <h3 align="left"><sub align="left" style="margin-left:5vw;">Webpage Info:</sub></h3><input class="input" id="title" style="width:30%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-index:1;" placeholder="Title..." placeholder-color="orange"></input>
+    <input class="input" id="subject" style="width:30%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-index:1;" placeholder="Subject..." onfocus="this.select();" placeholder-color="orange"></input></br>
+    <h3 align="left"><sub align="left" style="margin-left:5vw;">Builder Info:</sub></h3></br>
+    <input class="input" onfocus="this.select();" id="bitcoin" style="width:30%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-index:1;" placeholder="Bitcoin Address..." placeholder-color="orange"></input>
+    <input class="input" onfocus="this.select();"  id="ltcin" style="width:30%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-index:1;" placeholder="Cointr.ee User Name..." placeholder-color="orange"></input><button type="button" id="cointree" class="append"  onclick="window.open('https://cointr.ee');" style="width:30%;background-color:limegreen;color:black;border:2px solid transparent;padding:0.5vw;font-size:120%;">Get a Cointr.ee</button></br></br>
+<input id="bittubeHash"  align="center" style="width:48%;font-size:148%;background: linear-gradient(0deg, #414141 0%, black 100%);text-align:center;" placeholder="Airtime Hash" ></input> <input id="bittubeName" align="center" style="width:48%;font-size:148%;background: linear-gradient(0deg, #414141 0%, black 100%);text-align:center;" onfocus="this.select();"  placeholder="Airtime Name" ></input></br></br>
+<table align="center"></br></br></br>
+     <h1 align="center">Colors & Themes</h1>
+     <tr>
+      <td style="display:flex;overflow-x:scroll;white-space;nowrap;break-word:keep-all;" align="left">
+       <input class="input" value="0" onfocus="this.select();" id="userred" placeholder="Red"  style="width:20%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-ndex:1;margin-left:10vw;" ></input> <input class="input"  value="0" onfocus="this.select();" id="usergreen" placeholder="Green" style="width:20%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-ndex:1;"></input> <input class="input"  value="0" onfocus="this.select();" id="userblue" placeholder="Blue" style="width:20%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-ndex:1;" ></input> <button style="color:limegreen;background-color:transparent;border:none;padding:0.5vw;" id="pickrnd"  onclick="pickrndc();">Get Color</button>&nbsp;<button style="color:skyblue;background-color:transparent;border:none;padding:0.5vw;" id="findrnd" onclick="colormath(); textr();">New Color</button>
+      </td>
+     </tr>
+     <tr>
+      <td style="display:flex;overflow-x:scroll;white-space;nowrap;break-word:keep-all;" align="left">
+       <p style="margin: 0vw 15vw 0vw 15vw;" align="center">Red</p>
+       <p style="margin: 0vw 0vw 0vw 0vw;" align="center">Green</p>
+       <p style="margin: 0vw 15vw 0vw 15vw;" align="center">Blue</p>
+      </td>
+     </tr>
+    </table>
+    <hr style="border-color:transparent">
+      <h3>Color Modifier</h3>&nbsp;[R:<span id="rednum"></span>&nbsp;G:<span id="greennum"></span>&nbsp;B:<span id="bluenum"></span>]</br><p align="center">
+      <span>➕🟥</span><input onfocus="this.select();" id="rangeslidered" style="width:60%;" type="range" min="0" max="255" value="0" onclick="document.getElementById('rednum').innerHTML=document.getElementById('rangeslidered').value; document.getElementById('rangeslidered').value=docuement.getElementById('vari1').innerHTML;colormath();"></input><span>🟥➖</span></br>
+      <span>➕🟩</span><input onfocus="this.select();" id="rangeslidegreen" style="width:60%;" type="range" min="0" max="255" value="0" onclick="document.getElementById('greennum').innerHTML=document.getElementById('rangeslidegreen').value; document.getElementById('rangeslidegreen').value=docuement.getElementById('vari2').innerHTML;colormath();"></input><span>🟩➖</span></br>
+      <span>➕🟦</span><input onfocus="this.select();" id="rangeslideblue" style="width:60%;" type="range" min="0" max="255" value="0" onclick="document.getElementById('bluenum').innerHTML=document.getElementById('rangeslideblue').value; document.getElementById('rangeslideblue').value=docuement.getElementById('vari3').innerHTML;colormath();"><span>🟦➖</span></br>
+      <table align="center">
+       <tr align="center">
+        <td><button id="fontcolor" onclick="grabtext();">Text Color</button></td>
+        <td><button id="bgcolor" value="1" onclick="grabbg();">Background Color</button></td>
+        <td><button id="linecolor" onclick="grablines();">Line Color</button></td></tr>
+</table></br></br><button align="center" id="colorsub" onclick="append1();">Lock-In Section</button>
+</p> </span>
+
+   <span id="2options" style="display:none;width:98%;overflow-x:hidden;">
+    <hr style="border-color:transparent"></br>
+
+    <h1 align="center">NavBar
+     <hr style="border-color:transparent" name="2top">
+    </h1><input id="btntitle" onfocus="this.select();" style="width:30%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-ndex:1;" placeholder="Button Name" value="Button Name" />
+    <input id="btnlink" onfocus="this.select();" type="url" style="width:30%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-ndex:1;" placeholder="Button Link" value="Button Link" />
+    <input type="button" id="navsub" style="width:32%; padding:1.5vw; text-align:center; color: black; border:1px solid brown; font-size: 148%; background-color:orange; font-weight: bold;box-shadow:2px 2px 4px grey;" value="Add to NavBar" onclick="addnav();"></input></br><span id="subin" align="center"></span>
+<hr style="border-color:transparent;"></br></br>
+    <table align="center">
+     <tr><td style="width:48%">
+       <h1 align="center">Top-Left Object</h1></br> 
+       <input onfocus="this.select();" class="input" id="trobject2" placeholder="Link or QR Text" style="width:100%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-index:1;" ></input></br>
+       <button id="image2" style="width:15%;background-color:limegreen;color:black;border:2px solid transparent;padding:0.5vw;font-size:120%;" onclick="append5();">Append Image</button>
+       <button id="qr2" style="width:15%;background-color:limegreen;color:black;border:2px solid transparent;padding:0.5vw;font-size:120%;" onclick="append7();">Append QR</button></br><b style="font-size:70%" align="center">**Horizontal & <i>Square</i> Orientation Only**</b>
+      </td>
+      <td style="width:48%">
+       <h1 align="center">Top-Right Object</h1></br>
+       <input class="input" id="trobject" onfocus="this.select();" placeholder="Link or QR Text" style="width:100%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; text-align:center; padding:0.5vw;text-align:center; border: none; font-size:148%; z-index:1;"></input></br>
+       <button id="image1" style="width:15%;background-color:limegreen;color:black;border:2px solid transparent;padding:0.5vw;font-size:120%;" onclick="append2();">Append Image</button>
+       <button id="qr1" style="width:15%;background-color:limegreen;color:black;border:2px solid transparent;padding:0.5vw;font-size:120%;" onclick="append4();">Append QR</button></br><b style="font-size:70%" align="center">**Horizontal & <i>Square</i> Orientation Only**</b>
+      </td>
+     </tr>
+    </table>
+</br></br>
+    <button type="button" id="lockedin" align="center" style="width:50%; padding:0.5vw; text-align:center; border: 1px solid limegreen; color: black; padding:0.5vw; font-size: 148%; background-color:orange; font-weight: bold;" onclick="buildtopbar();">Lock-In&nbsp;Section</button>
+
+   </span>
+
+   <span id="6options" style="display:none;width:98%;overflow-x:hidden;">
+    <table align="center">
+     <h1 align="center">Content Block</h1></br>
+     <hr style="border-color:transparent;"  name="3top">
+     <button id="spac" onclick="insert14();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Space</button>&nbsp;<button id="italic" onclick="insert04();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;"><i>Italic Text</i></button>&nbsp;<button id="bold" onclick="insert05();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;"><b>Bold Text</b></button>&nbsp;<button id="quo" onclick="insert15();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;"><q>Quotes</q></button>&nbsp;<button id="pagebreak" onclick="insert03();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Page Break</button>&nbsp;<button id="sups" onclick="insert09();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Superscript Text</button>&nbsp;<button id="subs" onclick="insert10();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Subscript Text</button></br><button id="image" onclick="insert01();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Embed Image</button>&nbsp;<button id="video" onclick="insert06();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Embed Video</button>&nbsp;<button id="audio" onclick="insert14();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Embed Audio</button>&nbsp;<button id="linked" onclick="insert07();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Embed Link</button>&nbsp;<button id="webobj" onclick="insert08();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Embed Web Object</button>&nbsp;<button id="nftcard" onclick="insert11();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Embed ETH NFT Card</button>&nbsp;<button id="nftcard2" onclick="insert12();document.getElementById('inin').focus();" style="cursor: pointer; color: #3a253b; padding:0.5vw; font-size: 90%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">Embed PvtPpr NFTs</button>
+     <tr>
+      <td style="display:flex;overflow-x:scroll;white-space;nowrap;break-word:keep-all;" align="left"></td>
+     </tr>
+<tr></br></br></br><button id="contentsub" onclick="contentsend();">Lock-In Content Block</button></br></br><span id="lights"></span>
+     </tr>
+    </table></br>
+    <textarea id="inin" class="input" white-space="pre-wrap" type="file" wrap="soft" rows="1" cols="30" style="overflow:hidden;width:100%;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; padding:0.5vw;text-align:center; border: none; font-size:148%; z-ndex:1; placeholder-align:center; font-weight: bold; white-space: pre-wrap; -moz-white-space: pre; -ms-white-space: pre; -webkit-white-space: pre; overflow-x:none; width:92%; height:auto;" align="center" placeholder-align="center" placeholder="Build Content Here" onfocus="content();"></textarea>
+</br></br>
+
+   </span>
+
+   <span id="8options" style="display:none;width:98%;padding:1vw;overflow-x:hidden;">
+    <h1>Forge&nbsp;<b>🔗</b><b style="margin-left:-3.35vw;">⛏️&nbsp;</b>&nbsp;&nbsp;</h1>
+    </br></br><span style="display:none;"  name="4top"></span>
+    <h4>Preview Your Materials:: </h4></br>
+<div style="width:98%;height:auto;margin-bottom:8vw;margin-top:2vw;" id="previewtop"></div></br>
+<div style="width:98%;height:auto;margin-bottom:5vw;margin-top:5vw;" id="previewout"></div></br>
+<div style="width:98%;height:auto;margin-bottom:5vw;margin-top:2vw;" id="previewbottom"></div>
+</br>**Footers are generated based on <b>Basics & NavBar</b> data**</br></br>
+    <input type="submit" value="Forge" class="clicksub" id="clicksub" align="center" style="border: 0.02vw solid darkgreen; background-color: lightgreen; color: black; padding: 0.5vw; padding-right: 0.75vw; padding-left: 0.75vw; box-shadow: 3px 2px #223322; font-weight: bold; cursor: pointer; width:30%; font-size:148%;scroll-behavior:smooth; scroll-y:smooth;" onclick="document.getElementById('link').style.display='block'; myfunction(); window.scrollBy(0, 150); btn8done();"></input>&nbsp;&nbsp;<input class="clickres" type="button" value="Try Again" align="right" style="border: 0.02vw solid #B22222; background-color: pink; color: black; padding: 0.5vw; padding-right: 0.75vw; padding-left: 0.75vw; box-shadow: 3px 2px #332222; font-weight: bold; cursor: pointer; width:30%; font-size:148%;" onclick="document.location.reload(true);window.scrollTo(0,0);"></input></br></br></span>
+<span id="8op2" style="display:none; width:98%;"><h1>Forging Your Hashpage...</h1></span></br>
+
+  <!--   below is internal   -->
+  <a target="_top" id="link" name="link" style="display:none; word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;margin-left:-7.2vw;margin-right:-7.2vw;margin-bottom:2vw;"><!DOCTYPE html>
+   <html id="html" style="word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;">
+   <div id="icheck" style="margin-top:-7vw;">
+    </div>
+   <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+   <div id="background" style="margin-bottom:-10vw;"><label>
+     <h1 style="margin-top:-10vw;margin-bottom:-20vw;"><span style="left:0;" align="left" id="outtop"></span></h1>
+    </label>
+    <label>
+     <h4 style="font-weight:normal;margin-top:25vw;"><span id="outout" style="font-weight:normal;width:100%;"></span></h4>
+    </label> <label><span align="right" style="right:0;">
+      <h4 style="margin-top:-2.5vw;margin-bottom:-2vw;"><span align="right" style="right:0;" id="outbott"></span>
+    </h4></span></label>
+     <div align="center" align="center">
+      <hr><td id="qrimg" class="qrimg" align="center"></td>
+    <table>
+     <tr>
+      <div><div align="center" id="mapped" style="margin-bottom:-3vw;margin-top:-1vw;"></div>
+    <div align="center"><div align="left"><b>BTC#<i id="btchere" style="marign-bottom:-3vw;margin-top:3vw"></i></b></div> &nbsp; &nbsp; &nbsp; <div align="right" style="margin-top:-2.75vw;"><b id="ltchere"></b></div></div> <hr style="box-shadow:1px 2px 2px silver inset;border-color:lightgrey;" ><div>@<span id="authorname" onclick="this.style='display:none;'; document.getElementById('outmid').style='display:block;font-weight:bold;text-weight:bold;break-word:break-all;';" ></span><span align="right" style="right:0;display:none;" id="outmid" onclick="this.style='display:none;'; document.getElementById('authorname').style='display:inline-block;font-weight:bold;text-weight:bold;break-word:break-all;';"></span></div></div>
+     </tr>
+       <tr><td> <span style="opacity:0.53;color:grey;" align="left"><img onclick="AlertCheck()" style="width:10vw;left:0;" src="https://zxing.org/w/chart?cht=qr&chs=85x85&chld=H&#124;1&choe=UTF-8&chl=https://3dd.in/hashr" align="left"></img></span></td><td align="center">Made&nbsp;with&nbsp;<span id="DFCabinet" style="text-decoration:none;margin-bottom:-1vw;" align="center"></span><sup><sup><sub>2021</sub></sup></sup></span>&nbsp; &nbsp;</td><td><span align="right">Hashr <sup><sub>aka </sub></sup>#r 2021</br>#r is a PvtPpr Generator</br>PvtPpr. 2018-2021</br>Private Paper 2018-2021</span></td></tr>
+     <tr>
+      <td align="center"><span align="left" style="padding:1px 2px;box-shadow:1px -2px 4px grey inset;background-color: transparent; color:lightgrey;border-radius:50%;margin-left:15%;padding:0.5vw;font-size:128%;"><b>&nbsp;#<i>r&nbsp;</i></b></span></td><td align="center"><label>
+       <h5 style="margin-top:2vw;" align="center"><span style="left:0; margin-right:2.5vw;margin-left:-1.5vw;" align="center"><span id="prev" style="margin-top:-1.5px;margin-bottom:1.5px; margin-left:2.5vw; right:0; margin-right:-2.5vw;border-radius:15%;padding:3px;" align="center"></span></h5>
+      </label></td>
+      <td align="center"><span style="background-color:transparent;color:silver;border-radius:20%;padding:0.5vw;right:0;box-shadow: -1px -2px 4px grey inset;" align="center"><i>&nbsp;Genuine&nbsp;</i><b>&#35;<i>r</i>&nbsp;</span></td>
+     </tr>
+    </table>
+</div> 
+</div> 
+   <script>
+    function AlertCheck() {
+     alert("You clicked on an easter egg. Please enjoy!\n\nThis PvtPpr Generator was made with the PvtPpr Generator Hashr (#r), which allows anyone to build a meshnet webpage. This is a meshnet over hashnet system with everyone in mind. Anyone can use #r to build their own private webpage complete with a usable link.\n\n\n\nThank You\n     [LS0zRA::JAN172021]\n\n     Last Update [JAN192021::LS0zRA]");
+    }
+   </script>
+ </span></label>
+
+</html></a>
+<a>
+ <script src="https://itty.bitty.site/lzma/lzma_worker-min.js"></script>
+ <script>
+  function myfunction() {
+   var d = new Date();
+   var stamps = d.getTime();
+   var daters1 = d.getMonth();
+   var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+   if (daters1 === "0") {daters1 = months[0];} else if (daters1 === "1") {daters1 = months[1];} else if (daters1 === "2") {daters1 = months[2];} else if (daters1 === "3") {daters1 = months[3];} else if (daters1 === "4") {daters1 = months[4];} else if (daters1 === "5") {daters1 = months[5];} else if (daters1 === "6") {daters1 = months[6];} else if (daters1 === "7") {daters1 = months[7];
+   } else if (daters1 === "8") {daters1 = months[8];} else if (daters1 === "9") {daters1 = months[9];} else if (daters1 === "10") {daters1 = months[10];} else if (daters1 === "11") {daters1 = months[11];}
+   var daters2 = d.getDate();
+   if (daters2 === "1") {daters2 = "01";} else if (daters2 === "2") {daters2 = "02";} else if (daters2 === "3") {daters2 = "03";
+   } else if (daters2 === "4") {daters2 = "04";} else if (daters2 === "5") {daters2 = "05";} else if (daters2 === "6") {daters2 = "06";} else if (daters2 === "7") {daters2 = "07";} else if (daters2 === "8") {daters2 = "08";} else if (daters2 === "9") {daters2 = "09";}
+   var daters3 = d.getFullYear();
+   var timehash1A = "["+window.btoa(stamps)+"] :: ["+daters3+daters1+daters2+"]";
+   var datestamp = "["+"#"+window.btoa(timehash1A)+"]";
+   var jsinject = '';
+   jsinject += '<style> html { background:'+document.getElementById("bghold2").innerHTML+'; color:rgb('+document.getElementById("texthold").innerHTML+'); border-color:rgb('+document.getElementById("lineshold").innerHTML+'); margin-bottom:-15vw;} hr { border-color:rgb('+document.getElementById("lineshold").innerHTML+'); } .line {background-color: rgb('+document.getElementById('bgcolor').innerHTML+');opacity: 0.5;height: 4.5px;-webkit-box-shadow: 2px -2px 3px rgb('+document.getElementById('lineshold').innerHTML+'); width: 0%;position: fixed;bottom: 0;left:0;align:center;z-index:8;}  </style>';
+    var moduleHashIn = document.getElementById('bthash').innerHTML;
+    var moduleNameIn = document.getElementById('btname').innerHTML;
+   const scriptbt = '<script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true">';
+    const scriptbt2 = '</';
+    const scriptbt3 = 'script>';
+    document.getElementById('link').innerHTML += '<meta name="airtime-platform-display" content="'+moduleNameIn+'"><meta name="airtime-platform-id" content="'+moduleHashIn+'">'+scriptbt+scriptbt2+scriptbt3;
+   document.getElementById('icheck').innerHTML += jsinject;
+   var signeded = ' @'+ document.getElementById('bitcoinhold').innerHTML+' &nbsp; '+datestamp+' ';
+   document.getElementById('btchere').innerHTML = document.getElementById('bitcoinhold').innerHTML;
+   document.getElementById('ltchere').innerHTML = document.getElementById('cthold').innerHTML;
+   document.getElementById('mapped').innerHTML = document.getElementById('dbank').innerHTML;
+   var qqtt = "none";
+   document.getElementById('outmid').innerHTML += window.btoa(signeded);
+   document.getElementById('outtop').innerHTML += document.getElementById('navbarhold').innerHTML;
+   document.getElementById('authorname').innerHTML += '<b><i>'+datestamp+'</i></b>';
+   document.getElementById('outout').innerHTML += document.getElementById('contentholder').innerHTML;
+   var DFClink = document.getElementById('DFCabinet').innerHTML = '<a href="https://3dd.in/hashr" target="_blank" style="color:rgb('+document.getElementById('texthold').innerHTML+');text-decoration: overline; text-decoration-style: wavy;">PvtPpr&#39;s&nbsp;&#35;r</a>';
+   var str = '';  str += '<a href="https://3dd.in/pvtppr-info" target="_blank" rel="noopener noreferrer" style="border-radius:25%;color:silver;text-align:right;right:0;margin-top:2vw;break-word:keep-all;word-break:keep-all;box-shadow: 0px 2px grey inset; text-decoration:none; padding:0.5vw;" >&nbsp;3D&#58;&nbsp;<b>&#35;<i>15317feuwgs8jo</i></b>&nbsp;</a>'; document.getElementById('prev').innerHTML = str; a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?'+btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}
+ </script>
+</a>
+   </span>
+
+   <span id="9options" style="width:98%;padding:2vw;overflow-x:hidden;"><div style="font-size:148%;"><h1 align="center" style="font-size:148%;" name="5top">Welcome to Hashr</h1>
+    </br><h3 id="snipit" name="snipit">Hashr uses the power of <b>PvtPpr</b> <span style="font-size:115%">+</span> <b>IttyBitty</b> to give YOU the power to build your own Webpages & Networks unlike ever before!</h3>
+    </br></br>Hashr (<b>#r</b>) is a hashbased webpage builder that will allow anyone whom can load this page to build a hashpage. Hashr Hashpages are a new type of webpage that can be embeded & linked into any HTML network. Hashpages can be linked together to create a meshnet directly stored by hashes which creates an immutable network. Using external services like short-linking & top-linking can create a fluid-size chain, public networks, & public gateways.</br>Places like <i>BeenSeen</i> & <i>GeoCities</i> offered free hosting webpages during the turn of the Millennia. Some peope really took advatange of these services to learn HTML, some even took it a step further & started new carrers thanks to these services. Hashr hopes to bring this back because anyone can use #r to replace much of what is online today.</br></br><h3 id="how2">Get Acquainted with <b style="font-size:115%;">#r</b></h3><ul><span onclick="textr()" style="padding:0.5vw;border:1px solid white;box-shadow:1px 1px black;font-shadow:1p 1px black;font-size:148%;border-radius:50%;">#r</span> (the Hashr Logo): sweeping with your mouse or clicking in some areas of the hashr logo (top left) will change the colors of this page. This is also used to display picking colors. <sub><sup>Color changing doesn't always work offline.</sup></sub></ul>
+<ul>The Marquee (scrolling text): This gives information about updates.</ul>
+<ul>The Text buttons (near marquee): These are the different sections of #r. Each one will allow you to input data or customize your hashpage.</sup></sub></ul>
+</br><h3 id="how2start">The Basics to Use #r</b></h3></br>Start Hashr at <i onclick="btn1func();"><b>Basics & Colors</b></i>.  Filling in data is optional & customizing can give your Hashpage it's own identity.</br>Each Hashpage made with Hashr will need to be given at least a text color. Picking your hashpage's color theme is easy: click Get/New color buttons, click where to apply to your hashpage. If you know the <i>RGB</i> (<b><i>Red Green Blue</i></b>) color codes, input the code into the appropriate inputs then click where to apply in your hashpage.</br> At the end of each section there's a <i><b>Lock-In</b> button</i>. This will apply the data from the section or skip, depending if you filled anything out. After clicking <i>Lock-In</i>, your data will be applied to the forge preview & you will be moved to the next section. Keep in mind, if you start not in the first section, clicking Lock-In on a previous section may have you re-visit sections you've already done. The Navbar & Content Blocks do not need to be re-filled, the rest may.
+</br></br><h3 id="how2navi">Navigation: Yours & Your Users</b></h3>Most of the navigation around Hashr will be by Locking-In and the #r navigation bar. Users navigating through your hashpage may be different since you can have an <i><b>O</b>n-<b>S</b>creen <b>N</b>ewschain <b>I</b>ndex</i> (<i><b>OSNI</b></i>) or <i><b>Nav</b>igation <b>Bar</b></i>. Your hashpage doesn't need a <i>NavBar</i> but once you create a Hashpage, a NavBar nor NavBar buttons can be added even with <i>On-The-Fly Editing</i>. No JS nor CSS can be used with the IttyBitty OTF Editor.</br>The NavBar can be used for anything from top-links/short-links, PvtPprs, web objects, chain actions, Websites, Hashlinks & can be a <i><b>Social</b> List</i>.  Here's a couple of NavBar examples: <ol>If you built a Recipie book Hashpage, the Navbar could be linked to each recipie page.</ol><ol>If you built a Social Media Hashpage the navbar could be for displaying your friend's Hashpages.</ol>
+</br><h3 id="how2block">Blocking Content</b></h3><q><i><b>Block</b>ing <b>Content</b></i></q> means to place content in a package for delievery. Blocking Content with Hashr means to put your content into a box to be delievered aka embedded into your Hashpage! Adding content like banners, online media, HTML/JS widgets, & text is done in the <i onclick="btn6func()"><b>Content</b></i> section. The content section has HTML styling buttons to help you have more power automatically. Each HTML button onlys insert the code at the end of the input area and you will need to insert your data where plainly stated. HTML/CSS/JS is allowed to be used in input boxes, this allows for further customizing. You can submit multiple content blocks and they stack on each other <b>{Top<i>(First locked-in, </i>[</b>...</b>]<i>, Most recent locked-in)</i>Bottom}</b>.
+</br></br><h3 id="how2fin">Forging</b></h3>The Forge is the last step with #r. View the materials and click to Forge the data into a Hashpage. If there's a section not to your approval, you will have to click <i><b>Try Again</b></i> & re-fill everything. Once Forged, the Hashlink will appear below the Forge button & clicking the text will open your Hashpage. Your hashlink will be in your address bar once the hashpage is opened, use it wisely.
+   </span>
+</div>
+   <span id="bluesave" style="display:none"></span><span id="greensave" style="display:none"></span><span id="redsave" style="display:none"></span><span id="previn" style="display:none;"></span>
+   <script>
+    if (window.attachEvent) {
+     observe = function(element, event, handler) {
+      element.attachEvent('on'+event, handler);
+     };
+    } else {
+     observe = function(element, event, handler) {
+      element.addEventListener(event, handler, false);
+     };
+    }
+   </script>
+   <script>
+    function handleFileSelect(evt) {
+     evt.stopPropagation();
+     evt.preventDefault();
+     var files = evt.dataTransfer.files; 
+     var reader = new FileReader();
+     reader.onload = function(event) {
+      document.getElementById('inin').value = event.target.result;
+     }
+     reader.readAsText(files[0], "UTF-8");
+    }
+
+    function handleDragOver(evt) {
+     evt.stopPropagation();
+     evt.preventDefault();
+    }
+    var dropZone = document.getElementById('inin');
+    dropZone.addEventListener('dragover', handleDragOver, false);
+    dropZone.addEventListener('drop', handleFileSelect, false);
+
+    function content() {
+     var textarea = document.querySelector('textarea');
+     
+     document.getElementById("inin").addEventListener("keyup", function(event) {
+       if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("inin").value += "</br>";
+       }
+      });
+     
+    textarea.addEventListener('keydown', autosize);
+
+    function autosize() {
+     var el = this;
+     var thhhh = el.scrollHeight+0.1;
+     setTimeout(function() {
+      el.style.cssText = 'height:auto; padding:5px';
+      el.style.cssText = 'height:'+thhhh+'px;background: linear-gradient(0deg, #414141 0%, black 100%);color: orange; width:92%; text-align:center; border: none; font-size:148%; z-index:1; placeholder-align:center; font-weight: bold;';
+     }, 0);
+    }
+     }
+   
+   </script>
+   <script>
+    function textr() {
+     colormath();
+     var red = document.getElementById('redsave').innerHTML;
+     var green = document.getElementById('greensave').innerHTML;
+     var blue = document.getElementById('bluesave').innerHTML;
+     var pickcolor = "rgb("+red+","+green+","+blue+")";
+     document.getElementById('snipit').style = "color:"+pickcolor+";background-color:rgb(0,0,0,0.8);margin:0vw 0.5vw 0vw 0.5vw; padding:0.5vw 2.5vw 0.5vw 2.5vw; font-size: 148%;border:1px solid rgb("+blue+","+red+","+green+", 1); font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('cointree').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw 2.5vw 0.5vw 2.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('contentsub').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw 2.5vw 0.5vw 2.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('nftcard2').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('nftcard').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('webobj').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('linked').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('video').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('audio').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('image').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('subs').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('sups').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('pagebreak').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('quo').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('bold').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('italic').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('spac').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 90%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('navsub').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('lockedin').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('fontcolor').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('bgcolor').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('linecolor').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('qr2').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('image2').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('qr1').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('image1').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('pickrnd').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('findrnd').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw;  padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('obj2').style = "height:15vw;margin-top:-10vw;position: absolute;";
+     document.getElementById('img').style = "display:fixed;highlight:none;background:radial-gradient(circle, black 0%, "+pickcolor+" 100%);width:5vw;height:auto;margin: 1.5vw 0.5vw -7vw 0.5vw;color: limegreen;font-weight:bold;font-size:350%;top:0:left:0;border-radius:50%;border:2px solid rgb("+blue+","+red+","+green+", 1);padding:0.75vw 0vw 0.75vw 1.75vw;z-index:9;break-word:keep-all;white-space:nowrap;";
+     document.getElementById('marquee').style = "color:"+pickcolor+";font-size:150%;background-color:transparent;box-shadow:0px -3px 5px rgb("+blue+","+red+","+green+") inset;padding:0vw 0vw 0vw 0.5vw;margin:0vw -12vw -2vw -5vw;z-index:0;width:90%;";
+     document.getElementById('nav').style = "width:100%;position:fixed; white-space:nowrap;break-word:keep-all;margin-left:6vw;margin-bottom:-2.25%;margin-top:-1vw;padding-right:1vw;";
+     document.getElementById('how2').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.75vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+");";
+     document.getElementById('how2navi').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.75vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+");";
+     document.getElementById('how2start').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.75vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+");";
+     document.getElementById('how2block').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.75vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+");";
+     document.getElementById('how2fin').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.75vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+");";     
+     document.getElementById('theme2').style = "color:rgb("+blue+","+red+","+green+", 0.9);background-color:"+pickcolor+";margin-top:0vw;margin-bottom:0vw;margin-right:1.5vw; border-radius:50%; padding:0.5vw; font-size: 120%;border:1px solid rgb("+green+","+red+","+blue+"); font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+");";
+     document.getElementById('hrin').innerHTML = "<hr style='border-color:transparent; width:98%;margin-top:-1.33vw;margin-left:10vw;margin-bottom:-3vw;'>";
+     document.getElementById('btn1').style = "color:rgb("+blue+","+red+","+green+", 0.9);background-color:"+pickcolor+";margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid rgb("+green+","+red+","+blue+"); font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('btn2').style = "color:rgb("+blue+","+red+","+green+", 0.9);background-color:"+pickcolor+";margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid rgb("+green+","+red+","+blue+"); font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('btn6').style = "color:rgb("+blue+","+red+","+green+", 0.9);background-color:"+pickcolor+";margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid rgb("+green+","+red+","+blue+"); font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('btn8').style = "color:rgb("+blue+","+red+","+green+", 0.9);background-color:"+pickcolor+";margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid rgb("+green+","+red+","+blue+"); font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('btn9').style = "color:rgb("+blue+","+red+","+green+", 0.9);background-color:"+pickcolor+";margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; margin-right:1.5vw; padding:0.5vw; font-size: 120%;border:1px solid rgb("+green+","+red+","+blue+"); font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+     document.getElementById('colorsub').style = "color:"+pickcolor+";background-color:transparent;margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid rgb("+green+","+red+","+blue+"); font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+    }
+
+    function pickrndc() {
+     document.getElementById('userred').value = document.getElementById('redsave').innerHTML;
+     document.getElementById('usergreen').value = document.getElementById('greensave').innerHTML;
+     document.getElementById('userblue').value = document.getElementById('bluesave').innerHTML;
+    }
+
+    function grabtext() {
+     var tred = document.getElementById('userred').value;
+     var tbblue = document.getElementById('userblue').value;
+     var tgreen = document.getElementById('usergreen').value;
+     var fcolor = tred+","+tgreen+","+tbblue;
+     document.getElementById('texthold').innerHTML = fcolor;
+     document.getElementById('fontcolor').innerHTML = "Sumbitted!";
+     document.getElementById('fontcolor').disabled = true;
+     document.getElementById('fontcolor').style = "color:"+pickcolor+";background-color:rgb("+fcolor+");margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+    }
+
+    function grabbg() {
+     var bgva = document.getElementById('bgcolor');
+     if (bgva.value === '1'){
+      bgva.value = '2';
+     var tered = document.getElementById('userred').value;
+     var teblue = document.getElementById('userblue').value;
+     var tegreen = document.getElementById('usergreen').value;
+     var bcolor = tered+","+tegreen+","+teblue;
+     document.getElementById('bghold').innerHTML = bcolor;
+     document.getElementById('bghold2').innerHTML = "rgb("+bcolor+")";
+     document.getElementById('bgcolor').innerHTML = "Gradient Background Color";
+     }
+     else {
+     var tered2 = document.getElementById('userred').value;
+     var teblue2 = document.getElementById('userblue').value;
+     var tegreen2 = document.getElementById('usergreen').value;
+     var tebcolor = tered2+","+tegreen2+","+teblue2;
+     document.getElementById('bghold2').innerHTML = "rgb("+tebcolor+"); background: linear-gradient(0deg, rgb("+tebcolor+") 0%, rgb("+document.getElementById('bghold').innerHTML+") 100%)";
+     document.getElementById('bgcolor').innerHTML = "Sumbitted!";
+     document.getElementById('bgcolor').disabled = true;
+     document.getElementById('bgcolor').style = "color:"+pickcolor+";background-color:rgb("+bcolor+");margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+      
+     }
+    }
+
+    function grablines() {
+     var texred = document.getElementById('userred').value;
+     var texblue = document.getElementById('userblue').value;
+     var texgreen = document.getElementById('usergreen').value;
+     var lcolor = texred+","+texgreen+","+texblue;
+     document.getElementById('lineshold').innerHTML = lcolor;
+     document.getElementById('linecolor').innerHTML = "Sumbitted!";
+     document.getElementById('linecolor').disabled = true;
+     document.getElementById('linecolor').style = "color:"+pickcolor+";background-color:rgb("+lcolor+");margin-top:0vw;margin-bottom:0vw;margin-left:0.5vw; padding:0.5vw; font-size: 120%;border:1px solid "+pickcolor+"; font-weight: bold; box-shadow: 3px 2px rgb("+blue+","+red+","+green+", 1);";
+    }
+   </script>
+
+
+   <script>
+    function insert01() {
+     document.getElementById('inin').value += "<img align='center' style='width:98%;' src='insert image link here'></img>";
+    }
+
+    function insert03() {
+     document.getElementById('inin').value += "</br></br>";
+    }
+
+    function insert14() {
+     document.getElementById('inin').value += "&nbsp;";
+    }
+
+    function insert15() {
+     document.getElementById('inin').value += "<q>Insert Quote Text Here</q>";
+    }
+
+    function insert04() {
+     document.getElementById('inin').value += "<i>Insert Italic Text Here</i>";
+    }
+
+    function insert05() {
+     document.getElementById('inin').value += "<b>Insert Bold Text Here</b>";
+    }
+
+    function insert06() {
+     document.getElementById('inin').value += "<video controls align='center'  allow='javascript;fullscreen;picture-in-picture;' allowfullscreen style='width:98%;align:center;' src='insert video link here' ></video>";
+    }
+
+    function insert07() {
+     document.getElementById('inin').value += "<span target='_blank' rel='noopener noreferrer' onclick="+document.getElementById('placelink').innerHTML+">Insert Text for the link</span>";
+    }
+
+    function insert08() {
+     document.getElementById('inin').value += "<embed style='width:98%;align:center' align='center' src='insert web object link here'></embed>";
+    }
+
+    function insert09() {
+     document.getElementById('inin').value += "<sup>Insert Text Here</sup>";
+    }
+
+    function insert10() {
+     document.getElementById('inin').value += "<sub>Insert Text Here</sub>";
+    }
+
+    function insert11() {
+     document.getElementById('inin').value += "<nft-card align='center' style='width:98%;' contractAddress='insert ETH contract address here' tokenId='Insert NFT token ID number here'></nft-card>";
+    }
+
+    function insert12() {
+     document.getElementById('inin').value += "<embed style='width:98%;height:100%;' align='center' src='insert PvtPpr NFT hashlink here'></embed>";
+    }
+
+    function insert14() {
+     document.getElementById('inin').value += "<audio controls style='width:98%;height:100%;' align='center' src='insert audio link'></audio>";
+    }
+   </script>
+   <script>
+    function btn1func() {
+     document.getElementById("9options").style = 'display:none';
+     document.getElementById("2options").style = 'display:none';
+     document.getElementById("6options").style = 'display:none';
+     document.getElementById("8options").style = 'display:none';
+      document.getElementById('obj1').style = "margin-top:20vw;margin-bottom:-2vw;";
+      document.getElementById('optionspage').style = "display:inline-block;background:transparent;width:100%;margin-top:10vw;";
+      var plug1b = document.getElementById('1options').innerHTML;
+      document.getElementById('optionspage').innerHTML = plug1b;
+    
+    }
+
+    function btn2func() {
+     document.getElementById("1options").style = 'display:none';
+     document.getElementById("9options").style = 'display:none';
+     document.getElementById("6options").style = 'display:none';
+     document.getElementById("8options").style = 'display:none';
+      document.getElementById('obj1').style = "margin-top:20vw;margin-bottom:-2vw;";
+      document.getElementById('optionspage').style = "display:inline-block;background:transparent;width:100%;margin-top:10vw;";
+      var plug2b = document.getElementById('2options').innerHTML;
+      document.getElementById('optionspage').innerHTML = plug2b;
+      document.getElementById('qr1').disabled = true;
+     document.getElementById('subin').innerHTML = document.getElementById('subinhold').innerHTML;
+    }
+
+    function btn6func() {
+     document.getElementById("1options").style = 'display:none';
+     document.getElementById("2options").style = 'display:none';
+     document.getElementById("8options").style = 'display:none';
+     document.getElementById("9options").style = 'display:none';
+     document.getElementById('obj1').style = "margin-top:20vw;margin-bottom:-2vw;";
+      document.getElementById('optionspage').style = "display:inline-block;background:transparent;width:100%;margin-top:10vw;";
+      var plug6b = document.getElementById('6options').innerHTML;
+      document.getElementById('optionspage').innerHTML = plug6b;
+      document.getElementById('lights').innerHTML = document.getElementById('sparehold').innerHTML;
+      document.getElementById('inin').placeholder = "Click here to write your content.       What's Locked in:  "+document.getElementById('extrahold').innerHTML+"  ;}  ";
+     
+     
+    }
+
+    function btn8func() {
+     document.getElementById("1options").style = 'display:none';
+     document.getElementById("2options").style = 'display:none';
+     document.getElementById("6options").style = 'display:none';
+     document.getElementById("9options").style = 'display:none';
+     document.getElementById('obj1').style = "margin-top:20vw;margin-bottom:-2vw;";
+      document.getElementById('optionspage').style = "display:inline-block;background:transparent;width:100%;margin-top:10vw;";
+      var plug8b = document.getElementById('8options').innerHTML;
+      document.getElementById('optionspage').innerHTML = plug8b;
+     
+    }
+
+    function btn9func() {
+     document.getElementById("1options").style = 'display:none';
+     document.getElementById("2options").style = 'display:none';
+     document.getElementById("6options").style = 'display:none';
+     document.getElementById("8options").style = 'display:none';
+      document.getElementById('obj1').style = "margin-top:20vw;margin-bottom:-2vw;";
+      document.getElementById('optionspage').style = "display:inline-block;background:transparent;width:100%;margin-top:10vw;";
+      var plug9b = document.getElementById('9options').innerHTML;
+      document.getElementById('optionspage').innerHTML = plug9b;
+   
+    }
+
+    function append1() {
+     var titlesend = document.getElementById('title').value;
+     var subjectsend = document.getElementById('subject').value;
+     var btcsend = document.getElementById('bitcoin').value;
+     var cointreesend = document.getElementById('ltcin').value;
+     document.getElementById('titlehold').innerHTML = titlesend;
+     document.getElementById('subjecthold').innerHTML = subjectsend;
+     document.getElementById('bitcoinhold').innerHTML = btcsend;
+     document.getElementById('cointreehold').innerHTML = cointreesend;
+     document.getElementById('bthash').innerHTML = document.getElementById('bittubeHash').value;
+     document.getElementById('btname').innerHTML = document.getElementById('bittubeName').value;
+     document.getElementById('previewtop').innerHTML += "<div><span align='left' style='width:40%;margin-right:10vw;'>Title: "+titlesend+"</span><span align='right' style='width:40%'>Subject: "+subjectsend+"</span></br><span align='left' style='width:40%;margin-right:10vw;'>BTC address: "+btcsend+"</span><span align='right' style='width:40%'>Cointree: "+document.getElementById('cointreehold').innerHTML+"</span></div></br></br><div align='center' style='width:100%;margin-top:-10'><button style='width:20%;background-color:rgb("+document.getElementById('texthold').innerHTML+");color:black;'>Text <b style='color:white'>Color</b></button>  <button style='width:20%;background-color:rgb("+document.getElementById('bghold').innerHTML+");color:black;'>Background <b style='color:white'>Color</b></button>  <button style='width:20%;background-color:rgb("+document.getElementById('lineshold').innerHTML+");color:black;'>Lines <b style='color:white'>Color</b></button></div></br>";
+     document.getElementById('btn1').innerHTML = "<i><b>🔏</b></i>";
+     document.getElementById('btn1').disabled = true;
+     btn2func();
+     var qrimgin = ''; 
+     var qrin = "window.open('https://cointr.ee/"+document.getElementById('cointreehold').innerHTML;
+     qrimgin += '<b onclick="'+qrin+'" target="_blank" style="text-decoration:none;color:rgb('+document.getElementById('texthold').innerHTML+');">'+document.getElementById("cointreehold").innerHTML+'&#39;s Cointr.ee</a>'; 
+     document.getElementById('cthold').innerHTML = qrimgin; 
+    }
+
+    function append2() {
+     document.getElementById('image1').innerHTML = 'Submitted';
+     document.getElementById('image1').style = 'width:50%;background: linear-gradient(0deg, skyblue 0%, rgb(0,0,0,0.5) 100%);color: darkblue; text-align:center; padding:0.5vw;text-align:center; border: 1px solid darkblue; font-size:148%; z-index:1;';
+     var trob = document.getElementById('trobject').value;
+     var ilinksend = "<div style='margin-top:-8.25vw;'><img style='max-width:12vw;max-height:10vw;width: auto;height: auto;right:0;' align='right' src='"+document.getElementById('trobject').value+"'></img></div>";
+     document.getElementById('rtobjhold').innerHTML = ilinksend;
+     document.getElementById('trobject').disabled = true;
+     document.getElementById('image1').disabled = true;
+     document.getElementById('qr1').style = "display:none";
+     document.getElementById('trobject').placeholder = trob;
+     document.getElementById('previewout').innerHTML += "<div style='width:100%'><span align='left'><span style='width:50%;height:50%;' align='center'>"+document.getElementById('rtobjhold').innerHTML+"</span></span>";
+    }
+
+    function append4() {
+     document.getElementById('qr1').innerHTML = 'Submitted';
+     document.getElementById('qr1').style = 'width:50%;background: linear-gradient(0deg, skyblue 0%, rgb(0,0,0,0.5) 100%);color: darkblue; text-align:center; padding:0.5vw;text-align:center; border: 1px solid darkblue; font-size:148%; z-index:1;';
+     var troq = document.getElementById('trobject').value;
+     var qlinksend = "<div style='margin-top:-10.5vw;margin-left:-4.5vw;margin-right:1vw;'><img style='width:10.5vw;right:0;z-index:10;' align='right' src='https://zxing.org/w/chart?cht=qr&chs=115x115&chld=H&#124;1&choe=UTF-8&chl="+document.getElementById('trobject').value+"' ></img></div>";
+     document.getElementById('rtobjhold').innerHTML = qlinksend;
+     document.getElementById('trobject').disabled = true;
+     document.getElementById('image1').style = "display:none";
+     document.getElementById('qr1').disabled = true;
+     document.getElementById('trobject').placeholder = troq;
+     document.getElementById('previewout').innerHTML += "<div  style='width:100%;margin-top:7.4vw;'><span align='right'><span style='width:50%;height:50%;' align='center'>"+document.getElementById('rtobjhold').innerHTML+"</span></span>";
+    }
+
+    function append5() {
+     document.getElementById('image2').innerHTML = 'Submitted';
+     document.getElementById('image2').style = 'width:50%;background: linear-gradient(0deg, skyblue 0%, rgb(0,0,0,0.5) 100%);color: darkblue; text-align:center; padding:0.5vw;text-align:center; border: 1px solid darkblue; font-size:148%; z-index:1;';
+     var trob2 = document.getElementById('trobject2').value;
+     var ilinksend2 = "<div style='margin-top:-5.25vw;'><img style='max-width:12vw;max-height:10vw;width: auto;height: auto;left:0;z-index:20;' align='left'  src='"+document.getElementById('trobject2').value+"'></img></div>";
+     document.getElementById('ltobjhold').innerHTML = ilinksend2;
+     document.getElementById('trobject2').disabled = true;
+     document.getElementById('image2').disabled = true;
+     document.getElementById('qr2').style = "display:none";
+     document.getElementById('trobject2').placeholder = trob2;
+     document.getElementById('previewout').innerHTML += "<div  style='width:100%'><span align='left'><span style='width:50%;height:50%;' align='center'>"+document.getElementById('ltobjhold').innerHTML+"</span></span>";
+    }
+
+    function append7() {
+     document.getElementById('qr2').innerHTML = 'Submitted';
+     document.getElementById('qr2').style = 'width:50%;background: linear-gradient(0deg, skyblue 0%, rgb(0,0,0,0.5) 100%);color: darkblue; text-align:center; padding:0.5vw;text-align:center; border: 1px solid darkblue; font-size:148%; z-index:1;';
+     var troq2 = document.getElementById('trobject2').value;      
+     document.getElementById('qr1').disabled = false;
+     var qlinksend2 = "<div style='margin-top:-5.5vw;margin-right:-5.5vw;margin-left:1.2vw;'><img style='width:10.5vw;left:0;z-index:20;' align='left' src='https://zxing.org/w/chart?cht=qr&chs=115x115&chld=H&#124;1&choe=UTF-8&chl="+document.getElementById('trobject2').value+"' ></img></div>";
+     document.getElementById('ltobjhold').innerHTML = qlinksend2;
+     document.getElementById('trobject2').disabled = true;
+     document.getElementById('image2').disabled = true;
+     document.getElementById('image2').style = "display:none";
+     document.getElementById('qr2').disabled = true;
+     document.getElementById('trobject2').placeholder = troq2;
+     document.getElementById('previewout').innerHTML += "<div  style='width:100%'><span align='left'><span style='width:50%;height:50%;' align='center'>"+document.getElementById('ltobjhold').innerHTML+"</span></span></div>";
+    }
+
+    function addnav() {
+     var data = '';
+     var buttonbuild = "window.open('"+document.getElementById('btnlink').value+"')";
+     data = '<button class="navbutton" style="background-color:rgb('+document.getElementById('bghold').innerHTML+',0.8);color:rgb('+document.getElementById('texthold', 1).innerHTML+');border:1px solid rgb('+document.getElementById('lineshold').innerHTML+');box-shadow:2px 2px 4px silver inset;padding:0% 1.5% 0% 1.5%;margin:-3vw 0vw 1.5vw 0vw;" onclick="'+buttonbuild+';" target="_blank" rel="noopener noreferrer">'+document.getElementById('btntitle').value+'</button>&nbsp;&nbsp;';
+     document.getElementById('dbank').innerHTML += data;
+     document.getElementById('btntitle').value = "Submitted";
+     document.getElementById('btnlink').value = "Lock In When Done";
+     document.getElementById('navsub').value = "Add Another...";
+     document.getElementById('subin').innerHTML += '&nbsp;🔒&nbsp;';
+     document.getElementById('subinhold').innerHTML = document.getElementById('subin').innerHTML;
+    }
+
+    function buildtopbar() {
+     document.getElementById('navbarhold').innerHTML = '<div id="topbar" z-index:9; class="topbar" align="center" style="position:fixed;text-align:center; background: linear-gradient(0deg, rgb('+document.getElementById('bghold').innerHTML+',0.00) 0%, rgb('+document.getElementById('bghold').innerHTML+',0.75) 8%, rgb('+document.getElementById('bghold').innerHTML+') 18%);padding-top:30vw; padding-left:10vw; padding-bottom:-10vw; padding-right:10vw;top:0;left:50;right:50;margin-top:-27.5vw;margin-left:-14.5vw;margin-bottom:-5vw;margin-right:-16vw;color:rgb('+document.getElementById('texthold').innerHTML+');"><table style="width:100%;"><td id="tlo" align="left">'+document.getElementById('ltobjhold').innerHTML+'</td><td style="margin-left:2vw;"><td><td><tr><h3 class="navt" id="navt" align="center" style="padding:10.5px 0px 10.5px 0px;margin:-2.2% 0% 0% 0%;z-index:8;color:rgb('+document.getElementById('texthold').innerHTML+');" rel="noreferrer noopener" target="_blank">'+document.getElementById('titlehold').innerHTML+'</tr><tr><sup align="right" style="right:0;text-align:right;margin-right:-15vw;margin-top:0.5vw;margin-bottom:2.75vw;"><sup><sub>'+document.getElementById('subjecthold').innerHTML+'</sub></sup></sup></h3></tr></td><td style="margin-right:2vw;"><td><td id="tro" align="right">'+document.getElementById('rtobjhold').innerHTML+'</span><hr style="border-color:transparent;margin-top:-5vw;width:100%;"></td></table><div class="nav" align="center" style="overflow:auto;direction:ltr;margin-top:-5vw;margin-bottom:-0.25%;margin-left:11.65vw;margin-right:13.1vw;scroll-behavior:smooth;scroll-bar:transparent;white-space:nowrap;break-word:keep-all;">'+document.getElementById('dbank').innerHTML+'</div></div></br></br></br></br></br></br></br>';
+     document.getElementById('btn2').disabled = true;
+     document.getElementById('btn2').innerHTML = "<i><b>🔏</b></i>";
+     document.getElementById('previewout').innerHTML += "</br></br><div align='center' style='margin-left:11vw;margin-right:11vw;'>"+document.getElementById('dbank').innerHTML+"</span>";
+     btn6func();
+    }
+   </script>
+
+   <script>
+    function contentsend() {
+     var inhold = document.getElementById('inin').value;
+     document.getElementById('extrahold').innerHTML += inhold;
+     document.getElementById('contentholder').innerHTML += inhold+'</br>';
+     document.getElementById('extra2hold').innerHTML += document.getElementById('inin').value+' ';
+     document.getElementById('btn6').innerHTML = '<i><b>🔏</b></i>';
+     document.getElementById('lights').innerHTML += '&nbsp;🔒&nbsp;';
+     document.getElementById('sparehold').innerHTML = document.getElementById('lights').innerHTML;
+     document.getElementById('inin').placeholder = '...Submitted....Submit Another? What was sent: "'+inhold+'"    Whats Locked-in: '+document.getElementById('extra2hold').innerHTML+'"         ;}  ';
+     document.getElementById('inin').value = '';
+     document.getElementById('previewbottom').innerHTML += "<span align='center' style='width:100%;'>Content Block:</br>"+document.getElementById('contentholder').innerHTML+"</span>";
+    }
+    
+    function btn8done() {
+   document.getElementById('btn8').innerHTML = "<b><i>🔏</i></b>";
+    }
+    
+    function colormath() {
+     var redbuild = Math.floor((Math.random() * 255)+0);
+     var greenbuild = Math.floor((Math.random() * 255)+0);
+     var bluebuild = Math.floor((Math.random() * 255)+0);
+     document.getElementById('redsave').innerHTML = redbuild;
+     document.getElementById('bluesave').innerHTML = bluebuild;
+     document.getElementById('greensave').innerHTML = greenbuild;
+     var numred = document.getElementById('rednum').innerHTML;
+     var numgreen = document.getElementById('greennum').innerHTML;
+     var numblue = document.getElementById('bluenum').innerHTML;
+     var red2 = redbuild - numred;
+     var green2 = greenbuild - numgreen;
+     var blue2 = bluebuild - numblue;
+     document.getElementById('redsave').innerHTML = red2;
+     document.getElementById('bluesave').innerHTML = blue2;
+     document.getElementById('greensave').innerHTML = green2;
+     pickrndc();
+    }
+
+    
+   </script>
+   <script>
+    function theme2() {
+     var theme = document.getElementById('theme2');
+     if (theme.value === '1') {
+      theme.value = '2';
+      document.getElementById('body').style = "text-size:148%; margin-top:-1.5vw; background-color:white; color: black;text-align:left;align:left; word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;";
+      document.getElementById('world').style = 'background-color:transprent;';
+      document.getElementById('theme2').innerHTML = " 🔅 ";
+      document.getElementById('headercolor').style = 'position:fixed;top:0;left:0;background: transparent; background: linear-gradient(0deg, transparent 0%, white 25%);';
+     } else {
+      theme.value = '1';
+      document.getElementById('body').style = "text-size:148%; margin-top:-1.5vw; background-color:black; color: white;text-align:left;align:left; word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;";
+      document.getElementById('world').style = 'background-color:transparent;';
+      document.getElementById('theme2').innerHTML = " 🔆 ";
+      document.getElementById('headercolor').style = 'position:fixed;top:0;left:0; background: linear-gradient(0deg, transparent 0%, black 25%);';
+     }
+    }
+   </script>
+   </div>
+  </span>
+<div align="center" style=" word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;">
+ <p style="background-color:black;color:green;"></p>
+ <footer id="footer" style="background-color:transparent;color:inhert;text-decoration:none;margin-bottom:-10vw;">
+  <b style="margin-left:3vw;opacity:0.45;">Hashr 2021   #r 2021    A PvtPpr Generator</b>
+ </footer>
+</div>
+
+</body>
+<meta name="airtime-platform-display" content="PvtPpr Generator Main">
+<meta name="airtime-platform-id" content="a8adb15a-c69a-ea15-8862-2c34df8d3250">
+<script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true"></script>
+
+</html>
