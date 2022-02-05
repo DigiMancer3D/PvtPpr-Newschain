@@ -107,7 +107,7 @@ Find a Generator by Clicking:: &nsbp; <a href="#lite">Light</a> &nbsp; : &nbsp; 
  
  <i  name="lite">The Light Version links are as follows:</i></br></br>
  
- <li>Short Link: <a href="https://3dd.in/ppgen" target="_blank">3dd.in/ppgen</a></li></br>&</br></br>
+ <li>Short Link: <a href="https://3dd.in/ppgen" target="_blank">3dd.in/ppgen</a></li></br>
  <li>Short Link: <a href="https://3dd.in/ppgenlite" target="_blank">3dd.in/ppgenlite</a></li>
  <li>Short Link <a href="https://PvtPpr.app/write" target="_blank">PvtPpr.app/write</a></li>
  </br></br>
