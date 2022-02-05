@@ -101,7 +101,7 @@ The Newschain is an Internal Hash Based Mesh Network that can have Externally Li
  <h3>&nbsp&nbsp&nbsp&nbspThere are a multitude of PvtPpr Generator Versions and even Hashr (a Hashpage Generator). All of the Official Pvtppr Generators are listed here with both the short link(s) and full hashlinks.</br></br>
  
  ---
-Find a Generator by Clicking:: &nsbp; <a href="#lite">Light</a> &nbsp; : &nbsp; <a href="#hashr">Hashr</a> &nbsp; : &nbsp; <a href="#nft">NFT</a> &nbsp; : &nbsp; <a href="#msgr">Messenger</a> &nbsp; : &nbsp; <a href="#pge">Page</a> &nbsp; : &nbsp; <a href="#ssub">Safe-Submit</a> &nbsp; : &nbsp; <a href="#full">Original</a>   
+Find a Generator by Clicking:: &nbsp; <a href="#lite">Light</a> &nbsp; : &nbsp; <a href="#hashr">Hashr</a> &nbsp; : &nbsp; <a href="#nft">NFT</a> &nbsp; : &nbsp; <a href="#msgr">Messenger</a> &nbsp; : &nbsp; <a href="#pge">Page</a> &nbsp; : &nbsp; <a href="#ssub">Safe-Submit</a> &nbsp; : &nbsp; <a href="#full">Original</a>   
  ---
  </br></br></br>
  
