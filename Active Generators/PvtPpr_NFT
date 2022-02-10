@@ -7,10 +7,10 @@
  <meta name="airtime-platform-id" content="a8adb15a-c69a-ea15-8862-2c34df8d3250" >
 <script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true"></script>
 <body id="body" style="background-color:black;color:white;margin-top:-1.5vw; word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;">
- <span class="world" align="center" onLoad="handleFileSelect(evt)" syle="scroll-behavior:smooth; scroll-y:smooth;">
+ <span class="world" align="center" syle="scroll-behavior:smooth; scroll-y:smooth;">
    <p style="height:15vw;" class="obj1" id="obj2" align="left"><span style="cursor: default;margin-right:2vw;" align="left"><img id="img" style="background-color:transparent;width:15vw;height:auto;display:none;margin-right:0.5vw;margin-left:0.5vw;" onclick="Alert();" align="left" class="thumb" src="https://api.pcloud.com/getpubthumb?code=XZYRA4XZQFkYWHtrBi4lsA6D2Qb7H8EnNIU7&linkpassword=undefined&size=751x1080&crop=0&type=auto"><img id="imgtop" style="background-color:transparent;width:15vw;height:auto;margin-right:0.5vw;margin-left:0.5vw;" onclick="Alert();" align="left" class="thumb" src="https://api.pcloud.com/getpubthumb?code=XZJRA4XZ9rBmlg01Vr8qbT3SIGHLuHBcf2tV&linkpassword=undefined&size=746x1080&crop=0&type=auto">
   </span><span id="quote" style="text-align:left;inline-height:0vw;-moz-white-space: pre;align:left;font-size:3vw; margin-top:-2.5vw; margin-bottom:-1vw; text-align:left; align:left;line-height: normal; color:orange;" align="left">PvtPpr Generator is a free tool to create private serverless-stored digital papers including <b><i>social chains, articles, blogs, vlogs, podcasts, memos, journals, lists, newsletters, newspapers, magazines, books</i> or what your mind can imagine. <sup onclick="window.open('https://3dd.in/nft')" target="_blank" rel="noopener noreferrer"><sub><sup><sub>NFT Generator</sub></sup></sub></sup></b></br>&nbsp;<button id="website" style="margin-left:-0.5%;cursor: pointer;border-color:green; color: black; padding:0.5vw; font-size: 70%; background-color:lightgreen; font-weight: bold; box-shadow: 3px 2px #223322;" type="submit"  align="right" class="button" onClick="window.open('https://3dd.in/PvtPpr-Info')" target="_blank" rel="noreferrer noopener">Visit&nbsp;Website</button>&nbsp; &nbsp;<button id="yesthis"  style="cursor: pointer;border-color:green; color: black; padding:0.5vw; font-size: 70%; background-color:lightgreen; font-weight: bold; box-shadow: 3px 2px #223322;" align="right" type="button" value="FAQ" class="button" onclick="window.open('https://3dd.in/PPFAQ')" rel="noreferrer noopener">F.A.Q.</button>&nbsp; &nbsp;<button id="yesthis2" style="cursor: pointer;border-color:green; color; black; padding:0.5vw; font-size: 70%; background-color:lightgreen; font-weight: bold; box-shadow: 3px 2px #223322;" type="submit"  align="right"value="HTML Help" class="button" onclick="window.open('https://tinyurl.com/rv7bks2')" rel="noreferrer noopener">HTML&nbsp;Help</button>&nbsp; &nbsp;<button id="newschain" style="cursor: pointer; border-color:green; color: black; padding:0.5vw; font-size: 70%; background-color:lightgreen; font-weight: bold; box-shadow: 3px 2px #223322;" type="submit"  align="right" value="Read Our Newschain" class="button" onclick="window.open('https://3dd.in/pvtppr')" rel="noreferrer noopener">Read&nbsp;Our&nbsp;Newschain</button>&nbsp; &nbsp;<button id="theme1" style="cursor: pointer; color: darkblue; padding:0.5vw; font-size: 70%;display:none; background-color:skyblue; font-weight: bold; box-shadow: 3px 2px #223322;" type="submit"  style="align:right;" align="right" value="Theme" class="button" onclick="theme1()" value="1">Dark&nbsp;Theme</button> <button id="theme2" type="submit" style="align:right; color: black; padding:0.5vw; font-size: 70%; background-color:lightgreen; font-weight: bold; box-shadow: 3px 2px #223322;"  align="right" value="Theme" class="button" onclick="theme2()" value='2'>Light&nbsp;Theme</button>
-  </p></br></br></br>
+ </span></p></br></br></br>
   <div style="margin-bottom:-2vw;margin-top:4vw;" class="obj1" id="obj1" align="center" text-align="center">
   <span style="text-align:center" align="center"><input id="title" class="ab" style="width:98%; padding:0.5vw;text-align:center; border: none; background-color: #414141; font-size:148%; z-index:1; color: lightgreen;" onfocus="this.select();" align="left" placeholder="Title" /><hr id="hr" style="border-width:0.6px; border-color:lightgreen; color:lightgreen; z-index:3;"><input id="subject" class="ab" align="right" style="width:98%; padding:0.5vw; color:orange; text-align:center; border: none; background-color: #414141; font-size:148%; z-index:1; color: lightgreen;" onfocus="this.select();" placeholder="Quick Details (appears under image)" /><hr id="hr001" style="border-width:0.6px; border-color:lightgreen; color:lightgreen; z-index:3;">
    <textarea id="inin" white-space="pre-wrap" type="file" wrap="soft" class="ab" rows="25" cols="10" text-align="center" style="width:98%; padding:0.5vw; border: none; placeholder-align:center; background-color: #414141; font-size:148%; z-index:1; color: lightgreen; text-align:center; white-space: pre-wrap; -moz-white-space: pre; -ms-white-space: pre; -webkit-white-space: pre; overflow-x:hidden;" overflow-x="hidden" overflow-y="auto" align="center" placeholder-align="center" placeholder="Description"></textarea>
@@ -38,6 +38,7 @@
   </span></br>
 <input type="submit" value="submit" class="clicksub" id="clicksub" align="center" style="border: 0.02vw solid darkgreen; background-color: lightgreen; color: black; padding: 0.5vw; padding-right: 0.75vw; padding-left: 0.75vw; box-shadow: 3px 2px #223322; font-weight: bold; cursor: pointer; width:40%; font-size:148%;scroll-behavior:smooth; scroll-y:smooth;" onclick="document.getElementById('link').style.display='block'; myfunction(); window.scrollBy(0, 150); ">&nbsp;&nbsp;<input class="clickres" type="button" value="refresh" align="right" style="border: 0.02vw solid #B22222; background-color: pink; color: black; padding: 0.5vw; padding-right: 0.75vw; padding-left: 0.75vw; box-shadow: 3px 2px #332222; font-weight: bold; cursor: pointer; width:40%; font-size:148%;" onclick="document.location.reload(true);window.scrollTo(0,0);"></input></br>
 <hr id="hr060" style="border-width:0.6px; border-color:lightgreen; color:lightgreen; z-index:3;">
+
 <script>
 if (window.attachEvent) {
     observe = function (element, event, handler) {
@@ -49,32 +50,8 @@ else {
         element.addEventListener(event, handler, false);
     };
 }
- </script>
- <script>
  
-  function handleFileSelect(evt) {
-    evt.stopPropagation();
-    evt.preventDefault();
-
-    var files = evt.dataTransfer.files; // FileList object.
-    var reader = new FileReader();  
-    reader.onload = function(event) {            
-         document.getElementById('inin').value = event.target.result;
-    }        
-    reader.readAsText(files[0],"UTF-8");
-  }
-
-  function handleDragOver(evt) {
-    evt.stopPropagation();
-    evt.preventDefault();
-   // evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
-  }
-
-  // Setup the dnd listeners.
-  var dropZone = document.getElementById('inin');
-  dropZone.addEventListener('dragover', handleDragOver, false);
-  dropZone.addEventListener('drop', handleFileSelect, false);
-</script>
+ </script>
 <script>
 function insert01(){
  document.getElementById('inin').value += "<img align='center' style='align:center;width:98%;' src='insert image link here'></img>";
@@ -139,22 +116,7 @@ function insert11(){
    document.getElementById('bittubeName').value = "";
    document.getElementById('hr020').style = "display:block; border-width:0.6px; border-color:#cbaccc; color:#cbaccc; z-index:3;";
    
-document.getElementById("bittubeHash").addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-   // focus next input
-    document.getElementById("bittubeName").focus();
-}});
-document.getElementById("bittubeName").addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-   // focus next input
-    document.getElementById("previn").focus();
-}});
+   
   }
  }
  
@@ -305,7 +267,7 @@ document.getElementById("authornm").addEventListener("keyup", function(event) {
   alert('Hello & Welcome to the this PvtPpr [prīvit pāpər] NFT [non-fungable token].\n\nPvtPpr is brought to you by 3G, E-T & 3D.\n\nThis is hoasted by experimental technology in hash-based-link-data to store all of the website code off servers.\n\n     Servers are used for decryting the hashlink for the browser to display the website/webapp.\n\nHosted by Itty.Bitty.Site (by alcor), where anything can be conveyed in a link.\n\n\nThank you.\n     [LS0zRA::DEC242020]\n\n     Last Update [DEC162020::LS0zRA]');
  }
  function AlertCheck() {
-  alert("You clicked on an easter egg. Please enjoy!\n\nThis PvtPpr was made with the PvtPpr Generator (PPGen), which allows anyone to build a PvtPpr. This is a newspaper system with everyone in mind. Anyone can use PPGen to build their own private paper complete with a usable link.\n\nThe superpostition of this build will not appear in this build.\n\nThis is the lite-version of the PvtPpr Generator\n\n\n\nThank You\n     [LS0zRA::JAN162020]\n\n     Last Update [DEC162020::LS0zRA]");
+  alert("You clicked on an easter egg. Please enjoy!\n\nThis PvtPpr was made with the PvtPpr Generator (PPGen), which allows anyone to build a PvtPpr. This is a newspaper system with everyone in mind. Anyone can use PPGen to build their own private paper complete with a usable link.\n\nThe superpostition of this build will not appear in this build.\n\nThis is the lite-version of the PvtPpr Generator\n\n\n\nThank You\n     [LS0zRA::JAN162020]\n\n     Last Update [JAN062021::LS0zRA]");
  }
  
 </script>
@@ -314,7 +276,7 @@ document.getElementById("authornm").addEventListener("keyup", function(event) {
   <script src="https://itty.bitty.site/lzma/lzma_worker-min.js"></script>
   <script>
    function myfunction() {
-    var d = new Date(); var stamps = d.getTime(); var daters1 = d.getMonth(); var months = ["SPACE", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC", "OVER"]; if (daters1 = "0"){daters1=months[1];} else if (daters1 = "1"){daters1=months[2];} else if (daters1 = "2"){daters1=months[3];} else if (daters1 = "3"){daters1=months[4];}else if (daters1 = "4"){daters1=months[5];}else if (daters1 = "5"){daters1=months[6];} else if (daters1 = "6"){daters1=months[7];} else if (daters1 = "7"){daters1=months[8];}else if (daters1 = "8"){daters1=months[9];}else if (daters1 = "9"){daters1=months[10];}else if (daters1 = "10"){daters1=months[11];}else if (daters1 = "11"){daters1=months[12];} var daters2 = d.getDate(); if (daters2 === "1"){daters2="01";} else if (daters2 === "2"){daters2="02";} else if (daters2 === "3"){daters2="03";} else if (daters2 === "4"){daters2="04";}else if (daters2 === "5"){daters2="05";}else if (daters2 === "6"){daters2="06";} else if (daters2 === "7"){daters2="07";} else if (daters2 === "8"){daters2="08";}else if (daters2 === "9"){daters2="09";} var daters3 = d.getFullYear(); var timehash1A = "["+window.btoa(stamps)+"] :: ["+daters1+daters2+daters3+"]"; var datestamp = "["+"#"+window.btoa(timehash1A)+"]";
+    var d = new Date(); var stamps = d.getTime(); var daters1 = d.getMonth(); var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC", "OVER"]; if (daters1 = "0"){daters1=months[1];} else if (daters1 = "1"){daters1=months[2];} else if (daters1 = "2"){daters1=months[3];} else if (daters1 = "3"){daters1=months[4];}else if (daters1 = "4"){daters1=months[5];}else if (daters1 = "5"){daters1=months[6];} else if (daters1 = "6"){daters1=months[7];} else if (daters1 = "7"){daters1=months[8];}else if (daters1 = "8"){daters1=months[9];}else if (daters1 = "9"){daters1=months[10];}else if (daters1 = "10"){daters1=months[11];}else if (daters1 = "11"){daters1=months[12];} var daters2 = d.getDate(); if (daters2 === "1"){daters2="01";} else if (daters2 === "2"){daters2="02";} else if (daters2 === "3"){daters2="03";} else if (daters2 === "4"){daters2="04";}else if (daters2 === "5"){daters2="05";}else if (daters2 === "6"){daters2="06";} else if (daters2 === "7"){daters2="07";} else if (daters2 === "8"){daters2="08";}else if (daters2 === "9"){daters2="09";} var daters3 = d.getFullYear(); var timehash1A = "["+window.btoa(stamps)+"] :: ["+daters1+daters2+daters3+"]"; var datestamp = "["+"#"+window.btoa(timehash1A)+"]";
     var moduleHashIn = document.getElementById('bittubeHash').value;
     var moduleNameIn = document.getElementById('bittubeName').value;
     const scriptbt = '<script src="https://bittubeapp.com/tubepay/airtime.loader.js" data-verify="meta" data-autostart="true">';
@@ -344,8 +306,8 @@ document.getElementById("authornm").addEventListener("keyup", function(event) {
   </script>
  </a>
  <div align="center" style=" word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;">
-  <p style="background-color:black;color:green;"></p>
-  <footer style="margin-bottom:-5vw;"><h5>
+  <p style="background-color:black;color:green;"></p></br>
+<footer style="margin-bottom:-5vw;"><h5></br>
  <p align="left" style="font-size:148%;">&nbsp; &nbsp; &nbsp; The PvtPpr NFT is an indefinate mint HTML/JS NFT. These are not designed to move value across the internet but give your newschain a new substance and perhaps, liven up your network. This NFT Generator will let you build an IttyBitty Newschain NFT secured by it's self-stored data inside the hash built into the link, or hashlink. Simply by someone loading this hashlink into their browser, they are given the decrypting key from the ittybitty node/server, then they can view the NFT. Not only can they view the NFT, but they can download a copy & send off an indefinate number of copies. These are <b>Free-NFTs</b>, which means it has no cost to make copies, including the original mint (excluding input labor & clicks).</br></br>
    &nbsp; &nbsp; &nbsp How can we afford <i><b>Free-NFTs</b></i>? By using free public resorces, with the Newschain (a hash based meshnet blockcahin). The minters will find a way to sell their NFTs on their own & the can be shared. The technaical details of <b>Free-NFTs</b> is placing the freedom of hosting to the author, some will see the oppritiunity to build professional looking NFTs for clients that works within the client's browser. No download, no extras, just click & view.</br></br>
   &nbsp; &nbsp; &nbsp; Each NFT is secured through all the data hashed in a reversable-hash that is dropped into a link for easy distribution. Instead of everyone syncing up to a server, the link has the data and a decrypting key is sent from a node to unlock the data. Anyone can run a node and open hashlinks without trust.</br></br>
@@ -357,19 +319,19 @@ document.getElementById("authornm").addEventListener("keyup", function(event) {
  <h2 align="center">&nbsp; &nbsp; &nbsp; Hosting your own images, gifs, or videos for people whom are not looking at getting thousands to millions of people to flood the content constantly can get cheap & reliable server service. One thing to consider for most people, they already have access to some form of cloud storage and many cloud storage data has multiple access points so using it as unsafe storage but reliable service. Unsafe as in, <q><i>don't place data that needs secruity</i>.</q> For hosting images used in free NFTs, this is fine.</br>&nbsp; &nbsp; &nbsp; Any author or minting party can provide hosting for NFTs with just a constant internet connection and a small device that can run a private cloud application. Cell phones to small pi computers can all be used as micro servers to unsure you cannot be censored. <sup><p align='right' style="maring-left:50%;">&nbsp;<b>Let's Build a Meshnet <i>away from the clearnet <b>together!</b></i></b>
   </p></sup></h2><hr style="border-width:0.6px; z-index:3;" /> 
 <table><tr>
-<p aling="center"><h2 align="center">Try These Places for Hosting</h2></tr><tr><td><h3>File Hosting::</h3></br>
-<a href="https://www.ipfs.io" target="_blank" rel="noopener noreferrer">pCloud</a></br>
-<a href="https://www.lbry.tv" target="_blank" rel="noopener noreferrer">IPFS</a></td><td><h3>Image Hosting::</h3></br><a href="https://www.base64-image.de/" target="_blank" rel="noopener noreferrer">Base64-Image.de</a></br>
-<a href="https://www.lbry.tv" target="_blank" rel="noopener noreferrer">Lbry.tv</a></br></td></tr><tr><td><h3>Video Hosting::</h3></br>
-<a href="https://www.lbry.tv" target="_blank" rel="noopener noreferrer">Lbry.tv</a></br></td><td><h3>Base64 Encoding::</h3><i><b>*</b>This makes offline capable: files, audio, video, pictures & more<b>*</b></i></br><a href="https://base64.guru/" target="_blank" rel="noopener noreferrer">Base64.Guru</a></br>
-<a href="https://www.browserling.com/tools/file-to-base64" target="_blank" rel="noopener noreferrer">Browserling.com <sub><sup>(files2base64)</sup></sub></a></td></tr><tr>
-&nbsp;
-<td><h3>Lock Links::</h3></br>
-<a href="https://jstrieb.github.io/link-lock/create/" target="_blank" rel="noopener noreferrer">Jstrieb&nbsp;Locked&nbsp;Links</a></br></td>
-&nbsp;<td><h3>Online Store::</h3></br>
-<a href="https://rocketr.net" target="_blank" rel="noopener noreferrer">Rocketr.net&nbsp;Market</a></br></td>
-</p></tr></td>
-</table><hr style="border-width:0.6px; z-index:3;" /> 
+ <p aling="center"><h2 align="center">Try These Places for Hosting</h2></br><h3 align="center">File Hosting::</h3>
+<a href="https://www.ipfs.io" target="_blank" rel="noopener noreferrer">pCloud</a>&nbsp; &nbsp; &nbsp;
+<a href="https://www.lbry.tv" target="_blank" rel="noopener noreferrer">IPFS</a></br></br><h3 align="center">Image Hosting::</h3><a href="https://www.base64-image.de/" target="_blank" rel="noopener noreferrer">Base64-Image.de</a>&nbsp; &nbsp; &nbsp;
+<a href="https://www.odysee.com" target="_blank" rel="noopener noreferrer">Odysee</a></br></br><h3>Video Hosting::</h3>
+<a href="https://www.odysee.com" target="_blank" rel="noopener noreferrer">Odysee</a></br></br><h3>Base64 Encoding::</h3><i><b>*</b>This makes offline capable: files, audio, video, pictures & more<b>*</b></i></br></br><a href="https://base64.guru/" target="_blank" rel="noopener noreferrer">Base64.Guru</a>&nbsp; &nbsp; &nbsp;
+<a href="https://www.browserling.com/tools/file-to-base64" target="_blank" rel="noopener noreferrer">Browserling.com <sub><sup>(files2base64)</sup></sub></a>
+</br></br></br>
+<h3>Lock Links::</h3><i><b>*</b>This makes links that need a password to open which can help you make your NFTs private by default<b>*</b></i></br></br>
+<a href="https://jstrieb.github.io/link-lock/create/" target="_blank" rel="noopener noreferrer">Jstrieb&nbsp;Locked&nbsp;Links</a></br>
+&nbsp; &nbsp; &nbsp;<h3 align="center">Online Store::</h3><i><b>*</b>This is a place where you can sell your NFTs for crypto and in some cases fiat<b>*</b></i></br></br>
+<a href="https://rocketr.net" target="_blank" rel="noopener noreferrer">Rocketr.net&nbsp;Market</a></br>
+</p></br>
+<hr style="border-width:0.6px; z-index:3;" /> 
   <h2 align="center">&nbsp; &nbsp; &nbsp; As you build Free NFTs, you can still sell them. PvtPpr NFTs
 are built completely on your minting device. Until you choose to share them, they are privately on your device. All the data is tucked in a non-public viewpoint but uses a generic decrypting key.</br>&nbsp; &nbsp; &nbsp; When selling PvtPpr NFTs, you can actually sell them for a broader audiance because PvtPpr NFTs are web objects and can be embeded into websites/apps with <i>embed</i> code so the hashlink (the link that stores all the PvtPpr NFT data in the generic but priavte ittybitty-hash) can be sold as a digital document titled appropriately to the docuent.</br>&nbsp; &nbsp; &nbsp;Free NFTs means, <i>it's free to mint and distribute or there is no platform fees & no chain fees to mint and transfer these NFTs. PvtPpr NFTs works completely within the browser but can be taken offline once loaded into the browser because all html & text data is stored directly into the hash that makes up the link. The media (images, videos, etc) are hosted elsewhere by the authors & minter parties, these media inserts may or may not rely upon the internet for use. PvtPpr NFTs support Base64 images as image links for offline media.</h2>
 <hr id="hr7770" style="border-width:0.6px; z-index:3;">
@@ -389,9 +351,9 @@ are built completely on your minting device. Until you choose to share them, the
 <button align="center" onclick="window.open('https://3dd.in/safe-ppgen')" target="_blank" rel="noopener noreferrer" style="cursor: pointer; color: #3a253b; padding-right:0.5vw; font-size: 180%; background-color:#cbaccc; font-weight: bold; box-shadow: 3px 2px #223322;">The&nbsp;Safe-Submit&nbsp;Generator</button></br><ul align="left" style="font-size:148%;margin-left:-1.5vw;margin-right:0.75vw;">This generator is for people that want to build PvtPpr papers but may not be in a safe location or may be on a multi-user device, like a computer at work or on a public computer at an internet cafe. This generator still stores everything into a hashlink, but the link doens't decrypt the hash, it only gives the hash through the browser which can be decrypted via the ittybitty node script or the hash unlocking input found under the <i>"What's a 'Safe-Submit'"</i> section in the PvtPpr FAQ.</ul>
 </p>    
  <hr id="hr080" style="border-width:0.6px; z-index:3;">
-     <p align="center" align="center" id="obj3" class="obj1" style="font-size:148%;"><a align="center" id="wierd" href="https://tinyurl.com/v63ujqb" target="_blank" style="text-decoration:none; color:lightgreen;">0a097fdac8f16929579ed2a72f3c03b10d33bd9af04ae3ed90b26e9680e6bae2</a><br><sup><i>[<b><sup><sub>bef</sub></sup></b>]</i></br><sub style="font-size:148%;"><b>3D#<i><sup onclick="HelpAlert();"><sub>15317b8zzmfdcej</sub></sup></i></b></sub></sup>
+     <p align="center" align="center" id="obj3" class="obj1" style="font-size:148%;"><a align="center" id="wierd" href="https://tinyurl.com/v63ujqb" target="_blank" style="text-decoration:none; color:lightgreen;">0a097fdac8f16929579ed2a72f3c03b10d33bd9af04ae3ed90b26e9680e6bae2</a><br><sup><i>[<b><sup><sub>bef</sub></sup></b>]</i></br></br><sub style="font-size:148%;"><b>3D#<i><sup onclick="HelpAlert();"><sub>15317b8zzmfdcej</sub></sup></i></b></sub></sup></br></br>
        <h6 align="center" id="obj4" class="obj1" style="font-size:148%; cursor:pointer;">
-   <p onclick="window.open('https://codepen.io/digimancer3d/pen/qBapWoL');" style="margin-bottom:-4vw;margin-top:-4vw;" target="_blank" rel="noopener noreferrer"><sub><sup>This was designed on Codepen.io, click to view &amp; fork on Codepen.</sup></sub></p></h6>
+   <p onclick="window.open('https://codepen.io/digimancer3d/pen/qBapWoL');" style="margin-bottom:-4vw;margin-top:-4vw;" target="_blank" rel="noopener noreferrer"><sub><sup>This was designed on Codepen.io, click to view &amp; fork on Codepen.</sup></sub></p></h6></br>
   <h6 align="center" onclick="window.open('https://bittube.app');" target="_blank" rel="noopener noreferrer" style="font-size:148%;cursor:pointer;margin-bottom:-6vw;margin-top:0.5vw;"><sup><sub>Monetized by Bittube Airtime</sub></sup></h6>
      </p>
     </div>
@@ -403,6 +365,10 @@ are built completely on your minting device. Until you choose to share them, the
   function theme1() {
    document.getElementById('theme1').style="display:none;";
    document.getElementById('theme2').style="display:inline-block; background-color: lightgreen; color:darkgreen; border-color:green;margin-left:-1%;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
+   document.getElementById('yesthis').style="background-color:lightgreen; color: darkgreen; border-color:green; align:right;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
+   document.getElementById('yesthis2').style="background-color:lightgreen; color: darkgreen; border-color:green; align:right;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
+   document.getElementById('newschain').style="background-color:lightgreen; color: darkgreen; border-color:green; align:right;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
+   document.getElementById('website').style="background-color:lightgreen; color: darkgreen; border-color:green;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
    document.getElementById('body').style="text-size:148%; margin-top:-1.5vw; background-color:black; color: white;text-align:left;align:left;word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;"; 
   document.getElementById('title').style="color: lightgreen; width: 98%; text-align:center;width:98%; padding:0.5vw;text-align:center; border: none; background-color: #414141; font-size:148%; z-index:1;";
    document.getElementById('subject').style="color: lightgreen; width: 98%; text-align:center;width:98%; padding:0.5vw;text-align:center; border: none; background-color: #414141; font-size:148%; z-index:1;"; 
@@ -426,10 +392,6 @@ are built completely on your minting device. Until you choose to share them, the
    document.getElementById('imglink').style="color: lightgreen; width: 98%; text-align:center;width:98%; padding:0.5vw;text-align:center; border: none; background-color: #414141; font-size:148%; z-index:1;";
    document.getElementById('imglink2').style="color: lightgreen; width: 98%; text-align:center;width:98%; padding:0.5vw;text-align:center; border: none; background-color: #414141; font-size:148%; z-index:1;";
    document.getElementById('previn').style="color: lightgreen; width: 98%; text-align:center;width:98%; padding:0.5vw;text-align:center; border: none; background-color: #414141; font-size:148%; z-index:1;";
-   document.getElementById('yesthis').style="background-color:lightgreen; color: darkgreen; border-color:green; align:right;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
-   document.getElementById('yesthis2').style="background-color:lightgreen; color: darkgreen; border-color:green; align:right;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
-   document.getElementById('newschain').style="background-color:lightgreen; color: darkgreen; border-color:green; align:right;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
-   document.getElementById('website').style="background-color:lightgreen; color: darkgreen; border-color:green;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
     document.getElementById('qrlink').style=" background-color: #414141; color: lightgreen; width: 98%; text-align:center;width:98%; padding:0.5vw;text-align:center; border: none; background-color: #414141; font-size:148%; z-index:1;";
    document.getElementById('img').style="display:none;";
    document.getElementById('imgtop').style="display:inline-block;width:15vw;height:auto;margin-right:0.5vw;margin-left:0.5vw;";
@@ -454,7 +416,17 @@ are built completely on your minting device. Until you choose to share them, the
   }
   
   function theme2() {
+   document.getElementById('theme2').style="display:none;";
+   document.getElementById('theme1').style="display:inline-block; background-color: lightblue; color: darkblue; border-color:blue;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
+    document.getElementById('qrlink').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
+   document.getElementById('imgtop').style="display:none;";
+   document.getElementById('img').style="display:inline-block;width:15vw;height:auto;margin-right:0.5vw;margin-left:0.5vw;";
+   document.getElementById('yesthis').style="background-color:lightblue; color: darkblue; border-color:blue;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
+   document.getElementById('yesthis2').style="background-color:lightblue; color: darkblue; border-color:blue; cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
+   document.getElementById('newschain').style="background-color:lightblue; color: darkblue; border-color:blue; cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
+   document.getElementById('website').style="background-color:lightblue; color: darkblue; border-color:blue; cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
    document.getElementById('body').style="text-size:148%; margin-top:-1.5vw; background-color:white; color: black;text-align:left;align:left; word-wrap: break-word;scroll-behavior:smooth; scroll-y:smooth; javascript: allow;";
+  document.getElementById('inin').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;"; 
    document.getElementById('ltc').style="width:55%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
   document.getElementById('title').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;"; 
    document.getElementById('btc').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
@@ -473,19 +445,9 @@ are built completely on your minting device. Until you choose to share them, the
    document.getElementById('detail4Name').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
    document.getElementById('detail5Name').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
    document.getElementById('detail6Name').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
-  document.getElementById('inin').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;"; 
    document.getElementById('imglink').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
    document.getElementById('imglink2').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
    document.getElementById('previn').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
-   document.getElementById('theme2').style="display:none;";
-   document.getElementById('theme1').style="display:inline-block; background-color: lightblue; color: darkblue; border-color:blue;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
-    document.getElementById('qrlink').style="width:98%; padding:0.5vw; text-align:center; border:none; background-color: #FAFAFA; font-size:148%; z-index:1; color: orange;";
-   document.getElementById('imgtop').style="display:none;";
-   document.getElementById('img').style="display:inline-block;width:15vw;height:auto;margin-right:0.5vw;margin-left:0.5vw;";
-   document.getElementById('yesthis').style="background-color:lightblue; color: darkblue; border-color:blue;cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
-   document.getElementById('yesthis2').style="background-color:lightblue; color: darkblue; border-color:blue; cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
-   document.getElementById('newschain').style="background-color:lightblue; color: darkblue; border-color:blue; cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
-   document.getElementById('website').style="background-color:lightblue; color: darkblue; border-color:blue; cursor: pointer;padding:0.5vw; font-size: 70%; font-weight: bold; box-shadow: 3px 2px #223322;";
    document.getElementById('hr').style="border-color: skyblue; border-width:0.6px; z-index:3;";
    document.getElementById('hr001').style="border-color: skyblue; border-width:0.6px; z-index:3;";
    document.getElementById('hr003').style="border-color: skyblue; border-width:0.6px; z-index:3;";
