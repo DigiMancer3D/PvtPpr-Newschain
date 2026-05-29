@@ -1,103 +1,97 @@
-# PvtPpr Generators
-Pass inputs through nodejs to generate a digital document result for the user to publish their thoughts without needing more than their browser. Using itty.bitty.site and the nodejs encoding for the output results. This generator can also run off itty.bitty.site technology as well Base64 media for fully offline encoding, decoding, veryfing & reading.</br>
-</br>
+# PvtPpr-Newschain: Privacy-First Serverless Digital Publishing (2018–present)
 
-## What Does PvtPpr Do?
-PvtPpr allows anyone with a browser to build paper-type documents to store thoughts and documents online without servers. Users of PvtPpr can now place ads in their papers as well as monetize with <a href="https://bittube.app" target="_blank">Bittube Airtime</a>.
+[![GitHub](https://img.shields.io/badge/GitHub-DigiMancer3D/PvtPpr--Newschain-181717.svg)](https://github.com/DigiMancer3D/PvtPpr-Newschain)  
+**Live Tools** (These short links can open in any browser; full hashlinks at bottom of page):  
+• [PvtPpr Lite](PvtPpr_Lite.html) • [LSW Social Profile](LSWgen(wip).html) • [iPvtPpr AI1 / IPFS](iPvtPpr.html) • [UBC PIP Identity](UBC%20PIP%20GEN%20(untested%20w_hash%20key%20cutter).html) • [NFT Generator](NFT%20Generator.html)
 
-## PvtPpr Examples
-There is a dedicated PvtPpr Newschain that helps explain different possible features of PvtPpr. This newschain is the official by one of the 3Jokers and is found at the short link, <a href="https://PvtPpr.app/Newschain" target="_blank">PvtPpr.app/Newschain</a>. This is the longest known Newschain that goes back to the very first PvtPpr, the example. Other Newschains that can be seen as examples are: <ol>3Gxd's Newschain: <a href="https://rebrand.ly/3GxdPvtPpr" target="_blank">3GxD's PvtPpr</a></ol><ol>3D's Crypto & Tech Newchain: <a href="https://3dd.in/3d-pov" target="_blank">3D's Crypto & Technology POV</a></ol></br>To get your Newschain located here, place the request for change on this git.
+**PvtPpr** (Private Paper) is a completely **client-side, serverless** publishing system invented in 2018. It lets anyone create rich, self-contained digital “newspapers,” articles, blogs, memos, journals, or full personal **Newschains**: all stored inside a single shareable link (hashlink) with no server or account required.
 
-## What's a Newschain?
-A Newschain is the blockchain type data chain based on hashlinks and shortlinked-hashlinks. Block size isn't hard-coded but decided by the device's ability to encode the previous hashlink + new data input into the generator. Each Newschain is a personal & potentially private PvtPpr blockchain. The Newschain is self-built by the author. The author chooses which chain they attach their paper to which builds the newschain but eventually (if full hashlinks are being used to build the chain) the PvtPpr Generator will not generate the next PvtPpr. When this occurs the block is full and the code will not encode to the hashlink. This happens because of the length of the hashlink being produced by the new encoding is too large for the current machine to encode. If the hashlink is too long for the device being used, a new block will be needed. We use to think that the block size was decided by the encoder but after placing a 22-PvtPpr Newschain (with full hashlinks) together with an end result of a multi-million length top hashlink, we realized that the users device encoding the PvtPpr actually determines the size of a block. So the stronger machine a user has, the longer their full-hashlink newschain may be. With this new information, quantum computers have the ability to create the longest Newschains and the entire internet could be placed within a Meshed Newschain.
+Everything lives in the URL itself using the **itty.bitty** compression format (or self-hosted/local nodes). It is a privacy-by-default “HTML/JS data blockchain” where each link is its own immutable, printable, embeddable page.
 
-## Newschain Blocks
-Newschain Blocks that are full must be stored seperately from the newschain. These blocks can be stored offline (by paper), online (cloud storage/personal server/pastebin/IPFS) or personal stroage (offline digital storage i.e.: harddrive, sdd, USB-stick). Blocks cannot be used as a "previous page" link in the PvtPpr Generator but the storage link of the block can be. This is purely based on the user's want, capabilities and device.
+## Brief Overview
+You type content → add images/videos/audio/links/NFTs/ads/navbars/Bittube monetization → click “submit” → get a long but fully functional link.  
+Anyone who opens the link sees the exact page you built. No hosting. No database. No tracking.
 
-It is possible to build a singe PvtPpr page that is it's own block, this means that there is so much information that the finial result cannot be stored via shortlinks because the hashlink is approximately over 16,000 bytes or that the user's device doesn't have the power to encode the full amount of data being placed inside with a previous hashlink included.
+You can link one PvtPpr to another to build a **Newschain**: a decentralized personal publication that works like a blog or newspaper you fully own.
 
-## Coinless Chain?
-Yes, the Newschain is a "Coinless Chain" meaning the chain isn't for securing direct wealth but for securing data. Coin transactions of other chains can be stored within PvtPprs to either facilitate an offline-cabable transfer of wealth or to send a transaction hash to a node-runner of that chain for a sub-level transferring of a transaction.
+## 1. The Different Generators (Tools Included)
 
-## Why Shortlinks?
-Shortlinks are the less safe way to store PvtPprs because of the way shortlinks work, they are relying on another device or network to keep int's intergrity intact. Using a short link does reduce the length of the top hashlink which may allow quantum and supercomputers to be able to bruteforce guess the hashlink much faster. The only good way to use shortlinks with the Newshcain are for public PvtPprs, where the papers are intended to be read by the public like a blog, website or forum. Using TinyURL PvtPprs can be hidden in plain sight in the company of thousands of other shortlinks, a.k.a. <i><b>hiding in the crowd</b></i>. Always using shortlinks in a Newschain allows for "liquid chains" or chains where the hashlink doesn't increase in size just because of the previous link (which is shortlinked).
+| Generator | Purpose | Best For |
+|-----------|--------|----------|
+| **PvtPpr Lite** (`PvtPpr_Lite.html`) | Quick full-featured editor | Most users: title, subject, rich body, embeds, security options, monetization |
+| **Messenger** | Minimal inputs | Fast private messages or short posts that work across apps (Signal, etc.) |
+| **NFT Generator** | Turns content into free HTML/JS NFTs | Digital collectibles, embeddable art, LBRY/IPFS compatible |
+| **Safe-Submit** | Generates encrypted hashlinks only | Public computers or high-privacy needs |
+| **LSW (Little Strong Website)** (`LSWgen(wip).html`) | Profile + trending + posts section | Your personal social-media-style home in a Newschain |
+| **iPvtPpr AI1** (`iPvtPpr.html`) | All-in-one future version (IPFS + PQC role login) | Advanced users wanting IPFS + role-based decryption |
+| **UBC PIP** | Public Identity Proof with fingerprint hashing & QR splitting | Verifiable human identity proofs for the United Borderless Citizens concept |
 
-## PvtPpr Doesn't Distribute
-PvtPpr doesn't distribute your papers nor chain. Since the papers are generated on the user's machine/device, there's no way to know that a paper exists without sharing it to others. This is why PvtPpr doesn't distribute, they are too private to even see the generated paper except by the user's machine. Users have to opt-in to distribution of their paper/newschain, meaning the user has to distribute on their own by their own will. Because PvtPprs are created on the user's device without the need of internet (once the generator is loaded), rather online or offline, PvtPprs actually hide from The Way Back Machine until the finished and opened PvtPpr page is refreshed or shared. Yes, the generated PvtPprs, even if generated online, are shielded from the Way Back Machine (and similar internet backup protocols/systems) because the PvtPprs are not broadcasted across the internet unless the browser is refreshed or the papers are shared by the author of the PvtPpr.
+## 2. How It Works
+1. You fill in title, subject, body + optional extras (images, videos, BTC address, previous link, navbar, ads, etc.).
+2. The page compresses everything (HTML + your text + embeds) using LZMA + Base64.
+3. It produces a huge but usable link (e.g. `https://itty.bitty.site/#Title/...long-data...`).
+4. When someone clicks the link, they ask the public node-like-servers for a generic decrypting key, then the browser can decode and render the full interactive page.
+5. You can chain them: each new PvtPpr can link back to the previous one → forming your personal Newschain.
 
-## IPFS
-Inter Planetary File System (IPFS) allows anyone to have a form of a decentralized server. IPFS can be used within hashnets and meshnets which is what PvtPpr Newschains are (Hash based Meshnets). IPFS can be used to store PvtPpr Blocks, entire Newschains or even media used inside the PvtPprs. IPFS is a public distributed system so only public data should be placed within the IPFS network.
+**Note on Infrastructure**: Many public itty.bitty nodes have disappeared. Most generators still work perfectly if you run a local Itty Bitty v1 node (or use the included offline HTML files). Shortened TinyURLs add convenience but reduce privacy.
 
-## What's Safe-Submit?
-<i>Safe-Submit</i> is a method in which a PvtPpr can be built but not be presented with a viewable result. This method also disregards some auto-adjusting (like the node freespace on both sides of PvtPprs) and can be in some cases more private than a standard PvtPpr. Safe-Submit uses a PvtPpr Branded Holding Hashlink that puroposly displays a bad page error but still places the full hashlink within the address bar as well as creation epoch. The link can be copied and opened via the <q><i>unlocker</i></q> in the <a href="https://3dd.in/PPFAQ" target="_blank" rel="noreferrer noopener">PvtPpr FAQ page</a>. Unlocking a Safe-Submit created PvtPpr using the public unlocker may un-shield your PvtPpr to the Way Back Machine (and similar) but any PvtPpr, including Safe-Submit PvtPprs, can be decoded offline by almost all computers and some phones. Refer to <a href="https://github.com/alcor/itty-bitty/" target="_blank">Itty-Bitty's GitHub</a> for Decoding options.
+## 3. Key Features & Add-ons
+- One-click HTML styling buttons (bold, italic, embed image/video/audio/link/NFT)
+- Optional: Security increase, ad space, navbar, previous-link backreferences, QR data
+- LSW mode adds profile picture, header, bio fields, trending hashtags, and post feed
+- PIP mode creates verifiable identity proofs (fingerprints turned into public/private key sets + QR splits)
+- Full offline capable + printable
 
-## PvtPpr Messenger 
-PvtPpr Messenger Generator is an extreamly light-weight PvtPpr Generator specifically designed to send the full hashlink to others as private messages. Instead of trusting the message company's database and encyption, sending the hashlink through the system doesn't directly store your words to their servers. Using customizable shortlinks instead can allow you to send messages to someone through the same link everytime and at will you can remove/replace the link from the shortlink service to wipe your messages from the messaging system's database. This is the closest to "<i><b>Elastic Digital Storage</b></i>" ever achieved.
+## 4. Planned & Experimental Upgrades
+- Full PQC (Post-Quantum Cryptography) role-based decryption (see `iPvtPpr`)
+- Native IPFS/IPNS hosting with gateways
+- All-in-one iPvtPpr dashboard
+- Better hashlink splitting & key-cutter tools
+- Visual Newschain timeline builder
+- Local-first node that never disappears
 
-## PvtPpr Internal Feartures
-PvtPprs and PvtPpr Generators have Internal Features that can help users create their Newschain and PvtPprs which are as follows:
+## Comprehensive Terminology Table
 
-<ol><h2>IPFS Ready:</h2> <h3>PvtPprs can support the Gateway Links of IPFS and IPNS.</h3></ol>
-</br>
-<ol><h2>Base64 Ready:</h2> <h3>PvtPprs and the Newschain can support Base64 offline media and links for fully-offline capable pages/chains.</h3></ol>
-</br>
-<ol><h2>Torrents Ready:</h2> <h3>PvtPprs and the Newschain can be stored in torrents but can also use torrent magnet links. This is a great alternative way to distribute data and Newschains.</h3></ol>
-</br>
-<ol><h2>Cointree Intergrated:</h2> <h3>PvtPpr Generators have Cointree intergrated to help authors obtain donations and discovery for their linked pages in their Cointree.</h3></ol>
-</br>
-<ol><h2>Bitcoin Addressing Intergrated:</h2> <h3>Some PvtPpr Generators have Bitcoin (BTC) addressing intergrated into the PvtPprs to help authors obtain donations while allowing authors to use their BTC addresses as identities.</h3></ol>
-</br>
-<ol><h2>Bitcoin Style Signing:</h2> <h3>Many PvtPpr Generators have intergrated a signing feature similar to Bitcoin (BTC) signing. If this signing featrue is used, the user will have signed their PvtPpr similar to signing a Bitcoin (BTC) transaction.</h3></ol>
-</br>
-<ol><h2>Author-Served Ads:</h2> <h3>Many PvtPpr Generators have bottom-page ads intergrated. If the author chooses to use the Ad spacing in a generator, then they can sell Ad space or advertize their own content in their pages.</h3></ol>
-</br>
-<ol><h2>Node-Served Ads:</h2> <h3>Most PvtPprs created in a Newschain has empty space on each side of data for Node-Sereved Ads or Data. This means that the Node sending the Decoding string can also send ads/data for the PvtPpr to display. <i>The URL Fragment directs to the node used to decode a PvtPpr but anyone can decode on their own or run their own Decoding Node for anyone or no-one to use.</i></h3></ol>
-</br>
-<ol><h2>User Privacy by Default:</h2> <h3>The system running the Newschain is based on User-end Privacy by default and authors/users of the PvtPpr Generators have to opt-in to relinquish their own privacy but also the authors/users of the PvtPpr Generators can opt-in to additional PvtPpr security.</h3></ol>
-</br>
-<ol><h2>Private Ad-Less Monetization:</h2> <h3>Most PvtPpr Generators are Bittube Monetization ready so authors can add view-time based monetization instead of web-delivered ad monetization. Web-Delievered Ads are what broke the first Ethereum (ETH) Decentralized Autonomous Organization (DAO) so having the option for an author-private monetization model that pays in a cryptocurrency is an essential need for privacy-oriented entities. Bittube Monetization is less private for the reader (in some cases) but very private for the author (in most cases).</h3></ol>
-</br>
-<ol><h2>Passing Data:</h2> <h3>
-The main feature being presented in PvtPpr Generators is passing links through the itty.bitty.site's nodeJS encoder because it uses the selector and selects <code>&#60;a></code> for the information to be encoded.
-  
-  First we bring the make a new variable with an empty inside:
-     <code>  var adstuff = ''; </code>
-       
-  Next we add into the new variable the code directly being inserted into the output location:     
-    <code>   adstuff += '&#60;a type="button" align="right;" href="' + document.getElementById('adlink').value + '" target="_blank";>&#60;span id="adtext">&#60;sup>&#60;sub>' + document.getElementById('adtextin').value + '&#60;/sub>&#60;/sup>&#60;/span>&#60;/a>&#60;span id="adtxt" style="font-size:8px"> </br> &#60;b id="adtxtbottom">ad&#60;/b>&#60;/span>'; </code>  
-   
-   In the input of the new variable inline styling may be used but more standard styling should work as well if the output styling is located within the selctor section. 
-   
-   Now we can apply the new filled variable to the output location:
-    <code>   document.getElementById('adhere').innerHTML = adstuff;      </code>
-       
-       
-   Repeating these we can pass images, videos, buttons and maybe more:    
- <code>      var topimg = ''; </br> topimg += '&#60;img src="' + document.getElementById('imglink').value + '" value="Image Link" />'; </br>    document.getElementById('img1').innerHTML = topimg;     </code>
- 
- <i>A neat trick with the image pass, is if the input value is not a link but just text, the image transfer will become invalid and will not display a broken-link image nor a giant empty box in the output's location.</i>
-      
-   
-The nodejs passing for ittybittysite is as follows:   
-    <code>   a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});}  </code>
-    </h3></ol>
+| Strange Term | What it really is | Plain English |
+|--------------|-------------------|---------------|
+| **PvtPpr** | The generated HTML page inside a hashlink | Your private digital paper / article / post |
+| **Newschain** | Series of linked PvtPprs | Your personal decentralized blog or newspaper |
+| **LSW** | Letin Stark Webbplate / Little Strong Website | Your social profile page inside the Newschain |
+| **PIP** | Public Identity Proof (UBC) | Verifiable “this is really me” proof using images + hashing |
+| **Hashlink** | itty.bitty-style compressed URL | The shareable link that contains the entire page |
+| **Itty.bitty / IBS** | Original compression platform | The magic that squeezes whole websites into URLs |
+| **Cointree** | Payment profile embed | One-click way for readers to send you crypto |
+| **iPvtPpr AI1** | Advanced IPFS + PQC version | The next-gen all-in-one generator (in progress) |
+
+## How to Use
+1. Clone or download the repository.
+2. Open any `.html` file directly in your browser (works completely offline).
+3. Fill in the fields and click the big submit button.
+4. Copy the generated hashlink and share it anywhere.
+5. To build a Newschain, use the “Previous PvtPpr” field to link them together.
+
+**Pro tip**: Run a local Itty Bitty v1 decoder node for maximum privacy and reliability.
+
+## Project Status & Honest Notes
+**🚧 Active since 2018: Still in active creative development**
+
+- Many generators are mature and fully usable.
+- Some experimental files (LSW, iPvtPpr, PIP) are works-in-progress with TODOs and commented code: normal for rapid invention.
+- Public hosting nodes have largely vanished; the system shines when used locally or self-hosted.
+- Infrastructure challenges are real, but the core idea (entire publication in one link) remains extremely powerful and unique.
+
+Contributions, bug reports, local-node improvements, visual redesigns, or help restoring IPFS endpoints are all **very welcome**!
+
+**Made by** 3Douglas Pihl (DigiMancer3D)  
+**BTC**: 39ajMiohYWzzSH8E55vANhZAnwcrjBnTD7  
+**Original links & full hash examples** are inside the repo files and old README.
+
+Thank you for exploring this unusual and freedom-focused publishing system. Star the repo or open an Issue: every bit of help moves PvtPpr closer to a stable, beautiful v1.0!
+
+---
     
-----
-### Notice
-Some PvtPpr Generators use non-compressed Base64 encoding for fully offline encoding but still uses "itty.bitty.site" or "itty.bitty.app" fragment URLs to output the data encoded.
-----
-</br></br>
-    
-## Newschain External Features
-The Newschain is an Internal Hash Based Mesh Network that can have Externally Linked other Newschains & Mesh-Networks. So some of the Newschain External Features are as follows: <ol><h2>Linked Networks:</h2> <h3>Any other network type can be linked in rather it is a magnet link, standard link, DAT link or Gateway link as long as the reader of the PvtPpr has the means to use the link (ie: browser for DAT links or accompanying application/program for magenet links).</h3></ol></br>
-<ol><h2>Threaded Pages:</h2> <h3>A "Threaded Page" is a PvtPpr object or web-object that is linked to a Newschain short-link or a specific PvtPpr/Newschain Block but is not a part of the full chain. This means if a user is going through a Newschain using the natural Previous Page system they will not come across the Threaded Page but if the Threaded Page link is accessed then the reader uses the natrual Previous Page system from that page, they be may sent either to the Newscahin top page or a specific page within the Newscahin (based on how the page is threaded in).</h3></ol>
-</br>
-    
-<h2>Why showcase this?</h2>
-    This is a fun way to showcase more of what can be done with <a href="https://itty.bitty.site" target="_blank" >itty.bitty.site</a> and allowing anyone to build their own news-like-paper without having what they write saved directly on servers allowing people to finally be able to "Own Their Digital Docuemnts" like never before.
-    
-## Actual Versions    
- <h1>Working Versions:</h1>
+## Historic Versions    
+ <h1>Versions:</h1>
  <h3>&nbsp&nbsp&nbsp&nbspThere are a multitude of PvtPpr Generator Versions and even Hashr (a Hashpage Generator). All of the Official Pvtppr Generators are listed here with both the short link(s) and full hashlinks.</br></br>
  
  ---
